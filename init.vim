@@ -21,6 +21,8 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/simplifysimplify')
+  call dein#add('haya14busa/incsearch.vim')
+  call dein#add('haya14busa/incsearch-easymotion.vim')
   " Required:
   call dein#end()
   call dein#save_state()
@@ -33,3 +35,4 @@ syntax enable
 source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/vim-easymotion.vim
+source ~/.config/nvim/incsearch.vim
