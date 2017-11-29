@@ -33,6 +33,7 @@ if dein#load_state('~/.local/share/dein')
   endif
   call dein#add('zchee/deoplete-jedi')
   call dein#add('Shougo/echodoc.vim')
+  call dein#add('ekalinin/Dockerfile.vim')
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/vrunchbang')
