@@ -45,11 +45,15 @@ endif
 filetype plugin indent on
 syntax enable
 
-source ~/.config/nvim/colorschemes.vim
+
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/vim-easymotion.vim
 source ~/.config/nvim/incsearch.vim
 source ~/.config/nvim/tslime.vim
+if has('nvim')
+  set termguicolors
+endif
+set background=dark
 colorscheme colibri
 set syntax=dbout
 set nowrap
