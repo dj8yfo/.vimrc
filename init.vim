@@ -4,6 +4,7 @@ lan en_US
 let mapleader = "\<Space>"
 let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
+
 "
 "dein Scripts-----------------------------
 if &compatible
@@ -25,6 +26,13 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('haya14busa/incsearch-easymotion.vim')
   call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
   call dein#add('jgdavey/tslime.vim')
+  call dein#add('Shougo/deoplete.nvim')
+  if !has('nvim')
+  	call dein#add('roxma/nvim-yarp')
+  	call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+  call dein#add('zchee/deoplete-jedi')
+  call dein#add('Shougo/echodoc.vim')
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/vrunchbang')
@@ -50,3 +58,5 @@ source ~/.config/nvim/functions.vim
 source ~/.config/nvim/vim-easymotion.vim
 source ~/.config/nvim/incsearch.vim
 source ~/.config/nvim/tslime.vim
+source ~/.config/nvim/echodoc.vim
+source ~/.config/nvim/deoplete.vim
