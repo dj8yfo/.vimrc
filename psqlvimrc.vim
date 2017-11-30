@@ -23,7 +23,6 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('haya14busa/incsearch.vim')
   call dein#add('haya14busa/incsearch-easymotion.vim')
-  call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
   call dein#add('jgdavey/tslime.vim')
 " colors
   call dein#add('archSeer/colibri.vim')
@@ -35,6 +34,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('lifepillar/vim-wwdc17-theme')
   call dein#add('nightsense/seabird')
   call dein#add('LanFly/vim-colors')
+  call dein#add('ahw/vim-pbcopy')
 " colors end
   " Required:
   call dein#end()
@@ -46,6 +46,7 @@ filetype plugin indent on
 syntax enable
 
 
+let g:vim_pbcopy_local_cmd = "pbcopy"
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/vim-easymotion.vim
 source ~/.config/nvim/incsearch.vim
