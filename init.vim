@@ -50,15 +50,17 @@ if dein#load_state('~/.local/share/dein')
 			  \ 'hook_add' : 'source ~/.config/nvim/neomake.vim'}) " python
 
 " colors
-  call dein#add('archSeer/colibri.vim', {'script_type' : 'colors'} )
-  call dein#add('nightsense/vrunchbang', {'script_type' : 'colors'} )
-  call dein#add('nightsense/simplifysimplify', {'script_type' : 'colors'} )
-  call dein#add('nightsense/plumber', {'script_type' : 'colors'} )
-  call dein#add('nightsense/nemo', {'script_type' : 'colors'} )
-  call dein#add('nightsense/forgotten', {'script_type' : 'colors'} )
-  call dein#add('lifepillar/vim-wwdc17-theme', {'script_type' : 'colors'} )
-  call dein#add('nightsense/seabird', {'script_type' : 'colors'} )
-  call dein#add('LanFly/vim-colors', {'script_type' : 'colors'} )
+  call dein#add('archSeer/colibri.vim')
+  call dein#add('nightsense/vrunchbang')
+  call dein#add('nightsense/simplifysimplify')
+  call dein#add('nightsense/plumber')
+  call dein#add('nightsense/nemo')
+  call dein#add('nightsense/forgotten')
+  call dein#add('lifepillar/vim-wwdc17-theme')
+  call dein#add('LanFly/vim-colors')
+  call dein#add('skielbasa/vim-material-monokai')
+  call dein#add('emhaye/ceudah.vim')
+  call dein#add('Badacadabra/vim-archery')
 " colors end
   " Required:
   call dein#end()
