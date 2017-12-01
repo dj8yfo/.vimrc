@@ -46,9 +46,8 @@ if dein#load_state('~/.local/share/dein')
 			  \ 'hook_add' : 'source ~/.config/nvim/echodoc.vim'})
   call dein#add('ekalinin/Dockerfile.vim')
 
-"python linters: 
-"pip install pep8 flake8 pyflakes pylama pylint py3kwarn
-"  call dein#add('neomake/neomake') " python
+  call dein#add('neomake/neomake', {
+			  \ 'hook_add' : 'source ~/.config/nvim/neomake.vim'}) " python
 
 " colors
   call dein#add('archSeer/colibri.vim', {'script_type' : 'colors'} )
