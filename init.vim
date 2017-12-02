@@ -4,6 +4,7 @@ lan en_US
 let mapleader = "\<Space>"
 let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
+set wmh=0
 
 "
 "dein Scripts-----------------------------
@@ -62,6 +63,8 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('skielbasa/vim-material-monokai')
   call dein#add('emhaye/ceudah.vim')
   call dein#add('Badacadabra/vim-archery')
+  call dein#add('beigebrucewayne/skull-vim')
+  call dein#add('dim13/smyck.vim')
 " colors end
   " Required:
   call dein#end()
@@ -73,6 +76,7 @@ filetype plugin indent on
 syntax enable
 
 source ~/.config/nvim/colorschemes.vim
+source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/functions.vim
 
 
