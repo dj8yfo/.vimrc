@@ -14,8 +14,13 @@ call denite#custom#map(
 \ 'noremap'
 \)
 
-call denite#custom#source(
-\ 'file_rec', 'matchers', ['matcher_cpsm'])
+if !dein#check_install(['cpsm'])
+	call denite#custom#source(
+	\ 'file_rec', 'matchers', ['matcher_cpsm'])
+else
+	call denite#custom#source(
+	\ 'file_rec', 'matchers', ['matcher_fuzzy'])
+endif
 
 no <Leader>b :Denite buffer<CR>
 no <Leader>z :Denite file_rec<CR>
