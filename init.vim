@@ -49,7 +49,10 @@ if dein#load_state('~/.local/share/dein')
 
   call dein#add('neomake/neomake', {
 			  \ 'hook_add' : 'source ~/.config/nvim/neomake.vim'}) " python
-
+  call dein#add('Shougo/denite.nvim', {
+			  \ 'hook_add' : 'source ~/.config/nvim/denite.vim'})
+  call dein#add('nixprime/cpsm', {
+			  \ 'build' : 'PY3=ON ./install.sh'})
   call dein#add('elzr/vim-json')
 " colors
   call dein#add('archSeer/colibri.vim')
