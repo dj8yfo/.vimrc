@@ -4,8 +4,12 @@ lan en_US
 let mapleader = "\<Space>"
 let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
+"minimum height of a buffer winwow = 0
 set wmh=0
 
+"rg command for vimgrep backend
+set grepprg=rg\ --vimgrep
+set grepformat^=%f:%l:%c:%m
 "
 "dein Scripts-----------------------------
 if &compatible
