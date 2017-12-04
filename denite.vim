@@ -44,3 +44,4 @@ no \z :Denite -default-action=tabswitch file_rec<CR>
 no <Leader>q :Denite grep<CR>
 no \q :DeniteCursorWord grep<CR>
 
+no <Leader>y :Denite neoyank<CR>
