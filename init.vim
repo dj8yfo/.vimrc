@@ -80,6 +80,8 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('Badacadabra/vim-archery')
   call dein#add('beigebrucewayne/skull-vim')
   call dein#add('dim13/smyck.vim')
+  call dein#add('baines/vim-colorscheme-thaumaturge')
+  call dein#add('chr4/jellygrass.vim')
 " colors end
   " Required:
   call dein#end()
