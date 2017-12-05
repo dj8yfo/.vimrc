@@ -55,9 +55,16 @@ if dein#load_state('~/.local/share/dein')
 			  \ 'hook_add' : 'source ~/.config/nvim/neomake.vim'}) " python
   call dein#add('nixprime/cpsm', {
 			  \ 'build' : 'PY3=ON ./install.sh'})
+
   call dein#add('Shougo/neoyank.vim')
   call dein#add('Shougo/denite.nvim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/denite.vim'})
+
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('vim-airline/vim-airline', {
+			  \ 'hook_add' : 'source ~/.config/nvim/vim-airline.vim'})
+  call dein#add('vim-airline/vim-airline-themes')
   call dein#add('elzr/vim-json')
 " colors
   call dein#add('archSeer/colibri.vim')

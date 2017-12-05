@@ -6,3 +6,6 @@ nn <C-\> <C-W>_
 
 no <leader>cd :tcd %:h<CR>
 map <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
+
+map ]l :lnext<CR>
+map [l :lprev<CR>
