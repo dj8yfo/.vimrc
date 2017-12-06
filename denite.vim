@@ -20,6 +20,13 @@ call denite#custom#map(
 \ '<denite:do_action:tabswitch>',
 \ 'noremap'
 \)
+call denite#custom#map(
+\ 'insert',
+\ '<C-s>',
+\ '<denite:do_action:split>',
+\ 'noremap'
+\)
+
 if !dein#check_install(['cpsm'])
 	call denite#custom#source(
 	\ 'file_rec', 'matchers', ['matcher_cpsm'])
@@ -45,3 +52,4 @@ no <Leader>q :Denite grep<CR>
 no \q :DeniteCursorWord grep<CR>
 
 no <Leader>y :Denite neoyank<CR>
+no <Leader>c :Denite command_history<CR>
