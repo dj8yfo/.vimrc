@@ -26,6 +26,8 @@ if dein#load_state('~/.local/share/dein')
   " Required:
   call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
   call dein#add('thinca/vim-visualstar')
+  call dein#add('t9md/vim-quickhl', {
+			  \ 'hook_add': 'source ~/.config/nvim/vim-quickhl.vim'})
   call dein#add('easymotion/vim-easymotion', {
 			  \ 'hook_add': 'source ~/.config/nvim/vim-easymotion.vim'})
   call dein#add('haya14busa/incsearch.vim')
