@@ -8,3 +8,8 @@ function! s:getchar() abort
   redraw | echomsg printf('Raw: "%s" | Char: "%s"', c, nr2char(c))
 endfunction
 command! GetChar call s:getchar()
+
+function! s:delete_tr_whitespace() abort
+	:%s/\s\+$//e
+endfunction
+command! DeleteTrailingW call s:delete_tr_whitespace()
