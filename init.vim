@@ -66,9 +66,11 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('tpope/vim-fugitive')
   call dein#add('vim-airline/vim-airline', {
 			  \ 'hook_add' : 'source ~/.config/nvim/vim-airline.vim'})
-  call dein#add('edkolev/tmuxline.vim')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('elzr/vim-json')
+  "tmux
+  call dein#add('edkolev/tmuxline.vim')
+  call dein#add('christoomey/vim-tmux-navigator')
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/vrunchbang')
