@@ -35,8 +35,6 @@ if dein#load_state('~/.local/share/dein')
 			  \ 'hook_add': 'source ~/.config/nvim/incsearch.vim'
 			  \ })
   call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
-  call dein#add('jgdavey/tslime.vim', {
-			  \ 'hook_add' : 'source ~/.config/nvim/tslime.vim'})
   call dein#add('Shougo/deoplete.nvim', {
 			  \ 'lazy' : 1, 'on_i' : 1,
 			  \ 'hook_add': 'source ~/.config/nvim/deoplete.vim'})
@@ -68,9 +66,13 @@ if dein#load_state('~/.local/share/dein')
 			  \ 'hook_add' : 'source ~/.config/nvim/vim-airline.vim'})
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('elzr/vim-json')
+  call dein#add('jeetsukumaran/vim-indentwise')
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
+  call dein#add('ervandew/screen', {
+			  \ 'lazy' : 1, 'on_cmd' : "ScreenShell",
+			  \ 'hook_source' : 'source ~/.config/nvim/screen.vim'})
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/vrunchbang')
