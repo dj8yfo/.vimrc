@@ -89,6 +89,9 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('dim13/smyck.vim')
   call dein#add('baines/vim-colorscheme-thaumaturge')
   call dein#add('chr4/jellygrass.vim')
+  call dein#add('hzchirs/vim-material')
+  call dein#add('Zabanaa/neuromancer.vim')
+  call dein#add('beigebrucewayne/Turtles')
 " colors end
   " Required:
   call dein#end()
