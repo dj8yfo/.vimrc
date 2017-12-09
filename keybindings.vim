@@ -11,3 +11,4 @@ map ]l :lnext<CR>
 map [l :lprev<CR>
 no \p :let @" = expand('%:p')<CR>
 no \f :let @" = expand('%:t')<CR>
+no \t :NeomakeSh ctags -R .<CR>

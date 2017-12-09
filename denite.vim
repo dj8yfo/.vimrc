@@ -37,8 +37,9 @@ no <Leader>b :Denite buffer:!<CR>
 no \b :Denite -default-action=tabswitch buffer:!<CR>
 no <Leader>z :Denite file_rec<CR>
 no \z :Denite -default-action=tabswitch file_rec<CR>
-no <Leader>q :Denite grep<CR>
-no \q :DeniteCursorWord grep<CR>
+no <Leader>q :Denite -no-empty grep<CR>
+no \q :DeniteCursorWord -no-empty grep<CR>
+no <Leader>t :Denite tag<CR>
 
 no <Leader>y :Denite neoyank<CR>
 no <Leader>c :Denite command_history<CR>
