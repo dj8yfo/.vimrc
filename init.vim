@@ -69,6 +69,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('jeetsukumaran/vim-indentwise')
   call dein#add('scrooloose/nerdcommenter')
   call dein#add('michaeljsmith/vim-indent-object')
+  call dein#add('tpope/vim-surround')
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
