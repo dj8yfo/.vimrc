@@ -1,3 +1,4 @@
+set shada=!,'100,s10,h
 set clipboard+=unnamedplus
 set hidden
 lan en_US
