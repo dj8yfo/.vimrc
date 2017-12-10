@@ -1,6 +1,7 @@
 set clipboard+=unnamedplus
 set hidden
 lan en_US
+set updatetime=300
 let mapleader = "\<Space>"
 let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
@@ -70,6 +71,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('scrooloose/nerdcommenter')
   call dein#add('michaeljsmith/vim-indent-object')
   call dein#add('tpope/vim-surround')
+  call dein#add('majutsushi/tagbar')
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
