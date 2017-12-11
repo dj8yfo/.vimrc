@@ -23,7 +23,6 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('haya14busa/incsearch.vim')
   call dein#add('haya14busa/incsearch-easymotion.vim')
-  call dein#add('jgdavey/tslime.vim')
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/vrunchbang')
@@ -50,7 +49,6 @@ let g:vim_pbcopy_local_cmd = "pbcopy"
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/vim-easymotion.vim
 source ~/.config/nvim/incsearch.vim
-source ~/.config/nvim/tslime.vim
 if has('nvim')
   set termguicolors
 endif

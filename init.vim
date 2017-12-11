@@ -73,6 +73,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('michaeljsmith/vim-indent-object')
   call dein#add('tpope/vim-surround')
   call dein#add('majutsushi/tagbar')
+  call dein#add('junegunn/rainbow_parentheses.vim')
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
