@@ -8,7 +8,7 @@ let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
 "minimum height of a buffer winwow = 0
 set wmh=0
-
+au! BufNewFile,BufRead *.log set filetype=python
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
@@ -74,6 +74,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('tpope/vim-surround')
   call dein#add('majutsushi/tagbar')
   call dein#add('junegunn/rainbow_parentheses.vim')
+  call dein#add('mattboehm/vim-unstack')
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
