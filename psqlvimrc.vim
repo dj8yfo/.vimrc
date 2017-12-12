@@ -23,6 +23,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('haya14busa/incsearch.vim')
   call dein#add('haya14busa/incsearch-easymotion.vim')
+  call dein#add('christoomey/vim-tmux-navigator')
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/vrunchbang')
