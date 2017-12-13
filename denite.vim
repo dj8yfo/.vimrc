@@ -47,6 +47,7 @@ no <Leader>q :Denite -no-empty grep<CR>
 no \q :DeniteCursorWord -no-empty grep<CR>
 no <Leader>t :Denite tag<CR>
 no \r :Denite -resume<CR>
+no <Leader>/ :Denite line<CR>
 
 no <Leader>y :Denite neoyank<CR>
 no <Leader>c :Denite command_history -default-action=edit_and_execute<CR>
