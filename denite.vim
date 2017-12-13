@@ -24,6 +24,9 @@ else
 	\ 'file_rec', 'matchers', ['matcher_fuzzy'])
 endif
 
+call denite#custom#source(
+\ 'file_rec', 'sorters', ['sorter_sublime'])
+
 " Ripgrep command on grep source
 call denite#custom#var('grep', 'command', ['rg'])
 call denite#custom#var('grep', 'default_opts',
@@ -33,6 +36,9 @@ call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
 call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
 
+call denite#custom#source(
+\ 'grep', 'sorters', ['sorter_selecta'])
+
 no <Leader>b :Denite buffer:!<CR>
 no \b :Denite -default-action=tabswitch buffer:!<CR>
 no <Leader>z :Denite file_rec<CR>
@@ -40,6 +46,7 @@ no \z :Denite -default-action=tabswitch file_rec<CR>
 no <Leader>q :Denite -no-empty grep<CR>
 no \q :DeniteCursorWord -no-empty grep<CR>
 no <Leader>t :Denite tag<CR>
+no \r :Denite -resume<CR>
 
 no <Leader>y :Denite neoyank<CR>
 no <Leader>c :Denite command_history -default-action=edit_and_execute<CR>
