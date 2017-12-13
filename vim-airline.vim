@@ -1,5 +1,7 @@
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
+let g:tmuxline_powerline_separators = 0
 let g:airline_extensions = ["branch", "denite", "tabline", "hunks", "whitespace", "neomake"]
+let g:airline#extensions#taboo#enabled = 1
 
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1

@@ -13,3 +13,4 @@ no \f :let @" = expand('%:t')<CR>
 no \t :NeomakeSh ctags -R .<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nmap \\ :TagbarOpen fj<CR>
+no \1 :TabooRename 

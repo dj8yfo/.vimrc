@@ -64,6 +64,8 @@ if dein#load_state('~/.local/share/dein')
 
   call dein#add('airblade/vim-gitgutter')
   call dein#add('tpope/vim-fugitive')
+  call dein#add('gcmt/taboo.vim', {
+			  \ 'hook_add' : 'source ~/.config/nvim/taboo.vim'})
   call dein#add('vim-airline/vim-airline', {
 			  \ 'hook_add' : 'source ~/.config/nvim/vim-airline.vim'})
   call dein#add('vim-airline/vim-airline-themes')
