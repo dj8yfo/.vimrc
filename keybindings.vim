@@ -14,3 +14,14 @@ no \t :NeomakeSh ctags -R .<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nmap \\ :TagbarOpen fj<CR>
 no \1 :TabooRename 
+no \c /fzalnlsdndglksa<CR>
+
+nmap <leader>1 :1tabn<CR>
+nmap <leader>2 :2tabn<CR>
+nmap <leader>3 :3tabn<CR>
+nmap <leader>4 :4tabn<CR>
+nmap <leader>5 :5tabn<CR>
+nmap <leader>6 :6tabn<CR>
+nmap <leader>7 :7tabn<CR>
+nmap <leader>8 :8tabn<CR>
+nmap <leader>9 :9tabn<CR>
