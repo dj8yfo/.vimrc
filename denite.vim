@@ -17,6 +17,11 @@ call denite#custom#map(
 \)
 
 if !dein#check_install(['cpsm'])
+	"https://github.com/nixprime/cpsm
+	"osx
+"env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.3
+	"linux
+"env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.6.3
 	call denite#custom#source(
 	\ 'file_rec', 'matchers', ['matcher_cpsm'])
 else
@@ -38,6 +43,8 @@ call denite#custom#var('grep', 'final_opts', [])
 
 call denite#custom#source(
 \ 'grep', 'sorters', ['sorter_selecta'])
+call denite#custom#source('grep', 'converters', ['converter_abbr_word'])
+call denite#custom#source('grep', 'matchers', ['matcher_regexp'])
 
 no <Leader>b :Denite buffer:!<CR>
 no \b :Denite -default-action=tabswitch buffer:!<CR>
