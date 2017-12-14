@@ -1,3 +1,4 @@
+set hlsearch
 set clipboard+=unnamedplus
 set hidden
 lan en_US
