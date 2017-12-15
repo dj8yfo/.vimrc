@@ -50,7 +50,8 @@ no <Leader>b :Denite buffer:!<CR>
 no \b :Denite -default-action=tabswitch buffer:!<CR>
 no <Leader>z :Denite file_rec<CR>
 no \z :Denite -default-action=tabswitch file_rec<CR>
-no <Leader>q :Denite -no-empty -auto-highlight grep <CR>
+nn <Leader>q :Denite -no-empty -auto-highlight grep <CR>
+vn <Leader>q :<C-U>call denite#visual()<CR>
 no \q :DeniteCursorWord -no-empty -auto-highlight grep<CR>
 no <Leader>t :Denite -auto-highlight tag<CR>
 no \r :Denite -resume<CR>
@@ -58,3 +59,9 @@ no <Leader>/ :Denite -auto-highlight line<CR>
 
 no <Leader>y :Denite neoyank<CR>
 no <Leader>c :Denite command_history -default-action=edit_and_execute<CR>
+function! denite#visual() abort
+let temp = @z
+norm gv"zy
+	call denite#start([{'name': 'grep', 'args': []}], {"input": escape(@z, "*[](){}\\")})
+let @z = temp
+endfunction

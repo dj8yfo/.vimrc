@@ -77,6 +77,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('majutsushi/tagbar')
   call dein#add('junegunn/rainbow_parentheses.vim')
   call dein#add('mattboehm/vim-unstack')
+  call dein#add('machakann/vim-highlightedyank')
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
