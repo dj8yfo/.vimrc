@@ -62,6 +62,8 @@ no <Leader>c :Denite command_history -default-action=edit_and_execute<CR>
 function! denite#visual() abort
 let temp = @z
 norm gv"zy
-	call denite#start([{'name': 'grep', 'args': []}], {"input": escape(@z, "*[](){}\\")})
+	call denite#start([{'name': 'grep', 'args': []}], 
+				\{"input": escape(@z, "*[](){}\\"),
+				\"empty":0})
 let @z = temp
 endfunction
