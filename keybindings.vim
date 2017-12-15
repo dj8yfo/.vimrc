@@ -15,6 +15,7 @@ nmap <leader>\ :TagbarToggle<CR>
 nmap \\ :TagbarOpen fj<CR>
 no \1 :TabooRename 
 no \c /fzalnlsdndglksa<CR>
+no \0 :set syntax=none<CR>
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>
