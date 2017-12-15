@@ -50,11 +50,11 @@ no <Leader>b :Denite buffer:!<CR>
 no \b :Denite -default-action=tabswitch buffer:!<CR>
 no <Leader>z :Denite file_rec<CR>
 no \z :Denite -default-action=tabswitch file_rec<CR>
-no <Leader>q :Denite -no-empty grep<CR>
-no \q :DeniteCursorWord -no-empty grep<CR>
-no <Leader>t :Denite tag<CR>
+no <Leader>q :Denite -no-empty -auto-highlight grep <CR>
+no \q :DeniteCursorWord -no-empty -auto-highlight grep<CR>
+no <Leader>t :Denite -auto-highlight tag<CR>
 no \r :Denite -resume<CR>
-no <Leader>/ :Denite line<CR>
+no <Leader>/ :Denite -auto-highlight line<CR>
 
 no <Leader>y :Denite neoyank<CR>
 no <Leader>c :Denite command_history -default-action=edit_and_execute<CR>

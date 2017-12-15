@@ -8,8 +8,8 @@ map <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
 
 map ]l :lnext<CR>
 map [l :lprev<CR>
-no \p :let @" = expand('%:p')<CR>
-no \f :let @" = expand('%:t')<CR>
+no \p :let @+ = expand('%:p')<CR>
+no \f :let @+ = expand('%:t')<CR>
 no \t :NeomakeSh ctags -R .<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nmap \\ :TagbarOpen fj<CR>

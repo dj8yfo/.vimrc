@@ -7,7 +7,6 @@ let mapleader = "\<Space>"
 let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
 "minimum height of a buffer winwow = 0
-set colorcolumn=80
 set wmh=0
 au! BufNewFile,BufRead *.log set filetype=python
 "rg command for vimgrep backend
