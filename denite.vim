@@ -59,7 +59,8 @@ no \r :Denite -resume<CR>
 no <Leader>/ :Denite -auto-highlight line<CR>
 
 no <Leader>y :Denite neoyank<CR>
-no <Leader>c :Denite command_history -default-action=edit_and_execute<CR>
+no <Leader>c :Denite command_history<CR>
+no \c :Denite command_history -default-action=edit_and_execute<CR>
 function! denite#visual(source) abort
 let temp = @z
 norm gv"zy

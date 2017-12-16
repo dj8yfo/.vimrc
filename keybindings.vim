@@ -14,7 +14,7 @@ no \t :NeomakeSh ctags -R .<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nmap \\ :TagbarOpen fj<CR>
 no \1 :TabooRename 
-no \c /fzalnlsdndglksa<CR>
+no \/ /fzalnlsdndglksa<CR>
 no \0 :set syntax=none<CR>
 
 nmap <leader>1 :1tabn<CR>

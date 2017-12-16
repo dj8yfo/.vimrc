@@ -36,6 +36,9 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('haya14busa/incsearch-easymotion.vim',{
 			  \ 'hook_add': 'source ~/.config/nvim/incsearch.vim'
 			  \ })
+  call dein#add('haya14busa/incsearch-fuzzy.vim', {
+			  \ 'hook_add': 'source ~/.config/nvim/incsearch-fuzzy.vim'
+			  \ })
   call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
   call dein#add('Shougo/deoplete.nvim', {
 			  \ 'lazy' : 1, 'on_i' : 1,
@@ -69,7 +72,6 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('vim-airline/vim-airline', {
 			  \ 'hook_add' : 'source ~/.config/nvim/vim-airline.vim'})
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('elzr/vim-json')
   call dein#add('jeetsukumaran/vim-indentwise')
   call dein#add('scrooloose/nerdcommenter')
   call dein#add('michaeljsmith/vim-indent-object')
@@ -80,6 +82,9 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('machakann/vim-highlightedyank', {
 			  \ 'hook_add' : 'let g:highlightedyank_highlight_duration = 400'})
   call dein#add('mpetrov/vim-diffstat')
+  call dein#add('elzr/vim-json', {
+			  \ 'hook_add' : 'let g:vim_json_syntax_conceal = 1'})
+  call dein#add('sheerun/vim-polyglot')
   call dein#add('euclio/vim-markdown-composer', {
 			  \ 'lazy' : 1, 'on_ft' : "markdown",
 			  \'build' : 'cargo build --release',
@@ -92,23 +97,23 @@ if dein#load_state('~/.local/share/dein')
 			  \ 'hook_source' : 'source ~/.config/nvim/screen.vim'})
 " colors
   call dein#add('archSeer/colibri.vim')
-  call dein#add('nightsense/vrunchbang')
-  call dein#add('nightsense/simplifysimplify')
   call dein#add('nightsense/plumber')
-  call dein#add('nightsense/nemo')
-  call dein#add('nightsense/forgotten')
   call dein#add('lifepillar/vim-wwdc17-theme')
   call dein#add('LanFly/vim-colors')
   call dein#add('skielbasa/vim-material-monokai')
   call dein#add('emhaye/ceudah.vim')
-  call dein#add('Badacadabra/vim-archery')
-  call dein#add('beigebrucewayne/skull-vim')
-  call dein#add('dim13/smyck.vim')
   call dein#add('baines/vim-colorscheme-thaumaturge')
   call dein#add('chr4/jellygrass.vim')
   call dein#add('hzchirs/vim-material')
   call dein#add('Zabanaa/neuromancer.vim')
   call dein#add('beigebrucewayne/Turtles')
+  call dein#add('carakan/new-railscasts-theme')
+  call dein#add('kudabux/vim-srcery-drk')
+  call dein#add('bluz71/vim-moonfly-colors')
+  call dein#add('rakr/vim-one')
+  call dein#add('broduo/broduo-color-scheme')
+  call dein#add('rhysd/vim-color-shiny-white')
+  call dein#add('~/.config/nvim/colors')
 " colors end
   " Required:
   call dein#end()
