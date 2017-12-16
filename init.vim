@@ -79,6 +79,11 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('mattboehm/vim-unstack')
   call dein#add('machakann/vim-highlightedyank', {
 			  \ 'hook_add' : 'let g:highlightedyank_highlight_duration = 400'})
+  call dein#add('mpetrov/vim-diffstat')
+  call dein#add('euclio/vim-markdown-composer', {
+			  \ 'lazy' : 1, 'on_ft' : "markdown",
+			  \'build' : 'cargo build --release',
+			  \ 'hook_add' : 'let g:markdown_composer_browser = "/Applications/Firefox.app/Contents/MacOS/firefox"'})
   "tmux
   call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
