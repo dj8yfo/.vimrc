@@ -16,6 +16,7 @@ nmap \\ :TagbarOpen fj<CR>
 no \1 :TabooRename 
 no \/ /fzalnlsdndglksa<CR>
 no \0 :set syntax=none<CR>
+map \g :Gstatus<CR>
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>
