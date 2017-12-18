@@ -2,7 +2,7 @@ if has('nvim')
   set termguicolors
 endif
 set background=dark
-colorscheme turtles
+colorscheme srcery-drk
 set colorcolumn=80
 hi Comment term=bold ctermfg=Cyan guifg=#666666 gui=bold
 " the two below are used by denite search
