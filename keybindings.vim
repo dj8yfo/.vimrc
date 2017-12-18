@@ -18,6 +18,7 @@ no \/ /fzalnlsdndglksa<CR>
 no \0 :set syntax=none<CR>
 map \g :Gstatus<CR>
 no <leader>a q:
+map \` :setlocal foldmethod=indent<CR>
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>

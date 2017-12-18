@@ -113,6 +113,10 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('rakr/vim-one')
   call dein#add('broduo/broduo-color-scheme')
   call dein#add('rhysd/vim-color-shiny-white')
+  call dein#add('a-nikolaev/vim-boltzmann')
+  call dein#add('ltlollo/diokai')
+  call dein#add('fneu/breezy')
+  call dein#add('aliou/moriarty.vim')
   call dein#add('~/.config/nvim/colors')
 " colors end
   " Required:
