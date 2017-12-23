@@ -19,6 +19,7 @@ no \0 :set syntax=none<CR>
 map \g :Gstatus<CR>
 no <leader>a q:
 map \` :setlocal foldmethod=indent<CR>
+no \e :lopen 8<CR>
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>

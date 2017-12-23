@@ -51,6 +51,8 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('davidhalter/jedi-vim', {
 			  \ 'lazy' : 1, 'on_ft' : "python",
 			  \ 'hook_source': 'source ~/.config/nvim/jedi-vim.vim'}) " python
+  call dein#add('bfredl/nvim-ipy', {
+			  \ 'hook_add' : 'source ~/.config/nvim/nvim-ipy.vim'}) 
 
   call dein#add('Shougo/echodoc.vim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/echodoc.vim'})
