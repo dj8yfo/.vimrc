@@ -1,11 +1,11 @@
 set shada=!,'100,s10,h
 set clipboard+=unnamedplus
 set hidden
-lan en_US
+" lan en_US
 set updatetime=300
 let mapleader = "\<Space>"
-let g:python_host_prog = '/Users/sysmanj/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/Users/sysmanj/.pyenv/versions/neovim3/bin/python'
+let g:python_host_prog = '/home/sysmanj/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/home/sysmanj/.pyenv/versions/neovim3/bin/python'
 "minimum height of a buffer winwow = 0
 set wmh=0
 au! BufNewFile,BufRead *.log set filetype=python
