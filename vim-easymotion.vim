@@ -10,6 +10,10 @@ let g:EasyMotion_smartcase = 1
 map <Leader>h <Plug>(easymotion-linebackward)
 " alt-k
 map <Leader>l <Plug>(easymotion-lineforward)
+" alt-j
+map <Leader>J <Plug>(easymotion-j)
+" alt-k
+map <Leader>K <Plug>(easymotion-k)
 let g:EasyMotion_startofline = 0
 
 " Move to word
