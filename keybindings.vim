@@ -20,6 +20,8 @@ map \g :Gstatus<CR>
 no <leader>a q:
 map \` :setlocal foldmethod=indent<CR>
 no \e :lopen 8<CR>
+nmap <C-n> o<Esc>k
+nmap <C-p> O<Esc>j
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>
