@@ -1,5 +1,6 @@
 if has('nvim')
   set termguicolors
+  set guicursor=
 endif
 set background=dark
 colorscheme boltzmann
