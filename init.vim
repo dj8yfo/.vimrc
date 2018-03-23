@@ -97,6 +97,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('ervandew/screen', {
 			  \ 'lazy' : 1, 'on_cmd' : "ScreenShell",
 			  \ 'hook_source' : 'source ~/.config/nvim/screen.vim'})
+  call dein#add('jiangmiao/auto-pairs')
 " colors
   call dein#add('archSeer/colibri.vim')
   call dein#add('nightsense/plumber')
