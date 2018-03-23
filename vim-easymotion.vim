@@ -11,9 +11,9 @@ map <Leader>h <Plug>(easymotion-linebackward)
 " alt-k
 map <Leader>l <Plug>(easymotion-lineforward)
 " alt-j
-map <Leader>J <Plug>(easymotion-j)
+map <Leader>j <Plug>(easymotion-j)
 " alt-k
-map <Leader>K <Plug>(easymotion-k)
+map <Leader>k <Plug>(easymotion-k)
 let g:EasyMotion_startofline = 0
 
 " Move to word

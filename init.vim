@@ -92,7 +92,7 @@ if dein#load_state('~/.local/share/dein')
 			  \'build' : 'cargo build --release',
 			  \ 'hook_add' : 'let g:markdown_composer_browser = "/Applications/Firefox.app/Contents/MacOS/firefox"'})
   "tmux
-  call dein#add('edkolev/tmuxline.vim')
+  "call dein#add('edkolev/tmuxline.vim')
   call dein#add('christoomey/vim-tmux-navigator')
   call dein#add('ervandew/screen', {
 			  \ 'lazy' : 1, 'on_cmd' : "ScreenShell",
