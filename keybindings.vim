@@ -32,3 +32,7 @@ nmap <leader>6 :6tabn<CR>
 nmap <leader>7 :7tabn<CR>
 nmap <leader>8 :8tabn<CR>
 nmap <leader>9 :9tabn<CR>
+inoremap <C-g> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
