@@ -1,9 +1,9 @@
 if has('nvim')
   set termguicolors
 endif
-set guicursor=
+"set guicursor=
 set background=dark
-colorscheme ceudah
+colorscheme moonfly
 set colorcolumn=80
 hi Comment term=bold ctermfg=Cyan guifg=#666666 gui=bold
 hi Folded guifg=white guibg=black ctermfg=white ctermbg=black

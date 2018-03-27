@@ -39,3 +39,6 @@ inoremap <C-l> <Right>
 nmap <c-a> :w<CR>
 vmap <c-a> <Esc><c-a>gv
 imap <c-a> <Esc><c-a>
+nmap <leader>Q :qa!<CR>
+map <leader>C :call Toggle_chrosshairs()<CR>
+

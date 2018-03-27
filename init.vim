@@ -132,8 +132,8 @@ filetype plugin indent on
 syntax enable
 
 source ~/.config/nvim/colorschemes.vim
-source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/functions.vim
+source ~/.config/nvim/keybindings.vim
 
 
 

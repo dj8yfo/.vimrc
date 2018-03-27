@@ -13,3 +13,8 @@ function! s:delete_tr_whitespace() abort
 	:%s/\s\+$//e
 endfunction
 command! DeleteTrailingW call s:delete_tr_whitespace()
+
+function! Toggle_chrosshairs() abort
+	:set cursorline!
+	:set cursorcolumn!
+endfunction
