@@ -35,6 +35,7 @@ nmap <leader>9 :9tabn<CR>
 inoremap <C-g> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
+inoremap <C-space> <Right>
 inoremap <C-l> <Right>
 nmap <c-a> :w<CR>
 vmap <c-a> <Esc><c-a>gv

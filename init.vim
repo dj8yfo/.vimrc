@@ -121,6 +121,10 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('fneu/breezy')
   call dein#add('aliou/moriarty.vim')
   call dein#add('~/.config/nvim/colors')
+  call dein#add('sjl/badwolf')
+  call dein#add('nightsense/vrunchbang')
+  call dein#add('jalvesaq/southernlights')
+  call dein#add('Dru89/vim-adventurous')
 " colors end
   " Required:
   call dein#end()

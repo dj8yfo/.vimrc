@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-colorscheme moonfly
+colorscheme diokai
 set colorcolumn=80
 hi Comment term=bold ctermfg=Cyan guifg=#666666 gui=bold
 hi Folded guifg=white guibg=black ctermfg=white ctermbg=black
