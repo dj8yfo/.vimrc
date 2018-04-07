@@ -125,6 +125,13 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('nightsense/vrunchbang')
   call dein#add('jalvesaq/southernlights')
   call dein#add('Dru89/vim-adventurous')
+  call dein#add('wimstefan/vim-artesanal')
+  call dein#add('beigebrucewayne/subtle_solo')
+  call dein#add('felipesousa/rupza')
+  call dein#add('vim-scripts/dante.vim')
+  call dein#add('andbar-ru/vim-unicon')
+  call dein#add('gkjgh/cobalt')
+  call dein#add('danilo-augusto/vim-afterglow')
 " colors end
   " Required:
   call dein#end()
