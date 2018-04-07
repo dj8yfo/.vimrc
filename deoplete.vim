@@ -13,4 +13,4 @@ function! s:my_cr_function() abort
  return deoplete#close_popup() . "\<CR>"
 endfunction
 autocmd CompleteDone * silent! pclose!
-let g:deoplete#auto_complete_delay = 30
+let g:deoplete#auto_complete_delay = 0

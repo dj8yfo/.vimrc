@@ -1,4 +1,4 @@
-call neomake#configure#automake('nwr', 1000)
+call neomake#configure#automake('nwr', 300)
 
 "python linters: 
 "pip install frosted pep8 flake8 pyflakes pylama pylint py3kwarn

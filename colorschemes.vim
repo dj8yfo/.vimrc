@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-colorscheme tender
+colorscheme cobalt
 set relativenumber
 set colorcolumn=80
 hi Comment term=bold ctermfg=Cyan guifg=#666666 gui=bold
@@ -13,6 +13,6 @@ hi LineNr guifg=#00ff00
 hi CursorLineNr guifg=#00bb00 gui=italic,bold
 hi Visual guibg=Brown gui=bold
 hi CursorLine gui=bold guibg=#333333
-hi Search guifg=#00eeee guibg=#222222
+hi Search gui=bold guifg=Magenta guibg=DarkBlue
 hi ColorColumn ctermbg=Cyan guibg=#333333
 autocmd VimEnter * RainbowParentheses
