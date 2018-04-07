@@ -7,16 +7,16 @@ let g:EasyMotion_smartcase = 1
 
 " JK motions: Line motions
 " alt-j
-map <Leader>h <Plug>(easymotion-linebackward)
+map <M-h> <Plug>(easymotion-linebackward)
 " alt-k
-map <Leader>l <Plug>(easymotion-lineforward)
+map <M-l> <Plug>(easymotion-lineforward)
 " alt-j
-map <Leader>j <Plug>(easymotion-j)
+map <M-j> <Plug>(easymotion-j)
 " alt-k
-map <Leader>k <Plug>(easymotion-k)
+map <M-k> <Plug>(easymotion-k)
 let g:EasyMotion_startofline = 0
 
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
-map  <Leader>L <Plug>(easymotion-overwin-line)
+map  <Leader>l <Plug>(easymotion-overwin-line)

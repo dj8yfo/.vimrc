@@ -1,5 +1,5 @@
 let g:airline_powerline_fonts = 1
-let g:airline_highlighting_cache = 1
+let g:airline_highlighting_cache = 0
 let g:tmuxline_powerline_separators = 0
 let g:airline_extensions = ["branch", "denite", "tabline", "hunks", "whitespace", "neomake"]
 let g:airline#extensions#taboo#enabled = 1
