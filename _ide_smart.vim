@@ -12,3 +12,5 @@
 			  \ 'hook_add' : 'source ~/.config/nvim/denite.vim'})
   call dein#add('Shougo/neoyank.vim')
   call dein#add('majutsushi/tagbar')
+  call dein#add('KabbAmine/zeavim.vim', {
+			  \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})

@@ -51,9 +51,9 @@ no \b :Denite -default-action=tabswitch buffer:!<CR>
 nn <Leader>z :Denite file_rec<CR>
 vn <Leader>z :<C-U>call denite#visual('file_rec')<CR>
 no \z :Denite -default-action=tabswitch file_rec<CR>
-nn <Leader>q :Denite -no-empty -auto-highlight grep <CR>
+nn <Leader>q :Denite -no-empty  grep <CR>
 vn <Leader>q :<C-U>call denite#visual('grep')<CR>
-no \q :DeniteCursorWord -no-empty -auto-highlight grep<CR>
+no \q :DeniteCursorWord -no-empty  grep<CR>
 no <Leader>t :Denite tag<CR>
 no <Leader>o :Denite outline<CR>
 no \r :Denite -resume<CR>
