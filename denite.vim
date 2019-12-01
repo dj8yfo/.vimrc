@@ -63,7 +63,7 @@ no \q :DeniteCursorWord -no-empty  grep<CR>
 no <Leader>t :Denite tag<CR>
 no <Leader>o :Denite outline<CR>
 no \r :Denite -resume<CR>
-no <Leader>/ :Denite -auto-highlight line<CR>
+no <Leader>/ :Denite line<CR>
 no <Leader>+ :Denite colorscheme<CR>
 
 no <Leader>y :Denite neoyank<CR>
