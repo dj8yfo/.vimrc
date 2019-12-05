@@ -4,8 +4,10 @@ set hidden
 " lan en_US
 set updatetime=300
 let mapleader = "\<Space>"
-let g:python_host_prog = '/home/sysmanj/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/home/sysmanj/.pyenv/versions/neovim3/bin/python'
+    " Be iMproved
+let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
+    " Be iMproved
 "minimum height of a buffer winwow = 0
 set wmh=0
 au! BufNewFile,BufRead *.log set filetype=python
@@ -50,9 +52,6 @@ filetype plugin indent on
 syntax enable
 
 source ~/.config/nvim/colorschemes.vim
+hi Normal guibg=NONE ctermbg=NONE
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/keybindings.vim
-
-
-
-

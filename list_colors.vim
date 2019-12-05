@@ -10,7 +10,6 @@
   call dein#add('Zabanaa/neuromancer.vim')
   call dein#add('beigebrucewayne/Turtles')
   call dein#add('carakan/new-railscasts-theme')
-  call dein#add('kudabux/vim-srcery-drk')
   call dein#add('bluz71/vim-moonfly-colors')
   call dein#add('rakr/vim-one')
   call dein#add('broduo/broduo-color-scheme')
@@ -34,3 +33,4 @@
   call dein#add('dracula/vim')
   call dein#add('sonph/onehalf', {'rtp': 'vim'})
   call dein#add('jacoborus/tender.vim')
+  call dein#add('broduo/broduo-color-scheme')

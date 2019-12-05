@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-colorscheme cobalt
+colorscheme turtles
 set relativenumber
 set colorcolumn=80
 hi Comment term=bold ctermfg=Cyan guifg=#666666 gui=bold

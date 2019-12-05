@@ -42,5 +42,6 @@ vmap <c-a> <Esc><c-a>gv
 imap <c-a> <Esc><c-a>
 map <M-a> <esc>ggVG
 map <M-\> <esc>ggVG=
-nmap <leader>Q :qa!<CR>
+map <M-t> <esc>:DeleteTrailingW<CR>
+nmap <leader>x :qa!<CR>
 map <leader>C :call Toggle_chrosshairs()<CR>
