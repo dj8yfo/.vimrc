@@ -14,6 +14,14 @@ function! s:delete_tr_whitespace() abort
 endfunction
 command! DeleteTrailingW call s:delete_tr_whitespace()
 
+function! ClipboardYank()
+"https://github.com/neovim/neovim/issues/583#issuecomment-40942281
+  call system('xclip -sel clip -i', @@)
+endfunction
+function! ClipboardPaste()
+  let @@ = system('xclip -sel clip -o')
+endfunction
+
 function! Toggle_chrosshairs() abort
 	:set cursorline!
 	:set cursorcolumn!

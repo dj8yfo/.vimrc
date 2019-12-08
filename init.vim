@@ -52,6 +52,9 @@ filetype plugin indent on
 syntax enable
 
 source ~/.config/nvim/colorschemes.vim
-hi Normal guibg=NONE ctermbg=NONE
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/keybindings.vim
+
+hi Normal guibg=NONE ctermbg=NONE
+" transparent background
+call Toggle_chrosshairs()

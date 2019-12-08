@@ -45,3 +45,8 @@ map <M-\> <esc>ggVG=
 map <M-t> <esc>:DeleteTrailingW<CR>
 nmap <leader>x :qa!<CR>
 map <leader>C :call Toggle_chrosshairs()<CR>
+
+
+vnoremap <silent> y y:call ClipboardYank()<cr>
+vnoremap <silent> d d:call ClipboardYank()<cr>
+nnoremap <silent> p :call ClipboardPaste()<cr>p
