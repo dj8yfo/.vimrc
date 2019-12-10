@@ -26,3 +26,5 @@ function! Toggle_chrosshairs() abort
 	:set cursorline!
 	:set cursorcolumn!
 endfunction
+
+command! Mktemp exe 'edit' . system("mktemp")
