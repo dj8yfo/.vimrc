@@ -34,3 +34,6 @@
   call dein#add('sonph/onehalf', {'rtp': 'vim'})
   call dein#add('jacoborus/tender.vim')
   call dein#add('broduo/broduo-color-scheme')
+  call dein#add('Mcmartelle/vim-monokai-bold')
+
+
