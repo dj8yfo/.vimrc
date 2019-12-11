@@ -14,3 +14,5 @@
   call dein#add('majutsushi/tagbar')
   call dein#add('KabbAmine/zeavim.vim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
+  call dein#add('chrisbra/NrrwRgn')
+
