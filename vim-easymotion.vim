@@ -17,6 +17,6 @@ map <M-k> <Plug>(easymotion-k)
 let g:EasyMotion_startofline = 0
 
 " Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
-map  <Leader>l <Plug>(easymotion-overwin-line)
+map  gw <Plug>(easymotion-bd-w)
+nmap gw <Plug>(easymotion-overwin-w)
+map  gl <Plug>(easymotion-overwin-line)

@@ -35,5 +35,7 @@
   call dein#add('jacoborus/tender.vim')
   call dein#add('broduo/broduo-color-scheme')
   call dein#add('Mcmartelle/vim-monokai-bold')
+  call dein#add('rafi/awesome-vim-colorschemes')
+
 
 
