@@ -28,3 +28,10 @@ function! Toggle_chrosshairs() abort
 endfunction
 
 command! Mktemp exe 'edit' . system("mktemp")
+
+function! DumpBindings() abort
+	redir > $HOME/vim_bind.txt
+	silent nmap
+	silent imap
+	redir END
+endfunction
