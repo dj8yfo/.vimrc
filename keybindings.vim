@@ -5,6 +5,7 @@ no <C-l> <C-W>l
 
 no <leader>cd :tcd %:h<CR>
 map <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
+no <leader>j<Space> :bd!<CR>
 
 map ]l :lnext<CR>
 map [l :lprev<CR>
@@ -50,3 +51,6 @@ map <leader>C :call Toggle_chrosshairs()<CR>
 vnoremap <silent> y y:call ClipboardYank()<cr>
 vnoremap <silent> d d:call ClipboardYank()<cr>
 nnoremap <silent> p :call ClipboardPaste()<cr>p
+
+no <leader>jp :Pyre 
+no <leader>jj :Pyja 

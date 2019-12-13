@@ -30,8 +30,22 @@ endfunction
 command! Mktemp exe 'edit' . system("mktemp")
 
 function! DumpBindings() abort
-	redir > $HOME/vim_bind.txt
+	redir! > $HOME/vim_bind.txt
 	silent nmap
 	silent imap
 	redir END
 endfunction
+
+function! s:pyre_search(search) abort
+	15new
+	Mktemp
+	echo a:search
+	execute "read !pyre " . a:search
+endfunction
+
+
+function! s:pyre_jaunt(search) abort
+	execute "!pyjau " . a:search
+endfunction
+command! -nargs=1 Pyre  call <SID>pyre_search(<f-args>)
+command! -nargs=1 Pyja  call <SID>pyre_jaunt(<f-args>)
