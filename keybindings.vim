@@ -1,28 +1,22 @@
-no <C-j> <C-W>j
-no <C-k> <C-W>k
-no <C-h> <C-W>h
-no <C-l> <C-W>l
-
-no <leader>cd :tcd %:h<CR>
-map <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
-no <leader>j<Space> :bd!<CR>
-
-map ]l :lnext<CR>
-map [l :lprev<CR>
-no \p :let @+ = expand('%:p')<CR>
-no \f :let @+ = expand('%:t')<CR>
-no \t :NeomakeSh ctags -R .<CR>
-nmap <leader>\ :TagbarToggle<CR>
-nmap \\ :TagbarOpen fj<CR>
-no \1 :TabooRename 
-no \/ /fzalnlsdndglksa<CR>
-no \0 :set syntax=none<CR>
-map \g :Gstatus<CR>
-no <leader>a q:
-map \` :setlocal foldmethod=indent<CR>
-no \e :lopen 8<CR>
+nmap <C-a> :w<CR>
+imap <C-a> <Esc><C-a>
+vmap <C-a> <Esc><C-a>gv
 nmap <C-n> o<Esc>k
 nmap <C-p> O<Esc>j
+no   <C-j> <C-W>j
+no   <C-k> <C-W>k
+no   <C-h> <C-W>h
+no   <C-l> <C-W>l
+imap <C-e> <Esc>$a
+imap <C-b> <Esc>0i
+cmap <C-g> <Left>
+inor <C-g> <Left>
+inor <C-j> <Down>
+inor <C-k> <Up>
+inor <C-space> <Right>
+cmap <C-l> <Right>
+inor <C-l> <Right>
+
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>
@@ -33,24 +27,41 @@ nmap <leader>6 :6tabn<CR>
 nmap <leader>7 :7tabn<CR>
 nmap <leader>8 :8tabn<CR>
 nmap <leader>9 :9tabn<CR>
-inoremap <C-g> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-space> <Right>
-inoremap <C-l> <Right>
-nmap <c-a> :w<CR>
-vmap <c-a> <Esc><c-a>gv
-imap <c-a> <Esc><c-a>
+no   <leader>a q:
+no   <leader>cd :tcd %:h<CR>
+map  <leader>C :call Toggle_chrosshairs()<CR>
+map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
+no   <leader>j<Space> :bd!<CR>
+no   <leader>jj :Pyja 
+no   <leader>jp :Pyre 
+nmap <leader>x :qa!<CR>
+nmap <leader>\ :TagbarToggle<CR>
+
+
+map  ]l :lnext<CR>
+map  [l :lprev<CR>
+
+no   \0 :set syntax=none<CR>
+no   \1 :TabooRename 
+no   \c /fzalnlsdndglksa<CR>
+no   \e :lopen 8<CR>
+no   \f :let @+ = expand('%:t')<CR>
+map  \g :Gstatus<CR>
+no   \p :let @+ = expand('%:p')<CR>
+no   \s :%s:::g<Left><Left><Left>
+no   \t :NeomakeSh ctags -R .<CR>
+nmap \\ :TagbarOpen fj<CR>
+
+map  \' :setlocal foldmethod=indent<CR>
+no   \` :%s:::cg<Left><Left><Left><Left>
+
 map <M-a> <esc>ggVG
 map <M-\> <esc>ggVG=
 map <M-t> <esc>:DeleteTrailingW<CR>
-nmap <leader>x :qa!<CR>
-map <leader>C :call Toggle_chrosshairs()<CR>
 
+vn   <silent> y y:call ClipboardYank()<cr>
+vn   <silent> d d:call ClipboardYank()<cr>
+nn   <silent> p :call ClipboardPaste()<cr>p
 
-vnoremap <silent> y y:call ClipboardYank()<cr>
-vnoremap <silent> d d:call ClipboardYank()<cr>
-nnoremap <silent> p :call ClipboardPaste()<cr>p
-
-no <leader>jp :Pyre 
-no <leader>jj :Pyja 
+source ~/.config/nvim/keys-indentwise.vim
+"already: source ~/.config/nvim/vim-easymotion.vim

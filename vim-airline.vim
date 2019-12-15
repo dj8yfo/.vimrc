@@ -8,4 +8,4 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 let airline#extensions#neomake#error_symbol = 'E:'
 let airline#extensions#neomake#warning_symbol = 'W:'
-let g:airline_theme = 'tender'
+let g:airline_theme = 'powerlineish'
