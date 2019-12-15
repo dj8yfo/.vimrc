@@ -16,6 +16,7 @@ inor <C-k> <Up>
 inor <C-space> <Right>
 cmap <C-l> <Right>
 inor <C-l> <Right>
+no   <C-]> :NeomakeSh ctags -R .<CR>
 
 
 nmap <leader>1 :1tabn<CR>
@@ -44,12 +45,15 @@ map  [l :lprev<CR>
 no   \0 :set syntax=none<CR>
 no   \1 :TabooRename 
 no   \c /fzalnlsdndglksa<CR>
-no   \e :lopen 8<CR>
+let g:lt_location_list_toggle_map = '\e'
+let g:lt_quickfix_list_toggle_map = '<C-`>'
+"Valloric/ListToggle
+"no   \e :lopen 8<CR>
 no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
 no   \p :let @+ = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
-no   \t :NeomakeSh ctags -R .<CR>
+no   \t :NeomakeSh ctags -R . --language-force=Python<CR>
 nmap \\ :TagbarOpen fj<CR>
 
 map  \' :setlocal foldmethod=indent<CR>

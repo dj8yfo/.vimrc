@@ -10,6 +10,7 @@ let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
     " Be iMproved
 "minimum height of a buffer winwow = 0
 set wmh=0
+set tags=tags;
 au! BufNewFile,BufRead *.log set filetype=python
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
