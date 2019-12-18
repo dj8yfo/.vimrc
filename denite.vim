@@ -64,6 +64,7 @@ no <Leader>t :Denite tag<CR>
 no <Leader>o :Denite outline<CR>
 no \r :Denite -resume<CR>
 no <Leader>/ :Denite line<CR>
+vn <Leader>/ :<C-U>call denite#visual('line')<CR>
 no <Leader>+ :Denite colorscheme<CR>
 
 no <Leader>y :Denite neoyank<CR>
