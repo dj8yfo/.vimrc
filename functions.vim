@@ -28,7 +28,6 @@ function! Toggle_chrosshairs() abort
 endfunction
 
 command! Mktemp exe 'edit' . system("mktemp")
-
 function! DumpBindings() abort
 	redir! > $HOME/vim_bind.txt
 	silent nmap
@@ -49,3 +48,11 @@ function! s:pyre_jaunt(search) abort
 endfunction
 command! -nargs=1 Pyre  call <SID>pyre_search(<f-args>)
 command! -nargs=1 Pyja  call <SID>pyre_jaunt(<f-args>)
+
+
+function! FoldCurrentFile(column) abort
+	let l:tmpfile = trim(system("mktemp"))
+	execute '!cat % | fold -s -w ' . a:column . ' > ' . l:tmpfile
+	let l:curfile = expand('%:p')
+	execute '!cat ' . l:tmpfile . ' > ' . l:curfile
+endfunction
