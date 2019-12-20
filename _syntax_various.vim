@@ -7,3 +7,6 @@
 			  \'build' : 'cargo build --release',
 			  \ 'hook_add' : 'let g:markdown_composer_browser = "/Applications/Firefox.app/Contents/MacOS/firefox"'})
   call dein#add('jceb/vim-orgmode')
+  call dein#add('othree/html5.vim')
+  call dein#add('alvan/vim-closetag')
+

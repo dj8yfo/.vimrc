@@ -60,7 +60,7 @@ map  \' :setlocal foldmethod=indent<CR>
 no   \` :%s:::cg<Left><Left><Left><Left>
 
 map <M-a> <esc>ggVG
-map <M-\> <esc>ggVG=
+map <M-/> <esc>ggVG=
 map <M-t> <esc>:DeleteTrailingW<CR>
 
 vn   <silent> y y:call ClipboardYank()<cr>
