@@ -56,3 +56,9 @@ function! FoldCurrentFile(column) abort
 	let l:curfile = expand('%:p')
 	execute '!cat ' . l:tmpfile . ' > ' . l:curfile
 endfunction
+
+function! MyTagbarOpen() abort
+	let g:tagbar_show_linenumbers = 2
+	let g:tagbar_ctags_bin ="/usr/bin/ctags"
+	execute 'TagbarOpen fj'
+endfunction

@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color dracula
+color  monokain
 set relativenumber
 set number
 set colorcolumn=80

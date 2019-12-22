@@ -54,7 +54,7 @@ map  \g :Gstatus<CR>
 no   \p :let @+ = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
 no   \t :NeomakeSh ctags -R . --language-force=Python<CR>
-nmap \\ :TagbarOpen fj<CR>
+nmap \\ :call MyTagbarOpen()<CR>
 
 map  \' :setlocal foldmethod=indent<CR>
 no   \` :%s:::cg<Left><Left><Left><Left>
