@@ -12,6 +12,7 @@ let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
 set wmh=0
 set tags=tags;
 au! BufNewFile,BufRead *.log set filetype=python
+autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
