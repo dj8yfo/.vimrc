@@ -16,7 +16,7 @@ inor <C-k> <Up>
 inor <C-space> <Right>
 cmap <C-l> <Right>
 inor <C-l> <Right>
-no   <C-]> :NeomakeSh ctags -R .<CR>
+no   <C-\> :NeomakeSh ctags -R .<CR>
 
 
 nmap <leader>1 :1tabn<CR>
