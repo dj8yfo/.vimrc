@@ -1,6 +1,7 @@
   call dein#add('Shougo/deoplete.nvim', {
 			  \ 'lazy' : 1, 'on_i' : 1,
-			  \ 'hook_add': 'source ~/.config/nvim/deoplete.vim'})
+			  \ 'hook_add': 'source ~/.config/nvim/deoplete.vim',
+			  \ 'hook_source': 'source ~/.config/nvim/deoplete_source.vim'})
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('Shougo/echodoc.vim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/echodoc.vim'})
