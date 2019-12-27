@@ -57,6 +57,6 @@ source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/keybindings.vim
 
-"hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 " transparent background
 call Toggle_chrosshairs()

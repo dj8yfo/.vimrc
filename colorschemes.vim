@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color  monokain
+color  vim-material
 set relativenumber
 set number
 set colorcolumn=80

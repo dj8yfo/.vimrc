@@ -1,5 +1,4 @@
 nmap <C-a> :w<CR>
-imap <C-a> <Esc><C-a>
 vmap <C-a> <Esc><C-a>gv
 nmap <C-n> o<Esc>k
 nmap <C-p> O<Esc>j
@@ -7,15 +6,18 @@ no   <C-j> <C-W>j
 no   <C-k> <C-W>k
 no   <C-h> <C-W>h
 no   <C-l> <C-W>l
+no <C-g> i <Esc>
 imap <C-e> <Esc>$a
-imap <C-b> <Esc>0i
+imap <C-a> <Esc>0i
+imap <C-d> <Esc>lxa
+
 cmap <C-g> <Left>
-inor <C-g> <Left>
-inor <C-j> <Down>
-inor <C-k> <Up>
-inor <C-space> <Right>
-cmap <C-l> <Right>
-inor <C-l> <Right>
+inor <C-b> <Left>
+inor <C-f> <Right>
+
+inor <C-n> <Down>
+inor <C-p> <Up>
+cmap <C-f> <Right>
 no   <C-\> :NeomakeSh ctags -R .<CR>
 
 
