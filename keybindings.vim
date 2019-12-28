@@ -11,6 +11,13 @@ imap <C-e> <Esc>$a
 imap <C-a> <Esc>0i
 imap <C-d> <Esc>lxa
 
+
+map f <Plug>(snipe-f)
+map F <Plug>(snipe-F)
+map t <Plug>(snipe-t)
+map T <Plug>(snipe-T)
+map e <Plug>(snipe-e)
+
 cmap <C-g> <Left>
 inor <C-b> <Left>
 inor <C-f> <Right>
@@ -37,6 +44,7 @@ map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
 no   <leader>j<Space> :bd!<CR>
 no   <leader>jj :Pyja 
 no   <leader>jp :Pyre 
+nmap <leader>js mzi<CR><Esc>'z
 nmap <leader>x :qa!<CR>
 nmap <leader>\ :TagbarToggle<CR>
 

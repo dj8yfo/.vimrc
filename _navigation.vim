@@ -10,4 +10,5 @@
 			  \ 'hook_add': 'source ~/.config/nvim/incsearch-fuzzy.vim'
 			  \ })
   call dein#add('jeetsukumaran/vim-indentwise')
+  call dein#add('yangmillstheory/vim-snipe')
 

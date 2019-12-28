@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color  vim-material
+color  molokayo
 set relativenumber
 set number
 set colorcolumn=80
@@ -17,3 +17,6 @@ hi CursorLine guibg=#333333
 hi Search gui=bold guifg=#00ff00 guibg=black
 hi ColorColumn ctermbg=Cyan guibg=#333333
 autocmd VimEnter * RainbowParentheses
+
+hi EasyMotionTarget guifg=#00ff00
+hi SmartMotionHL1 guifg=#00ff00 guibg=#000000
