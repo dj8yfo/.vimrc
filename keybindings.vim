@@ -61,7 +61,7 @@ let g:lt_quickfix_list_toggle_map = '<C-`>'
 "no   \e :lopen 8<CR>
 no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
-no   \p :let @+ = expand('%:p')<CR>
+no   \a :let @+ = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
 no   \t :NeomakeSh ctags -R . --language-force=Python<CR>
 nmap \\ :call MyTagbarOpen()<CR>

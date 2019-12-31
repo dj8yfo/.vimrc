@@ -62,3 +62,9 @@ function! MyTagbarOpen() abort
 	let g:tagbar_ctags_bin ="/usr/bin/ctags"
 	execute 'TagbarOpen fj'
 endfunction
+
+function! HideHashComments() abort
+	"zi to toggle stuff
+	set fdm=expr
+	set fde=getline(v:lnum)=~'^\\s#'?1:getline(prevnonblank(v:lnum))=~'^\\s#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
+endfunction
