@@ -68,3 +68,10 @@ function! HideHashComments() abort
 	set fdm=expr
 	set fde=getline(v:lnum)=~'^\\s#'?1:getline(prevnonblank(v:lnum))=~'^\\s#'?1:getline(nextnonblank(v:lnum))=~'^\\s*#'?1:0
 endfunction
+
+function! RgVisual() abort
+let temp = @z
+norm gv"zy
+	execute "Rg " . escape(@z, "*[](){}\\")
+let @z = temp
+endfunction

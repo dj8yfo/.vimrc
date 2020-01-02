@@ -17,4 +17,7 @@
   call dein#add('KabbAmine/zeavim.vim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
   call dein#add('chrisbra/NrrwRgn')
+  call dein#add('junegunn/fzf.vim', {
+  			  \ 'hook_add': 'set rtp+=~/.fzf'})
+
 

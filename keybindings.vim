@@ -25,7 +25,7 @@ inor <C-f> <Right>
 inor <C-n> <Down>
 inor <C-p> <Up>
 cmap <C-f> <Right>
-no   <C-\> :NeomakeSh ctags -R .<CR>
+no   <C-t> :NeomakeSh ctags -R .<CR>
 
 
 nmap <leader>1 :1tabn<CR>
@@ -41,6 +41,13 @@ no   <leader>a q:
 no   <leader>cd :tcd %:h<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
 map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
+
+"fzf binding >
+no   <leader>f :Files<CR>
+no   <leader>: :History:<CR>
+no   <leader>t :Tags<CR>
+vn   <leader>w :call RgVisual()<CR>
+"fzf binding ^
 no   <leader>j<Space> :bd!<CR>
 no   <leader>jj :Pyja 
 no   <leader>jp :Pyre 
@@ -61,6 +68,7 @@ let g:lt_quickfix_list_toggle_map = '<C-`>'
 "no   \e :lopen 8<CR>
 no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
+no  \h :QuickhlManualAdd! 
 no   \a :let @+ = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
 no   \t :NeomakeSh ctags -R . --language-force=Python<CR>

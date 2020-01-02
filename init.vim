@@ -13,6 +13,7 @@ set wmh=0
 set tags=tags;
 au! BufNewFile,BufRead *.log set filetype=python
 autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
@@ -38,9 +39,9 @@ if dein#load_state('~/.local/share/dein')
   source ~/.config/nvim/_navigation.vim
   source ~/.config/nvim/_nifty_editing.vim
   source ~/.config/nvim/_version_control.vim
+  source ~/.config/nvim/_syntax_various.vim
   source ~/.config/nvim/_appearance.vim
   source ~/.config/nvim/_ide_smart.vim
-  source ~/.config/nvim/_syntax_various.vim
   source ~/.config/nvim/_python_specific.vim
   source ~/.config/nvim/_tmux.vim
   source ~/.config/nvim/list_colors.vim
