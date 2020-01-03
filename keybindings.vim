@@ -10,6 +10,7 @@ no <C-g> i <Esc>
 imap <C-e> <Esc>$a
 imap <C-a> <Esc>0i
 imap <C-d> <Esc>lxa
+imap <C-]> <Esc>ui<Right>
 
 
 map f <Plug>(snipe-f)
@@ -17,6 +18,7 @@ map F <Plug>(snipe-F)
 map t <Plug>(snipe-t)
 map T <Plug>(snipe-T)
 map e <Plug>(snipe-e)
+nmap <leader><leader>a <Plug>(snipe-f-a)
 
 cmap <C-g> <Left>
 inor <C-b> <Left>

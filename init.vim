@@ -39,9 +39,13 @@ if dein#load_state('~/.local/share/dein')
   source ~/.config/nvim/_navigation.vim
   source ~/.config/nvim/_nifty_editing.vim
   source ~/.config/nvim/_version_control.vim
-  source ~/.config/nvim/_syntax_various.vim
   source ~/.config/nvim/_appearance.vim
+  "
+  "order is important: the bindings from ragtags(_syntax_various.vim) should override those 
+  "from fzf(_ide_smart.vim)
   source ~/.config/nvim/_ide_smart.vim
+  source ~/.config/nvim/_syntax_various.vim
+
   source ~/.config/nvim/_python_specific.vim
   source ~/.config/nvim/_tmux.vim
   source ~/.config/nvim/list_colors.vim
@@ -58,6 +62,6 @@ source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/keybindings.vim
 
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 " transparent background
 call Toggle_chrosshairs()

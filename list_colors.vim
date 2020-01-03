@@ -36,6 +36,10 @@
   call dein#add('broduo/broduo-color-scheme')
   call dein#add('Mcmartelle/vim-monokai-bold')
   call dein#add('rafi/awesome-vim-colorschemes')
+  call dein#add('niklas-8/vim-darkspace')
+  call dein#add('megantiu/true.vim')
+
+
 
 
 

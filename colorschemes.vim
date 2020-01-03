@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color  molokayo
+color  true
 set relativenumber
 set number
 set colorcolumn=80
@@ -20,3 +20,9 @@ autocmd VimEnter * RainbowParentheses
 
 hi EasyMotionTarget guifg=#00ff00
 hi SmartMotionHL1 guifg=#00ff00 guibg=#000000
+
+highlight Pmenu ctermbg=8 guibg=#606060
+highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
+highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
+
+hi MatchParen guibg=gray  guifg=white
