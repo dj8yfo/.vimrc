@@ -13,11 +13,8 @@ imap <C-d> <Esc>lxa
 imap <C-]> <Esc>ui<Right>
 
 
-map f <Plug>(snipe-f)
-map F <Plug>(snipe-F)
-map t <Plug>(snipe-t)
-map T <Plug>(snipe-T)
-map e <Plug>(snipe-e)
+map <M-h> <Plug>(snipe-ge)
+map <M-l> <Plug>(snipe-e)
 nmap <leader><leader>a <Plug>(snipe-f-a)
 
 cmap <C-g> <Left>
@@ -56,7 +53,8 @@ no   <leader>jp :Pyre
 nmap <leader>js mzi<CR><Esc>'z
 nmap <leader>x :qa!<CR>
 nmap <leader>\ :TagbarToggle<CR>
-
+map <F6> 20zl " Scroll 20 characters to the right
+map <F5> 20zh " Scroll 20 characters to the left
 
 map  ]l :lnext<CR>
 map  [l :lprev<CR>

@@ -48,6 +48,7 @@ function! s:pyre_jaunt(search) abort
 endfunction
 command! -nargs=1 Pyre  call <SID>pyre_search(<f-args>)
 command! -nargs=1 Pyja  call <SID>pyre_jaunt(<f-args>)
+command! Jsf %!python -m json.tool
 
 
 function! FoldCurrentFile(column) abort

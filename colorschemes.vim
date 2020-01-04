@@ -16,7 +16,37 @@ hi Visual guifg=#aaaaaa guibg=#222222
 hi CursorLine guibg=#333333
 hi Search gui=bold guifg=#00ff00 guibg=black
 hi ColorColumn ctermbg=Cyan guibg=#333333
-autocmd VimEnter * RainbowParentheses
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+\	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'honeydew1', 'DeepSkyBlue1', 'magenta'],
+\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\	'guis': [''],
+\	'cterms': [''],
+\	'operators': '_,_',
+\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\	'separately': {
+\		'*': {},
+\		'markdown': {
+\			'parentheses_options': 'containedin=markdownCode contained', 
+\		},
+\		'lisp': {
+\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'], 
+\		},
+\		'haskell': {
+\			'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/\v\{\ze[^-]/ end=/}/ fold', 'start=/</ end=/>/ fold'], 
+\		},
+\		'vim': {
+\			'parentheses_options': 'containedin=vimFuncBody', 
+\		},
+\		'perl': {
+\			'syn_name_prefix': 'perlBlockFoldRainbow', 
+\		},
+\		'stylus': {
+\			'parentheses': ['start=/{/ end=/}/ fold contains=@colorableGroup'], 
+\		},
+\		'css': 0, 
+\	}
+\}
 
 hi EasyMotionTarget guifg=#00ff00
 hi SmartMotionHL1 guifg=#00ff00 guibg=#000000

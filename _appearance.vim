@@ -5,8 +5,7 @@
   call dein#add('vim-airline/vim-airline', {
 			  \ 'hook_add' : 'source ~/.config/nvim/vim-airline.vim'})
   call dein#add('vim-airline/vim-airline-themes')
-  call dein#add('junegunn/rainbow_parentheses.vim', {
-			  \ 'hook_add' : 'source ~/.config/nvim/rainbow_parentheses.vim'} )
+  call dein#add('luochen1990/rainbow')
   call dein#add('Yggdroot/indentLine')
   call dein#add('Valloric/ListToggle')
   call dein#add('chrisbra/Colorizer')
