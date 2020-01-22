@@ -19,5 +19,9 @@
   call dein#add('chrisbra/NrrwRgn')
   call dein#add('junegunn/fzf.vim', {
   			  \ 'hook_add': 'set rtp+=~/.fzf'})
+  call dein#add('wincent/ferret', {
+  			  \ 'hook_add': 'let g:FerretMap=0'})
+
+
 
 

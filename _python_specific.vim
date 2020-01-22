@@ -9,5 +9,8 @@
   call dein#add('bfredl/nvim-ipy', {
 			  \ 'hook_add' : 'source ~/.config/nvim/nvim-ipy.vim'}) 
   call dein#add('mattboehm/vim-unstack')
+  call dein#add('vim-python/python-syntax', {
+			  \ 'lazy' : 1, 'on_ft' : "python",
+			  \ 'hook_source' : 'let g:python_highlight_all = 1'})
   call dein#add('fs111/pydoc.vim')
 

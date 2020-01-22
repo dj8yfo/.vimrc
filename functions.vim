@@ -42,6 +42,12 @@ function! s:pyre_search(search) abort
 	execute "read !pyre " . a:search
 endfunction
 
+function! JupyterAll() abort
+	tabnew
+	Mktemp
+	execute "read !ps -e -o command | grep jupyter | grep kernel"
+endfunction
+
 
 function! s:pyre_jaunt(search) abort
 	execute "!pyjau " . a:search

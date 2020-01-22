@@ -11,6 +11,7 @@ let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
 "minimum height of a buffer winwow = 0
 set wmh=0
 set tags=tags;
+set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<
 au! BufNewFile,BufRead *.log set filetype=python
 autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4

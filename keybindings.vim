@@ -13,8 +13,8 @@ imap <C-d> <Esc>lxa
 imap <C-]> <Esc>ui<Right>
 
 
-map <M-h> <Plug>(snipe-ge)
-map <M-l> <Plug>(snipe-e)
+map <M-h> <Plug>(snipe-F)
+map <M-l> <Plug>(snipe-f)
 nmap <leader><leader>a <Plug>(snipe-f-a)
 
 cmap <C-g> <Left>
@@ -43,6 +43,7 @@ map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "fzf binding >
 no   <leader>f :Files<CR>
+no   <leader>v :Buffers<CR>
 no   <leader>: :History:<CR>
 no   <leader>t :Tags<CR>
 vn   <leader>w :call RgVisual()<CR>

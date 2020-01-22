@@ -38,8 +38,7 @@
   call dein#add('rafi/awesome-vim-colorschemes')
   call dein#add('niklas-8/vim-darkspace')
   call dein#add('megantiu/true.vim')
-
-
-
-
-
+  call dein#add('victorze/foo')
+  call dein#add('atahabaki/archman-vim')
+  call dein#add('bluz71/vim-nightfly-guicolors')
+  call dein#add('ajh17/Spacegray.vim')

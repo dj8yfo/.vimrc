@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color  true
+color tender
 set relativenumber
 set number
 set colorcolumn=80
@@ -51,7 +51,7 @@ let g:rainbow_conf = {
 hi EasyMotionTarget guifg=#00ff00
 hi SmartMotionHL1 guifg=#00ff00 guibg=#000000
 
-highlight Pmenu ctermbg=8 guibg=#606060
+highlight Pmenu ctermbg=8 guibg=#606060 guifg=#ffffff
 highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
 highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
 
