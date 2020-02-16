@@ -21,7 +21,5 @@
   			  \ 'hook_add': 'set rtp+=~/.fzf'})
   call dein#add('wincent/ferret', {
   			  \ 'hook_add': 'let g:FerretMap=0'})
-
-
-
-
+  call dein#add('Chiel92/vim-autoformat', {
+  			  \ 'hook_add': 'source ~/.config/nvim/autoformat_settings.vim'})

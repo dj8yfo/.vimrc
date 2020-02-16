@@ -11,4 +11,7 @@
 			  \ })
   call dein#add('jeetsukumaran/vim-indentwise')
   call dein#add('yangmillstheory/vim-snipe')
+  call dein#add('preservim/nerdtree', {
+			  \ 'hook_add': 'let NERDTreeShowLineNumbers=1'
+			  \ })
 

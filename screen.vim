@@ -1,16 +1,4 @@
-function! s:ScreenShellListener()
-if g:ScreenShellActive
-	map <Leader>vs :ScreenSend<cr>
-	nmap <C-c><C-x> :ScreenQuit<cr>
-else
-	map <Leader>vs :ScreenShell<cr>
-endif
-endfunction
-
-map <Leader>vs :ScreenShell<cr>
-augroup ScreenShellEnter
-	autocmd User * call <SID>ScreenShellListener()
-	augroup END
-augroup ScreenShellExit
-	autocmd User * call <SID>ScreenShellListener()
-	augroup END
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
+" or maybe...
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{down-of}"}

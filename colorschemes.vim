@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color tender
+color molokai
 set relativenumber
 set number
 set colorcolumn=80
@@ -16,16 +16,18 @@ hi Visual guifg=#aaaaaa guibg=#222222
 hi CursorLine guibg=#333333
 hi Search gui=bold guifg=#00ff00 guibg=black
 hi ColorColumn ctermbg=Cyan guibg=#333333
+hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
 let g:rainbow_active = 1
 let g:rainbow_conf = {
-\	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'honeydew1', 'DeepSkyBlue1', 'magenta'],
+\	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'yellow', 'DeepSkyBlue1', 'magenta'],
 \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
 \	'guis': [''],
 \	'cterms': [''],
 \	'operators': '_,_',
-\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold',  'start=/</ end=/>/ fold'],
 \	'separately': {
 \		'*': {},
+\       'html': 0,
 \		'markdown': {
 \			'parentheses_options': 'containedin=markdownCode contained', 
 \		},

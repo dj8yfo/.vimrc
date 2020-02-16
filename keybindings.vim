@@ -9,7 +9,7 @@ no   <C-l> <C-W>l
 no <C-g> i <Esc>
 imap <C-e> <Esc>$a
 imap <C-a> <Esc>0i
-imap <C-d> <Esc>lxa
+imap <C-d> <Esc>lxi
 imap <C-]> <Esc>ui<Right>
 
 
@@ -40,13 +40,17 @@ no   <leader>a q:
 no   <leader>cd :tcd %:h<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
 map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>= :NERDTreeToggle<CR>
 
 "fzf binding >
 no   <leader>f :Files<CR>
+vmap <leader>hv <Plug>(quickhl-manual-this)
 no   <leader>v :Buffers<CR>
 no   <leader>: :History:<CR>
+no   <leader>$ :call GitGutterRefresh()<CR>
 no   <leader>t :Tags<CR>
 vn   <leader>w :call RgVisual()<CR>
+no   <leader>W :call RgClip()<CR>
 "fzf binding ^
 no   <leader>j<Space> :bd!<CR>
 no   <leader>jj :Pyja 
@@ -54,25 +58,37 @@ no   <leader>jp :Pyre
 nmap <leader>js mzi<CR><Esc>'z
 nmap <leader>x :qa!<CR>
 nmap <leader>\ :TagbarToggle<CR>
+nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
+nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">")<cr>
+nnoremap <f3> :echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')<cr>
+nnoremap <f4> :exec 'syn list '.synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
 map <F6> 20zl " Scroll 20 characters to the right
 map <F5> 20zh " Scroll 20 characters to the left
+map <F7> :set wrap!<CR>
+
 
 map  ]l :lnext<CR>
 map  [l :lprev<CR>
 
 no   \0 :set syntax=none<CR>
 no   \1 :TabooRename 
-no   \c /fzalnlsdndglksa<CR>
+no   \5 :call LineTabFile()<CR>
+no   \c :tabclose<CR>
+no   \= /fzalnlsdndglksa<CR>
 let g:lt_location_list_toggle_map = '\e'
 let g:lt_quickfix_list_toggle_map = '<C-`>'
 "Valloric/ListToggle
+
+vn   \u :call UnstackVisual()<CR>
 "no   \e :lopen 8<CR>
-no   \f :let @+ = expand('%:t')<CR>
+no   \f :let @" = expand('%:t')<CR>
 map  \g :Gstatus<CR>
 no  \h :QuickhlManualAdd! 
-no   \a :let @+ = expand('%:p')<CR>
+no   \a :let @" = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
-no   \t :NeomakeSh ctags -R . --language-force=Python<CR>
+no   \t :BTags<CR>
 nmap \\ :call MyTagbarOpen()<CR>
 
 map  \' :setlocal foldmethod=indent<CR>
@@ -80,7 +96,7 @@ no   \` :%s:::cg<Left><Left><Left><Left>
 
 map <M-a> <esc>ggVG
 map <M-/> <esc>ggVG=
-map <M-t> <esc>:DeleteTrailingW<CR>
+map <M-t> <esc>:ALEFix<CR>
 
 vn   <silent> y y:call ClipboardYank()<cr>
 vn   <silent> d d:call ClipboardYank()<cr>

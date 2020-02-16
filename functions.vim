@@ -27,7 +27,18 @@ function! Toggle_chrosshairs() abort
 	:set cursorcolumn!
 endfunction
 
-command! Mktemp exe 'edit' . system("mktemp")
+function! s:mktempfunc(...) abort
+    let arg = get(a:, 1, 0)
+    echo arg
+    if len(arg) > 1
+        exe 'edit ' . trim(system("mktemp")) . '.' . arg
+    else
+        exe 'edit ' . trim(system("mktemp"))
+    endif
+endfunction
+
+command! -nargs=? Mktemp  call <SID>mktempfunc(<f-args>)
+
 function! DumpBindings() abort
 	redir! > $HOME/vim_bind.txt
 	silent nmap
@@ -48,6 +59,11 @@ function! JupyterAll() abort
 	execute "read !ps -e -o command | grep jupyter | grep kernel"
 endfunction
 
+
+function! LineTabFile() abort
+	let l:line = line(".")
+	execute "tabedit +" . l:line . " %"
+endfunction
 
 function! s:pyre_jaunt(search) abort
 	execute "!pyjau " . a:search
@@ -81,4 +97,18 @@ let temp = @z
 norm gv"zy
 	execute "Rg " . escape(@z, "*[](){}\\")
 let @z = temp
+endfunction
+
+function! RgClip() abort
+	execute "Rg " . escape(@",  "*[](){}\\")
+endfunction
+
+function! UnstackVisual() abort
+norm gvy
+UnstackFromClipboard
+endfunction
+
+function! GitGutterRefresh() abort
+GitGutterToggle
+GitGutterToggle
 endfunction

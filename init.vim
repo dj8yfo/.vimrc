@@ -4,24 +4,26 @@ set hidden
 " lan en_US
 set updatetime=300
 let mapleader = "\<Space>"
-    " Be iMproved
+" Be iMproved
 let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
-    " Be iMproved
+" Be iMproved
 "minimum height of a buffer winwow = 0
 set wmh=0
 set tags=tags;
-set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<
-au! BufNewFile,BufRead *.log set filetype=python
+set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<,space:.
+au! BufNewFile,BufRead *.log set filetype=log
+set expandtab
 autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
 "
 "dein Scripts-----------------------------
 if &compatible
-  set nocompatible               " Be iMproved
+    set nocompatible               " Be iMproved
 endif
 
 " Required:
@@ -29,30 +31,32 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
 if dein#load_state('~/.local/share/dein')
-  call dein#begin('~/.local/share/dein')
 
-  " Required:
-  call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
-  "libs start
-  call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
-  "libs end
-  "
-  source ~/.config/nvim/_navigation.vim
-  source ~/.config/nvim/_nifty_editing.vim
-  source ~/.config/nvim/_version_control.vim
-  source ~/.config/nvim/_appearance.vim
-  "
-  "order is important: the bindings from ragtags(_syntax_various.vim) should override those 
-  "from fzf(_ide_smart.vim)
-  source ~/.config/nvim/_ide_smart.vim
-  source ~/.config/nvim/_syntax_various.vim
+    call dein#begin('~/.local/share/dein')
 
-  source ~/.config/nvim/_python_specific.vim
-  source ~/.config/nvim/_tmux.vim
-  source ~/.config/nvim/list_colors.vim
-  " Required:
-  call dein#end()
-  call dein#save_state()
+    " Required:
+    call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
+    "libs start
+    call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
+    "libs end
+    "
+    source ~/.config/nvim/_navigation.vim
+    source ~/.config/nvim/_nifty_editing.vim
+    source ~/.config/nvim/_version_control.vim
+    source ~/.config/nvim/_syntax_various.vim
+    source ~/.config/nvim/_appearance.vim
+    "
+    "order is important: the bindings from ragtags(_syntax_various.vim) should override those 
+    "from fzf(_ide_smart.vim)
+    source ~/.config/nvim/_ide_smart.vim
+
+    source ~/.config/nvim/_javascript_specific.vim
+    source ~/.config/nvim/_python_specific.vim
+    source ~/.config/nvim/_tmux.vim
+    source ~/.config/nvim/list_colors.vim
+    " Required:
+    call dein#end()
+    call dein#save_state()
 endif
 
 " Required:
@@ -63,6 +67,6 @@ source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/keybindings.vim
 
-"hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 " transparent background
 call Toggle_chrosshairs()
