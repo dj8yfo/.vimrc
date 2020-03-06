@@ -6,7 +6,7 @@ set background=dark
 color molokai
 set relativenumber
 set number
-set colorcolumn=80
+set colorcolumn=88
 hi Comment term=bold ctermfg=Cyan guifg=#ffffff guibg=#333333
 hi Folded guifg=white guibg=black ctermfg=white ctermbg=black
 " the two below are used by denite search
