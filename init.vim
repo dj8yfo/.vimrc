@@ -4,6 +4,7 @@ set hidden
 " lan en_US
 set updatetime=300
 let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
 " Be iMproved
 let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
@@ -12,10 +13,9 @@ let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
 set wmh=0
 set tags=tags;
 set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<,space:.
-au! BufNewFile,BufRead *.log set filetype=log
 set expandtab
-autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead,BufNewFile *.js setlocal tabstop=4 shiftwidth=4 softtabstop=4
+set signcolumn=yes
+au! BufNewFile,BufRead *.log set filetype=log
 autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
@@ -65,6 +65,7 @@ syntax enable
 
 source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
+source ~/.config/nvim/_javascript_after_dein.vim
 source ~/.config/nvim/keybindings.vim
 
 hi Normal guibg=NONE ctermbg=NONE

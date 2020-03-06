@@ -5,7 +5,6 @@ augroup END
 
 inoremap <expr><C-h> deoplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
-
 let g:deoplete#enable_at_startup = 1
 "set completeopt-=preview
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
@@ -14,3 +13,10 @@ function! s:my_cr_function() abort
 endfunction
 autocmd CompleteDone * silent! pclose!
 let g:deoplete#auto_complete_delay = 0
+
+autocmd FileType javascript
+\ call deoplete#disable()
+autocmd FileType json
+\ call deoplete#disable()
+autocmd FileType html
+\ call deoplete#disable()

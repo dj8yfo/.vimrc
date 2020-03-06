@@ -1,7 +1,6 @@
   call dein#add('Shougo/deoplete.nvim', {
-			  \ 'lazy' : 1, 'on_i' : 1,
-			  \ 'hook_add': 'source ~/.config/nvim/deoplete.vim',
-			  \ 'hook_source': 'source ~/.config/nvim/deoplete_source.vim'})
+              \ 'hook_add': 'source ~/.config/nvim/deoplete.vim',
+              \ 'hook_source': 'source ~/.config/nvim/deoplete_source.vim'})
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('Shougo/echodoc.vim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/echodoc.vim'})
@@ -23,3 +22,6 @@
   			  \ 'hook_add': 'let g:FerretMap=0'})
   call dein#add('Chiel92/vim-autoformat', {
   			  \ 'hook_add': 'source ~/.config/nvim/autoformat_settings.vim'})
+
+call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
+"CocInstall coc-tsserver coc-json coc-html coc-css

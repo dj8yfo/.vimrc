@@ -15,6 +15,7 @@ imap <C-]> <Esc>ui<Right>
 
 map <M-h> <Plug>(snipe-F)
 map <M-l> <Plug>(snipe-f)
+map <M-y> y$
 nmap <leader><leader>a <Plug>(snipe-f-a)
 
 cmap <C-g> <Left>
@@ -57,6 +58,7 @@ no   <leader>jj :Pyja
 no   <leader>jp :Pyre 
 nmap <leader>js mzi<CR><Esc>'z
 nmap <leader>x :qa!<CR>
+nmap <M-x> :qa!<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
 nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
@@ -83,10 +85,10 @@ let g:lt_quickfix_list_toggle_map = '<C-`>'
 
 vn   \u :call UnstackVisual()<CR>
 "no   \e :lopen 8<CR>
-no   \f :let @" = expand('%:t')<CR>
+no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
 no  \h :QuickhlManualAdd! 
-no   \a :let @" = expand('%:p')<CR>
+no   \a :let @+ = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
 no   \t :BTags<CR>
 nmap \\ :call MyTagbarOpen()<CR>

@@ -5,4 +5,4 @@
   call dein#add('machakann/vim-highlightedyank', {
 			  \ 'hook_add' : 'let g:highlightedyank_highlight_duration = 400'})
   call dein#add('jiangmiao/auto-pairs', {
-			  \ 'hook_add' : 'let g:AutoPairsFlyMode = 1'})
+			  \ 'hook_add' : 'source ~/.config/nvim/autopairs.vim'})
