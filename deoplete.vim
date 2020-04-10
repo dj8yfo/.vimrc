@@ -16,6 +16,8 @@ let g:deoplete#auto_complete_delay = 0
 
 autocmd FileType javascript
 \ call deoplete#disable()
+autocmd FileType cpp,c
+\ call deoplete#disable()
 autocmd FileType json
 \ call deoplete#disable()
 autocmd FileType html

@@ -66,6 +66,7 @@ syntax enable
 source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/_javascript_after_dein.vim
+source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
 
 hi Normal guibg=NONE ctermbg=NONE
