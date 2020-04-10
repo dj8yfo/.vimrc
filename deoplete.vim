@@ -14,6 +14,9 @@ endfunction
 autocmd CompleteDone * silent! pclose!
 let g:deoplete#auto_complete_delay = 0
 
+
+autocmd FileType python,zsh,vim
+\ CocDisable
 autocmd FileType javascript
 \ call deoplete#disable()
 autocmd FileType cpp,c

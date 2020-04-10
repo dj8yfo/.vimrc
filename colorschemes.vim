@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color molokai
+color monokai-bold
 set relativenumber
 set number
 set colorcolumn=88
@@ -17,7 +17,14 @@ hi CursorLine guibg=#333333
 hi Search gui=bold guifg=#00ff00 guibg=black
 hi ColorColumn ctermbg=Cyan guibg=#333333
 hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
+hi semshiParameter       ctermfg=75  guifg=LightSkyBlue
+hi semshiImported        ctermfg=214 guifg=LemonChiffon cterm=bold gui=bold
 let g:rainbow_active = 1
+
+let g:stealth#reveal_on_move = 0
+hi Ignore guibg=#000000 guifg=#000000
+
+hi Folded guibg=#000000 guifg=#666666
 let g:rainbow_conf = {
 \	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'yellow', 'DeepSkyBlue1', 'magenta'],
 \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],

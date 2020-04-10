@@ -16,6 +16,7 @@
   call dein#add('KabbAmine/zeavim.vim', {
 			  \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
   call dein#add('chrisbra/NrrwRgn')
+  call dein#add('segeljakt/vim-stealth')
   call dein#add('junegunn/fzf.vim', {
   			  \ 'hook_add': 'set rtp+=~/.fzf'})
   call dein#add('wincent/ferret', {
@@ -24,4 +25,5 @@
   			  \ 'hook_add': 'source ~/.config/nvim/autoformat_settings.vim'})
 
 call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
+  call dein#add('mbbill/undotree')
 "CocInstall coc-tsserver coc-json coc-html coc-css

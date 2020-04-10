@@ -9,7 +9,7 @@ no   <C-l> <C-W>l
 no <C-g> i <Esc>
 imap <C-e> <Esc>$a
 imap <C-a> <Esc>0i
-imap <C-d> <Esc>lxi
+imap <C-l> <Esc>lxi
 imap <C-]> <Esc>ui<Right>
 
 
@@ -20,6 +20,7 @@ nmap <leader><leader>a <Plug>(snipe-f-a)
 
 cmap <C-g> <Left>
 inor <C-b> <Left>
+vmap <C-b> :!black -q -<CR>
 inor <C-f> <Right>
 
 inor <C-n> <Down>
@@ -56,8 +57,8 @@ no   <leader>W :call RgClip()<CR>
 no   <leader>j<Space> :bd!<CR>
 no   <leader>jj :Pyja 
 no   <leader>jp :Pyre 
+vmap   <leader>jp :<C-U>call Pyre_visual()<CR>
 nmap <leader>js mzi<CR><Esc>'z
-nmap <leader>x :qa!<CR>
 nmap <M-x> :qa!<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
@@ -65,17 +66,28 @@ nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">")<cr>
 nnoremap <f3> :echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')<cr>
-nnoremap <f4> :exec 'syn list '.synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
+"nnoremap <f4> :exec 'syn list '.synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
+map <F4> :CocDisable<CR>
 map <F6> 20zl " Scroll 20 characters to the right
 map <F5> 20zh " Scroll 20 characters to the left
 map <F7> :set wrap!<CR>
 
+map <F10> :Stealth<CR>
+map <F11> :PatSearch
+map <F12> :Autoformat<CR>
+" move whole line up/DOWN
+
+nmap - ddkP
+nmap + ddp
+set tildeop
+imap <M-g> <Esc>~awea
+nmap gcw ~awe
 
 map  ]l :lnext<CR>
 map  [l :lprev<CR>
 
 no   \0 :set syntax=none<CR>
-no   \1 :TabooRename 
+no   \1 :TabooRename
 no   \5 :call LineTabFile()<CR>
 no   \c :tabclose<CR>
 no   \= /fzalnlsdndglksa<CR>
@@ -87,11 +99,12 @@ vn   \u :call UnstackVisual()<CR>
 "no   \e :lopen 8<CR>
 no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
-no  \h :QuickhlManualAdd! 
+no  \h :QuickhlManualAdd!
 no   \a :let @+ = expand('%:p')<CR>
 no   \s :%s:::g<Left><Left><Left>
 no   \t :BTags<CR>
 nmap \\ :call MyTagbarOpen()<CR>
+nnoremap <leader>x *``cgn
 
 map  \' :setlocal foldmethod=indent<CR>
 no   \` :%s:::cg<Left><Left><Left><Left>

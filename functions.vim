@@ -38,6 +38,15 @@ function! s:mktempfunc(...) abort
 endfunction
 
 command! -nargs=? Mktemp  call <SID>mktempfunc(<f-args>)
+command! -nargs=? PatSearch  call <SID>patsearch(<f-args>)
+
+
+command! Htmltoggle call <SID>html_toggle_rainbow()
+
+function! s:html_toggle_rainbow() abort
+    set syntax=html
+    RainbowToggle
+endfunction
 
 function! DumpBindings() abort
 	redir! > $HOME/vim_bind.txt
@@ -46,11 +55,15 @@ function! DumpBindings() abort
 	redir END
 endfunction
 
+function! s:patsearch(search) abort
+    exec 'lvimgrep /' . a:search .'/gj %'
+endfunction
+
 function! s:pyre_search(search) abort
-	15new
+	tabnew
 	Mktemp
 	echo a:search
-	execute "read !pyre " . a:search
+	silent execute "read !pyre " . a:search
 endfunction
 
 function! JupyterAll() abort
@@ -66,8 +79,9 @@ function! LineTabFile() abort
 endfunction
 
 function! s:pyre_jaunt(search) abort
-	execute "!pyjau " . a:search
+	silent execute "!pyjau " . a:search
 endfunction
+
 command! -nargs=1 Pyre  call <SID>pyre_search(<f-args>)
 command! -nargs=1 Pyja  call <SID>pyre_jaunt(<f-args>)
 command! Jsf %!python -m json.tool
@@ -96,6 +110,13 @@ function! RgVisual() abort
 let temp = @z
 norm gv"zy
 	execute "Rg " . escape(@z, "*[](){}\\")
+let @z = temp
+endfunction
+
+function! Pyre_visual() abort
+let temp = @z
+norm gv"zy
+    call <SID>pyre_search(escape(@z, "*[](){}\\"))
 let @z = temp
 endfunction
 

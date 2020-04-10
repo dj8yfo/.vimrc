@@ -6,3 +6,5 @@
 			  \ 'hook_add' : 'let g:highlightedyank_highlight_duration = 400'})
   call dein#add('jiangmiao/auto-pairs', {
 			  \ 'hook_add' : 'source ~/.config/nvim/autopairs.vim'})
+  call dein#add('kana/vim-textobj-user') 
+  call dein#add('thinca/vim-textobj-comment') " https://github.com/tommcdo/vim-ninja-feet

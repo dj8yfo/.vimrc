@@ -13,6 +13,9 @@ let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
 set wmh=0
 set tags=tags;
 set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<,space:.
+set sm
+set matchtime=3
+
 set expandtab
 set signcolumn=yes
 au! BufNewFile,BufRead *.log set filetype=log
@@ -40,6 +43,8 @@ if dein#load_state('~/.local/share/dein')
     call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
     "libs end
     "
+    call dein#add('wsdjeg/dein-ui.vim')
+
     source ~/.config/nvim/_navigation.vim
     source ~/.config/nvim/_nifty_editing.vim
     source ~/.config/nvim/_version_control.vim
