@@ -19,7 +19,10 @@ set matchtime=3
 set expandtab
 set signcolumn=yes
 au! BufNewFile,BufRead *.log set filetype=log
-autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
+augroup indents
+    autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
+augroup end
+
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
@@ -71,6 +74,8 @@ syntax enable
 source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/_javascript_after_dein.vim
+source ~/.config/nvim/_python_specific_after_dein.vim
+source ~/.config/nvim/_bash_specific_after_dein.vim
 source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
 

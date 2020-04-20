@@ -2,6 +2,7 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 map s <Plug>(easymotion-bd-f)
 nmap s <Plug>(easymotion-overwin-f)
+omap <leader>s <Plug>(easymotion-bd-f)
 
 let g:EasyMotion_smartcase = 1
 

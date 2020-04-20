@@ -14,12 +14,13 @@ hi LineNr guifg=#00ff00 guibg=None
 hi CursorLineNr guifg=#00bb00 
 hi Visual guifg=#aaaaaa guibg=#222222
 hi CursorLine guibg=#333333
-hi Search gui=bold guifg=#00ff00 guibg=black
+hi Search gui=underline,bold guifg=#ffffff guibg=black
 hi ColorColumn ctermbg=Cyan guibg=#333333
 hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
 hi semshiParameter       ctermfg=75  guifg=LightSkyBlue
 hi semshiImported        ctermfg=214 guifg=LemonChiffon cterm=bold gui=bold
 let g:rainbow_active = 1
+let g:airline_theme='sol'
 
 let g:stealth#reveal_on_move = 0
 hi Ignore guibg=#000000 guifg=#000000

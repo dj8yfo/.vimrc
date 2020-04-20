@@ -100,6 +100,10 @@ function! MyTagbarOpen() abort
 	execute 'TagbarOpen fj'
 endfunction
 
+function! LoadSessionAndTrack() abort
+    so Session.vim
+endfunction
+
 function! HideHashComments() abort
 	"zi to toggle stuff
 	set fdm=expr
@@ -125,11 +129,20 @@ function! RgClip() abort
 endfunction
 
 function! UnstackVisual() abort
-norm gvy
-UnstackFromClipboard
+    norm gvy
+    let g:semshi#filetypes = []
+    UnstackFromClipboard
+    let g:semshi#filetypes = ['python']
 endfunction
 
 function! GitGutterRefresh() abort
 GitGutterToggle
 GitGutterToggle
+endfunction
+
+function! Flash()
+    set cursorline cursorcolumn
+    redraw
+    sleep 400m
+    set nocursorline nocursorcolumn
 endfunction

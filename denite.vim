@@ -2,7 +2,9 @@ call denite#custom#var('file_rec', 'command',
 	\ ['rg', '--files', '--hidden'])
 " Change mappings.
 
-autocmd FileType denite call s:denite_my_settings()
+augroup denite_my
+    autocmd FileType denite call s:denite_my_settings()
+augroup end
 
 function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <C-s>
@@ -56,7 +58,7 @@ no <Leader>b :Denite buffer:!<CR>
 no \b :Denite -default-action=tabswitch buffer:!<CR>
 nn <Leader>z :Denite file/rec<CR>
 vn <Leader>z :<C-U>call denite#visual('file/rec')<CR>
-no \z :Denite -default-action=tabswitch file/rec<CR>
+no \= :Denite -default-action=tabswitch file/rec<CR>
 nn <Leader>q :Denite -no-empty  grep <CR>
 vn <Leader>q :<C-U>call denite#visual('grep')<CR>
 no \q :DeniteCursorWord -no-empty  grep<CR>

@@ -3,7 +3,7 @@ call neomake#configure#automake('nwr', 300)
 "python linters: 
 "pip install frosted pep8 flake8 pyflakes pylama pylint py3kwarn
 let g:neomake_python_enabled_makers = ['flake8', 'pyflakes', 'python', 'frosted',
-			\ 'pylama', 'pylint', 'py3kwarn']
+			\ 'pylama', 'pylint']
 
 let g:neomake_python_pylint_maker = {
   \ 'args': [

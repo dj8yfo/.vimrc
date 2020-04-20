@@ -15,3 +15,5 @@ call dein#add('othree/html5.vim', {
 call dein#add('tpope/vim-ragtag', {
             \ 'lazy' : 1, 'on_ft' :[ "htmldjango", "html"],
             \ 'hook_add' : 'let g:ragtag_global_maps = 1' })
+call dein#add('baverman/vial')
+call dein#add('baverman/vial-http')
