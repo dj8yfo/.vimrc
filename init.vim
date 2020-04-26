@@ -1,14 +1,14 @@
+let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
+let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
+
+" var options ---------------------------- {{{
 set shada=!,'100,s10,h
 set clipboard+=unnamedplus
 set hidden
 " lan en_US
 set updatetime=300
-let mapleader = "\<Space>"
-let maplocalleader = "\<Space>"
-" Be iMproved
-let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
-" Be iMproved
 "minimum height of a buffer winwow = 0
 set wmh=0
 set tags=tags;
@@ -18,16 +18,14 @@ set matchtime=3
 
 set expandtab
 set signcolumn=yes
-au! BufNewFile,BufRead *.log set filetype=log
-augroup indents
-    autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
-augroup end
 
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
-"
-"dein Scripts-----------------------------
+" }}}
+
+
+"dein Scripts----------------------------- {{{
 if &compatible
     set nocompatible               " Be iMproved
 endif
@@ -66,11 +64,26 @@ if dein#load_state('~/.local/share/dein')
     call dein#end()
     call dein#save_state()
 endif
+"}}}
 
 " Required:
 filetype plugin indent on
 syntax enable
 
+" vimscript file settings ------------------------------------ {{{
+augroup filetype_vim
+    autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+
+" log file settings ------------------------------------ {{{
+au! BufNewFile,BufRead *.log set filetype=log
+" }}}
+
+
+" keybindings, functions colorscheme and filetype initializations ------------------------------------ {{{
 source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/_javascript_after_dein.vim
@@ -78,6 +91,7 @@ source ~/.config/nvim/_python_specific_after_dein.vim
 source ~/.config/nvim/_bash_specific_after_dein.vim
 source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
+" }}}
 
 hi Normal guibg=NONE ctermbg=NONE
 " transparent background

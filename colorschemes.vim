@@ -3,12 +3,12 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color monokai-bold
+color monokain
 set relativenumber
 set number
 set colorcolumn=88
 hi Comment term=bold ctermfg=Cyan guifg=#ffffff guibg=#333333
-hi Folded guifg=white guibg=black ctermfg=white ctermbg=black
+
 " the two below are used by denite search
 hi LineNr guifg=#00ff00 guibg=None
 hi CursorLineNr guifg=#00bb00 
@@ -19,13 +19,27 @@ hi ColorColumn ctermbg=Cyan guibg=#333333
 hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
 hi semshiParameter       ctermfg=75  guifg=LightSkyBlue
 hi semshiImported        ctermfg=214 guifg=LemonChiffon cterm=bold gui=bold
-let g:rainbow_active = 1
-let g:airline_theme='sol'
+"let g:material_style='palenight'
+let g:airline_theme='powerlineish'
 
 let g:stealth#reveal_on_move = 0
-hi Ignore guibg=#000000 guifg=#000000
 
-hi Folded guibg=#000000 guifg=#666666
+hi Ignore guibg=#000000 guifg=#000000
+hi Folded guibg=#000000 guifg=#555555
+hi FoldColumn guibg=#444444 guifg=#00ffff
+set fdc=2
+
+hi EasyMotionTarget guifg=#00ff00
+hi SmartMotionHL1 guifg=#00ff00 guibg=#000000
+
+highlight Pmenu ctermbg=8 guibg=#606060 guifg=#ffffff
+highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
+highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
+
+hi MatchParen guibg=gray  guifg=white
+"
+" rainbow paren conf --------------------------------------------------- {{{
+let g:rainbow_active = 1
 let g:rainbow_conf = {
 \	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'yellow', 'DeepSkyBlue1', 'magenta'],
 \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
@@ -57,12 +71,4 @@ let g:rainbow_conf = {
 \		'css': 0, 
 \	}
 \}
-
-hi EasyMotionTarget guifg=#00ff00
-hi SmartMotionHL1 guifg=#00ff00 guibg=#000000
-
-highlight Pmenu ctermbg=8 guibg=#606060 guifg=#ffffff
-highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
-highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
-
-hi MatchParen guibg=gray  guifg=white
+" }}}

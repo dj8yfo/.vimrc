@@ -11,6 +11,7 @@
   call dein#add('mattboehm/vim-unstack')
   call dein#add('numirias/semshi')
   call dein#add('fs111/pydoc.vim')
-
+  call dein#add('bps/vim-textobj-python', {
+			  \ 'hook_add' : 'source ~/.config/nvim/vim-textobj-python.vim'})
 
  
