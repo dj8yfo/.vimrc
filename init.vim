@@ -72,8 +72,8 @@ syntax enable
 
 " vimscript file settings ------------------------------------ {{{
 augroup filetype_vim
-    autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
     autocmd!
+    autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
 " }}}

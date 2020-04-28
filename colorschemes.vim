@@ -3,7 +3,7 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
-color monokain
+color molokai
 set relativenumber
 set number
 set colorcolumn=88
@@ -17,7 +17,7 @@ hi CursorLine guibg=#333333
 hi Search gui=underline,bold guifg=#ffffff guibg=black
 hi ColorColumn ctermbg=Cyan guibg=#333333
 hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
-hi semshiParameter       ctermfg=75  guifg=LightSkyBlue
+hi semshiParameter       ctermfg=75  guifg=#lfddff
 hi semshiImported        ctermfg=214 guifg=LemonChiffon cterm=bold gui=bold
 "let g:material_style='palenight'
 let g:airline_theme='powerlineish'
