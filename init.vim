@@ -75,6 +75,7 @@ augroup filetype_vim
     autocmd!
     autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType vim setlocal foldmethod=marker
+    autocmd FileType vim :execute 'iabbrev <buffer> imc <F8>" {{{ }}}<F8>' 
 augroup END
 " }}}
 
@@ -89,6 +90,7 @@ source ~/.config/nvim/functions.vim
 source ~/.config/nvim/_javascript_after_dein.vim
 source ~/.config/nvim/_python_specific_after_dein.vim
 source ~/.config/nvim/_bash_specific_after_dein.vim
+source ~/.config/nvim/cscope_maps.vim
 source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
 " }}}

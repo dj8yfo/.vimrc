@@ -3,41 +3,54 @@ if has('nvim')
 endif
 "set guicursor=
 set background=dark
+let g:molokai_original = 1
 color molokai
 set relativenumber
 set number
 set colorcolumn=88
-hi Comment term=bold ctermfg=Cyan guifg=#ffffff guibg=#333333
 
 " the two below are used by denite search
-hi LineNr guifg=#00ff00 guibg=None
-hi CursorLineNr guifg=#00bb00 
+hi Comment term=bold ctermfg=Cyan guifg=#eeeeee guibg=#000000
+let g:comment_bright = 1
+
+hi LineNr          guifg=#BCBCBC guibg=#3B3A32
+hi CursorLine                    guibg=#3E3D32
+hi CursorLineNr    guifg=#FD971F               gui=none
 hi Visual guifg=#aaaaaa guibg=#222222
-hi CursorLine guibg=#333333
-hi Search gui=underline,bold guifg=#ffffff guibg=black
+hi Search  guifg=#ffffff guibg=#0000aa gui=underline
 hi ColorColumn ctermbg=Cyan guibg=#333333
-hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
-hi semshiParameter       ctermfg=75  guifg=#lfddff
-hi semshiImported        ctermfg=214 guifg=LemonChiffon cterm=bold gui=bold
+hi MatchParen guibg=gray  guifg=white
 "let g:material_style='palenight'
 let g:airline_theme='powerlineish'
 
 let g:stealth#reveal_on_move = 0
 
 hi Ignore guibg=#000000 guifg=#000000
-hi Folded guibg=#000000 guifg=#555555
+hi Folded guifg=#eeeeee guibg=#000000
 hi FoldColumn guibg=#444444 guifg=#00ffff
 set fdc=2
 
 hi EasyMotionTarget guifg=#00ff00
-hi SmartMotionHL1 guifg=#00ff00 guibg=#000000
 
-highlight Pmenu ctermbg=8 guibg=#606060 guifg=#ffffff
-highlight PmenuSel ctermbg=1 guifg=#dddd00 guibg=#1f82cd
-highlight PmenuSbar ctermbg=0 guibg=#d6d6d6
+hi SmartMotionHL1 guifg=#ffff00 guibg=#000000
 
-hi MatchParen guibg=gray  guifg=white
+
 "
+" autocomplete menu ------------------------- {{{
+
+hi Pmenu           guifg=#5fd7ff  guibg=Grey0
+hi PmenuSel        guifg=Grey93 guibg=Grey42
+hi PmenuSbar                   guibg=Grey3
+hi PmenuThumb      guifg=SteelBlue1
+" }}}
+" semshi config ---------------------------- {{{
+hi semshiSelected  gui=underline  ctermfg=231 guifg=#ffffff ctermbg=161 guibg=black guifg=cyan
+hi semshiParameter       ctermfg=75  guifg=#66D9EF
+hi semshiImported        ctermfg=214 guifg=#FD971F cterm=bold gui=bold
+hi semshiBuiltin         guifg=#AE81FF               gui=bold
+hi semshiSelf            guifg=#7E8E91               gui=bold
+hi semshiAttribute       guifg=#C4BE89 guibg=#000000
+" }}}
 " rainbow paren conf --------------------------------------------------- {{{
 let g:rainbow_active = 1
 let g:rainbow_conf = {
@@ -50,6 +63,10 @@ let g:rainbow_conf = {
 \	'separately': {
 \		'*': {},
 \       'html': 0,
+\       'php': {
+\	        'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'yellow', 'DeepSkyBlue1', 'magenta'],
+\			'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'], 
+\		},
 \		'markdown': {
 \			'parentheses_options': 'containedin=markdownCode contained', 
 \		},

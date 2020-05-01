@@ -15,7 +15,8 @@ call dein#add('majutsushi/tagbar')
 
 call dein#add('KabbAmine/zeavim.vim', {
             \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
-call dein#add('chrisbra/NrrwRgn')
+call dein#add('chrisbra/NrrwRgn', {
+            \ 'hook_add' : 'source ~/.config/nvim/narrow_region.vim'})
 call dein#add('segeljakt/vim-stealth')
 call dein#add('junegunn/fzf.vim', {
             \ 'hook_add': 'set rtp+=~/.fzf'})

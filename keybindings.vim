@@ -2,10 +2,10 @@ nmap <C-a> :w<CR>
 vmap <C-a> <Esc><C-a>gv
 nmap <C-n> o<Esc>k
 nmap <C-p> O<Esc>j
-no   <C-j> <C-W>j
-no   <C-k> <C-W>k
-no   <C-h> <C-W>h
-no   <C-l> <C-W>l
+no   <M-j> <C-W>j
+no   <M-k> <C-W>k
+no   <M-h> <C-W>h
+no   <M-l> <C-W>l
 no <C-g> i <Esc>
 imap <C-e> <Esc>$a
 imap <C-a> <Esc>0i
@@ -13,8 +13,8 @@ imap <C-l> <Esc>lxi
 imap <C-]> <Esc>ui<Right>
 
 
-map <M-h> <Plug>(snipe-F)
-map <M-l> <Plug>(snipe-f)
+map <C-h> <Plug>(snipe-F)
+map <C-l> <Plug>(snipe-f)
 map <M-y> y$
 nmap <leader><leader>a <Plug>(snipe-f-a)
 
@@ -26,10 +26,9 @@ inor <C-f> <Right>
 inor <C-n> <Down>
 inor <C-p> <Up>
 cmap <C-f> <Right>
-no   <C-t> :NeomakeSh ctags -R .<CR>
+no   \<C-t> :NeomakeSh ctags -R .<CR>
 let @z = '"bY'
 let @y = '"aY'
-
 
 nmap <leader>1 :1tabn<CR>
 nmap <leader>2 :2tabn<CR>
@@ -53,9 +52,11 @@ vmap <leader>hv <Plug>(quickhl-manual-this)
 no   <leader>v :Buffers<CR>
 no   <leader>: :History:<CR>
 no   <leader>$ :call GitGutterRefresh()<CR>
+no   <leader>cz :call ToggleCommentHIghlight()<CR>
 no   <leader>t :Tags<CR>
 no   <leader>ss :Obsession<CR>
 no   <leader>sl :call LoadSessionAndTrack()<CR>
+nn <Leader>q :Denite -no-empty  grep <CR>
 
 let g:slime_no_mappings = 1
 xmap <leader>rs <Plug>SlimeRegionSend
@@ -70,7 +71,8 @@ no   <leader>jj :Pyja
 no   <leader>jp :Pyre 
 vmap   <leader>jp :<C-U>call Pyre_visual()<CR>
 nmap <leader>js mzi<CR><Esc>`z
-nmap <M-x> :qa!<CR>
+nmap <C-x> :qa!<CR>
+nmap <C-s> :wq<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
 nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
@@ -84,7 +86,7 @@ map <F5> 20zh
 map <F7> :set wrap!<CR>
 
 map <F10> :Stealth<CR>
-map <F11> :PatSearch
+map <F11> :PatSearch 
 map <F12> :Autoformat<CR>
 " move whole line up/DOWN
 
@@ -105,22 +107,21 @@ no   \5 :call LineTabFile()<CR>
 no   \c :tabclose<CR>
 no   \z /fzalnlsdndglksa<CR>
 let g:lt_location_list_toggle_map = '\e'
-let g:lt_quickfix_list_toggle_map = '<C-`>'
+let g:lt_quickfix_list_toggle_map = '\`'
 "Valloric/ListToggle
 
 vn   \u :call UnstackVisual()<CR>
 "no   \e :lopen 8<CR>
 no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
-no  \h :QuickhlManualAdd!
+no  \h :QuickhlManualAdd! 
 no   \a :let @+ = expand('%:p')<CR>
-no   \s :%s:::g<Left><Left><Left>
+no   \s :let @+ = expand('%:p:h')<CR>
 no   \t :BTags<CR>
 nmap \\ :call MyTagbarOpen()<CR>
 nnoremap <leader>x *``cgn
 
 map  \' :setlocal foldmethod=indent<CR>
-no   \` :%s:::cg<Left><Left><Left><Left>
 noremap \/ /
 
 map <M-a> <esc>ggVG

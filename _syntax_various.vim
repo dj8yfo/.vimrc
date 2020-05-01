@@ -6,10 +6,10 @@ call dein#add('pangloss/vim-javascript')
 call dein#add('sheerun/vim-polyglot', { 
 			  \ 'hook_add' : "let g:polyglot_disabled = ['javascript', 'html']"})
 
-call dein#add('euclio/vim-markdown-composer', {
-            \ 'lazy' : 1, 'on_ft' : "markdown",
-            \'build' : 'cargo build --release',
-            \ 'hook_add' : 'let g:markdown_composer_browser = "/Applications/Firefox.app/Contents/MacOS/firefox"'})
+"call dein#add('euclio/vim-markdown-composer', {
+"            \ 'lazy' : 1, 'on_ft' : "markdown",
+"            \'build' : 'cargo build --release',
+"            \ 'hook_add' : 'let g:markdown_composer_browser = "/Applications/Firefox.app/Contents/MacOS/firefox"'})
 call dein#add('othree/html5.vim', {
             \ 'lazy' : 1, 'on_ft' : "html"})
 call dein#add('tpope/vim-ragtag', {
@@ -17,3 +17,6 @@ call dein#add('tpope/vim-ragtag', {
             \ 'hook_add' : 'let g:ragtag_global_maps = 1' })
 call dein#add('baverman/vial')
 call dein#add('baverman/vial-http')
+call dein#add('fedorenchik/AnsiEsc')
+call dein#add('StanAngeloff/php.vim')
+
