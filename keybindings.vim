@@ -44,7 +44,10 @@ no   <leader>cd :tcd %:h<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
 map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-map <leader>= :NERDTreeToggle<CR>
+map <C-.> :Defx -split=floating<CR>
+map <C-/> :Defx -split=vertical<CR>
+map <C-,> :Defx<CR>
+map <leader>di :Defx -split=vertical<CR>
 
 "fzf binding >
 no   <leader>f :Files<CR>

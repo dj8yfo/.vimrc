@@ -9,10 +9,14 @@ set relativenumber
 set number
 set colorcolumn=88
 
+" neovide setup
+set guifont=Ubuntu\ Mono:h18
+let g:neovide_cursor_vfx_mode = "sonicboom"
+let g:neovide_refresh_rate=60
+
 " the two below are used by denite search
 hi Comment term=bold ctermfg=Cyan guifg=#eeeeee guibg=#000000
 let g:comment_bright = 1
-
 hi LineNr          guifg=#BCBCBC guibg=#3B3A32
 hi CursorLine                    guibg=#3E3D32
 hi CursorLineNr    guifg=#FD971F               gui=none
