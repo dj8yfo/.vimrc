@@ -48,6 +48,8 @@ map <C-.> :Defx -split=floating<CR>
 map <C-/> :Defx -split=vertical<CR>
 map <C-,> :Defx<CR>
 map <leader>di :Defx -split=vertical<CR>
+map <leader>dh :Defx<CR>
+map <leader>df :Defx -split=floating<CR>
 
 "fzf binding >
 no   <leader>f :Files<CR>
