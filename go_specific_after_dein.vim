@@ -1,5 +1,6 @@
 let g:go_bin_path = '/home/hypen9/Documents/code/GO_PKGS/bin'
 let g:go_def_mapping_enabled = 0
+let g:go_fmt_autosave = 0
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
 " -------------------------------------------------------------------------------------------------
@@ -44,7 +45,7 @@ augroup coc_go
                 \ nmap <silent> <buffer> K :call <SID>show_documentation()<CR>
 
     autocmd FileType go
-                \ inoremap <silent><expr> <c-space> coc#refresh()
+                \ inoremap <silent><expr> <c-.> coc#refresh()
 
     autocmd FileType go
                 \ nmap <silent> <leader>rn <Plug>(coc-rename)
@@ -85,4 +86,8 @@ endfunction
 augroup indents
     autocmd BufRead,BufNewFile *.go silent setlocal noexpandtab
     autocmd BufRead,BufNewFile *.go silent setlocal tabstop=4 shiftwidth=4 softtabstop=4
+augroup end
+
+augroup go_format
+    autocmd FileType go :set fp=gofmt
 augroup end
