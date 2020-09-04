@@ -42,11 +42,13 @@ nmap <leader>9 :9tabn<CR>
 no   <leader>a q:
 no   <leader>cd :tcd %:h<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
-map  <leader>ed :e <C-R>=expand("%:p:h") . "/" <CR>
+map  <leader>e. :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 map <C-.> :Defx -split=floating<CR>
 map <C-/> :Defx -split=vertical<CR>
-map <C-,> :Defx<CR>
+map <C--> :Defx<CR>
+map <C-,> :Defx `expand('%:p:h')`<CR>
+
 map <leader>di :Defx -split=vertical<CR>
 map <leader>dh :Defx<CR>
 map <leader>df :Defx -split=floating<CR>
