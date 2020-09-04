@@ -60,7 +60,6 @@ augroup coc_go
     autocmd FileType go
                 \ nnoremap <silent> <space>ec  :<C-u>CocList commands<cr>
     autocmd FileType go
-
                 \ nnoremap <silent> <space>eo  :<C-u>CocList outline<cr>
     autocmd FileType go
                 \ nnoremap <silent> <space>es  :<C-u>CocList -I symbols<cr>
@@ -82,6 +81,6 @@ function! s:show_documentation()
 endfunction
 
 augroup indents
-    autocmd BufRead,BufNewFile *.go set noexpandtab
-    autocmd BufRead,BufNewFile *.go setlocal tabstop=4 shiftwidth=4 softtabstop=4
+    autocmd BufRead,BufNewFile *.go silent setlocal noexpandtab
+    autocmd BufRead,BufNewFile *.go silent setlocal tabstop=4 shiftwidth=4 softtabstop=4
 augroup end
