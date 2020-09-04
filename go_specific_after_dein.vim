@@ -69,6 +69,8 @@ augroup coc_go
                 \ nnoremap <silent> <space>ek  :<C-u>CocPrev<CR>
     autocmd FileType go
                 \ nnoremap <silent> <space>ep  :<C-u>CocListResume<CR>
+    autocmd FileType go
+                \ nnoremap <silent> <space>ed  :<C-u>GoDocBrowser<CR>
 augroup END
 
 
