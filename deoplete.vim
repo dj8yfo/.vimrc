@@ -14,13 +14,12 @@ endfunction
 
 augroup deoplete_my
     autocmd CompleteDone * silent! pclose!
+    autocmd VimEnter * silent call deoplete#custom#option('auto_complete_delay', 0)
 augroup end
-
-let g:deoplete#auto_complete_delay = 0
 
 augroup deoplete_coc
     autocmd!
-    autocmd VimEnter * CocDisable
+    autocmd VimEnter * silent CocDisable
 
     autocmd FileType javascript
     \ call deoplete#disable()
@@ -29,5 +28,7 @@ augroup deoplete_coc
     autocmd FileType json
     \ call deoplete#disable()
     autocmd FileType html
+    \ call deoplete#disable()
+    autocmd FileType go
     \ call deoplete#disable()
 augroup END

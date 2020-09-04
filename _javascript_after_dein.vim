@@ -3,17 +3,17 @@ augroup deoplete_coc
     \ CocEnable
 augroup END
 
-augroup coc
+augroup coc_javascript
     set shortmess+=c
     set signcolumn=yes
     autocmd Filetype javascript,html,css,typescript
-                \ nmap gd <Plug>(coc-definition)
+                \ nmap <silent> gd <Plug>(coc-definition)
     autocmd Filetype javascript,html,css,typescript
-                \ nmap  <leader>d <Plug>(coc-type-definition)
+                \ nmap  <silent> <leader>d <Plug>(coc-type-definition)
     autocmd Filetype javascript,html,css,typescript
-                \ nmap <leader>i <Plug>(coc-implementation)
+                \ nmap <silent> <leader>i <Plug>(coc-implementation)
     autocmd Filetype javascript,html,css,typescript
-                \ nmap <leader>r <Plug>(coc-references)
+                \ nmap <silent> gr <Plug>(coc-references)
 
     autocmd Filetype javascript,html,css,typescript
                 \ nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -21,10 +21,37 @@ augroup coc
                 \ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
     autocmd Filetype javascript,html,css,typescript
-                \ nmap <buffer> K :call <SID>show_documentation()<CR>
+                \ nmap <silent> <buffer> K :call <SID>show_documentation()<CR>
 
     autocmd Filetype javascript,html,css,typescript
-                \ no  <buffer> <localleader><localleader>t :NeomakeSh ctags --exclude=node_modules -R .<CR>
+                \ no  <silent> <buffer> <localleader><localleader>t :NeomakeSh ctags --exclude=node_modules -R .<CR>
+
+    autocmd FileType javascript,html,css,typescript
+                \ inoremap <silent><expr> <c-space> coc#refresh()
+
+    autocmd FileType javascript,html,css,typescript
+                \ nmap <silent> <leader>rn <Plug>(coc-rename)
+    autocmd FileType javascript,html,css,typescript
+                \ vmap <silent> <leader>u  <Plug>(coc-format-selected)
+    autocmd FileType javascript,html,css,typescript
+                \ nmap <silent> <leader>u  <Plug>(coc-format-selected)
+
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>ea  :<C-u>CocList diagnostics<cr>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>ee  :<C-u>CocList extensions<cr>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>ec  :<C-u>CocList commands<cr>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>eo  :<C-u>CocList outline<cr>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>es  :<C-u>CocList -I symbols<cr>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>ej  :<C-u>CocNext<CR>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>ek  :<C-u>CocPrev<CR>
+    autocmd FileType javascript,html,css,typescript
+                \ nnoremap <silent> <space>ep  :<C-u>CocListResume<CR>
 augroup END
 
 function! s:show_documentation()

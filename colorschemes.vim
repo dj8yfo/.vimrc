@@ -1,7 +1,6 @@
 if has('nvim')
   set termguicolors
 endif
-"set guicursor=
 set background=dark
 let g:molokai_original = 1
 color molokai
@@ -10,7 +9,7 @@ set number
 set colorcolumn=88
 
 " neovide setup
-set guifont=Terminus:h12:cANSI
+set guifont=Terminus:h14:cANSI
 let g:neovide_cursor_vfx_mode = "sonicboom"
 let g:neovide_refresh_rate=60
 
@@ -18,6 +17,7 @@ let g:neovide_refresh_rate=60
 hi Comment term=bold ctermfg=Cyan guifg=#eeeeee guibg=#000000
 let g:comment_bright = 1
 hi LineNr          guifg=#BCBCBC guibg=#3B3A32
+highlight Cursor guifg=white guibg=black
 hi CursorLine                    guibg=#3E3D32
 hi CursorLineNr    guifg=#FD971F               gui=none
 hi Visual guifg=#aaaaaa guibg=#222222

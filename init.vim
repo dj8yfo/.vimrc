@@ -24,7 +24,6 @@ set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m
 " }}}
 
-
 "dein Scripts----------------------------- {{{
 if &compatible
     set nocompatible               " Be iMproved
@@ -86,6 +85,7 @@ au! BufNewFile,BufRead *.log set filetype=log
 
 
 " keybindings, functions colorscheme and filetype initializations ------------------------------------ {{{
+let g:coc_disable_transparent_cursor = 1
 source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/_javascript_after_dein.vim
