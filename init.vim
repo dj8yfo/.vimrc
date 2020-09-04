@@ -60,6 +60,7 @@ if dein#load_state('~/.local/share/dein')
     source ~/.config/nvim/_python_specific.vim
     source ~/.config/nvim/_tmux.vim
     source ~/.config/nvim/list_colors.vim
+    source ~/.config/nvim/go_specific.vim
     " Required:
     call dein#end()
     call dein#save_state()
@@ -93,6 +94,7 @@ source ~/.config/nvim/_bash_specific_after_dein.vim
 source ~/.config/nvim/cscope_maps.vim
 source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
+source ~/.config/nvim/go_specific_after_dein.vim
 " }}}
 
 hi Normal guibg=NONE ctermbg=NONE

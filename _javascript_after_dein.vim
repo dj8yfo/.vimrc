@@ -4,6 +4,8 @@ augroup deoplete_coc
 augroup END
 
 augroup coc
+    set shortmess+=c
+    set signcolumn=yes
     autocmd Filetype javascript,html,css,typescript
                 \ nmap gd <Plug>(coc-definition)
     autocmd Filetype javascript,html,css,typescript

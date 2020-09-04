@@ -6,8 +6,8 @@ call dein#add('dj8yfo/vim-crystalline', {
             \ 'hook_add' : 'source ~/.config/nvim/vim-crystalline.vim',
             \ 'rev': 'mod_fory' })
 call dein#add('luochen1990/rainbow')
-call dein#add('Yggdroot/indentLine', {
-            \ 'hook_add' : "source ~/.config/nvim/indentline.vim"})
+"call dein#add('Yggdroot/indentLine', {
+"            \ 'hook_add' : "source ~/.config/nvim/indentline.vim"})
 call dein#add('Valloric/ListToggle')
 call dein#add('chrisbra/Colorizer')
 
