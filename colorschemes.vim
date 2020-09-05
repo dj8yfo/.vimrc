@@ -9,7 +9,7 @@ set number
 set colorcolumn=88
 
 " neovide setup
-set guifont=Terminus:h14:cANSI
+set guifont=Terminus:h12:cANSI
 let g:neovide_cursor_vfx_mode = "sonicboom"
 let g:neovide_refresh_rate=60
 

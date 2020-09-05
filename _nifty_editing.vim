@@ -8,5 +8,5 @@
 			  \ 'hook_add' : 'source ~/.config/nvim/autopairs.vim'})
   call dein#add('kana/vim-textobj-user') 
   call dein#add('thinca/vim-textobj-comment') " https://github.com/tommcdo/vim-ninja-feet
-  call dein#add('lambdalisue/suda.vim', {
-			  \ 'hook_add' : 'source ~/.config/nvim/suda.vim'}) 
+  "call dein#add('lambdalisue/suda.vim', {
+  "            \ 'hook_add' : 'source ~/.config/nvim/suda.vim'}) 

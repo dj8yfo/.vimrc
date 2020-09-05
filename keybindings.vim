@@ -50,7 +50,7 @@ map <C--> :Defx<CR>
 map <C-,> :Defx `expand('%:p:h')`<CR>
 
 map <leader>di :Defx -split=vertical<CR>
-map <leader>dh :Defx<CR>
+map <leader>dh :Defx `expand('%:p:h')`<CR>
 map <leader>df :Defx -split=floating<CR>
 
 "fzf binding >
