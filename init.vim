@@ -69,6 +69,8 @@ if dein#load_state('~/.local/share/dein')
     source ~/.config/nvim/_tmux.vim
     source ~/.config/nvim/list_colors.vim
     source ~/.config/nvim/go_specific.vim
+    "call dein#add('sheerun/vim-polyglot', { 
+    "              \ 'hook_add' : "let g:polyglot_disabled = ['javascript', 'html', 'go']"})
     " Required:
     call dein#end()
     call dein#save_state()

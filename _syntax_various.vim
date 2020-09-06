@@ -3,8 +3,6 @@ call dein#add('elzr/vim-json', {
             \ 'hook_add' : 'let g:vim_json_syntax_conceal = 1'})
 
 call dein#add('pangloss/vim-javascript')
-call dein#add('sheerun/vim-polyglot', { 
-			  \ 'hook_add' : "let g:polyglot_disabled = ['javascript', 'html']"})
 
 "call dein#add('euclio/vim-markdown-composer', {
 "            \ 'lazy' : 1, 'on_ft' : "markdown",
