@@ -15,11 +15,19 @@ endfunction
 command! DeleteTrailingW call s:delete_tr_whitespace()
 
 function! ClipboardYank()
-"https://github.com/neovim/neovim/issues/583#issuecomment-40942281
-  call system('xclip -sel clip -i', @@)
+	"https://github.com/neovim/neovim/issues/583#issuecomment-40942281
+	if has('macunix')
+		call system('pbcopy', @@)
+	else
+		call system('xclip -sel clip -i', @@)
+	endif
 endfunction
 function! ClipboardPaste()
-  let @@ = system('xclip -sel clip -o')
+	if has('macunix')
+		let @@ = system('pbpaste')
+	else
+		let @@ = system('xclip -sel clip -o')
+	endif
 endfunction
 
 function! Toggle_chrosshairs() abort
