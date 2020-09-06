@@ -48,6 +48,9 @@ augroup coc_go
                 \ inoremap <silent><expr> <c-.> coc#refresh()
 
     autocmd FileType go
+                \ inoremap <silent><expr> <c-space> coc#refresh()
+
+    autocmd FileType go
                 \ nmap <silent> <leader>rn <Plug>(coc-rename)
     autocmd FileType go
                 \ vmap <silent> <leader>u  <Plug>(coc-format-selected)
