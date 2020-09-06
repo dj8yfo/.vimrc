@@ -1,7 +1,16 @@
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
-let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
+
+
+if has('unix')
+    let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
+    let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
+endif
+
+if has('macunix')
+    let g:python_host_prog = '/Users/rblstrmtp/.pyenv/versions/neovim2/bin/python'
+    let g:python3_host_prog = '/Users/rblstrmtp/.pyenv/versions/neovim3/bin/python'
+endif
 
 " var options ---------------------------- {{{
 set shada=!,'100,s10,h
@@ -51,7 +60,7 @@ if dein#load_state('~/.local/share/dein')
     source ~/.config/nvim/_syntax_various.vim
     source ~/.config/nvim/_appearance.vim
     "
-    "order is important: the bindings from ragtags(_syntax_various.vim) should override those 
+    "order is important: the bindings from ragtags(_syntax_various.vim) should override those
     "from fzf(_ide_smart.vim)
     source ~/.config/nvim/_ide_smart.vim
 
@@ -75,7 +84,7 @@ augroup filetype_vim
     autocmd!
     autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType vim setlocal foldmethod=marker
-    autocmd FileType vim :execute 'iabbrev <buffer> imc <F8>" {{{ }}}<F8>' 
+    autocmd FileType vim :execute 'iabbrev <buffer> imc <F8>" {{{ }}}<F8>'
 augroup END
 " }}}
 
