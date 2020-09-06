@@ -1,4 +1,8 @@
 let g:go_bin_path = '/home/hypen9/Documents/code/GO_PKGS/bin'
+
+if has('macunix')
+    let g:go_bin_path = '/Users/rblstrmtp/Documents/code/GO_PKGS/bin'
+endif
 let g:go_def_mapping_enabled = 0
 let g:go_fmt_autosave = 0
 " -------------------------------------------------------------------------------------------------
