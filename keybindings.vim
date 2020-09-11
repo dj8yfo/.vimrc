@@ -146,4 +146,5 @@ vnoremap <leader>en :!python -c 'import sys;from urllib.parse import quote;print
 vnoremap <leader>de :!python -c 'import sys;from urllib.parse import unquote;print(unquote(sys.stdin.read().strip()))'<cr>
 
 nnoremap <leader>fl :call Flash()<CR>
+nnoremap gp `[v`]
 "already: source ~/.config/nvim/vim-easymotion.vim
