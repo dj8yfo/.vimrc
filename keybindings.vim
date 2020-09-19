@@ -62,7 +62,7 @@ no   <leader>$ :call GitGutterRefresh()<CR>
 no   <leader>cz :call ToggleCommentHIghlight()<CR>
 no   <leader>t :Tags<CR>
 no   <leader>ss :Obsession<CR>
-no   <leader>sl :call LoadSessionAndTrack()<CR>
+no   <leader>sl :call LoadSessionAndDoNotTrack()<CR>
 nn <Leader>q :Denite -no-empty  grep <CR>
 
 let g:slime_no_mappings = 1
@@ -109,7 +109,7 @@ map  ]l :lnext<CR>
 map  [l :lprev<CR>
 
 no   \0 :set syntax=none<CR>
-no   \1 :TabooRename
+no   \1 :TabooRename 
 no   \5 :call LineTabFile()<CR>
 no   \c :tabclose<CR>
 no   \z /fzalnlsdndglksa<CR>

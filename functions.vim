@@ -112,6 +112,12 @@ function! LoadSessionAndTrack() abort
     so Session.vim
 endfunction
 
+function! LoadSessionAndDoNotTrack() abort
+    so Session.vim
+    Obsession
+endfunction
+    
+
 function! HideHashComments() abort
 	"zi to toggle stuff
 	set fdm=expr
@@ -165,4 +171,10 @@ function! ToggleCommentHIghlight() abort
         hi Comment term=bold ctermfg=Cyan guifg=#eeeeee guibg=#000000
         hi Folded guifg=#eeeeee guibg=#000000
     endif
+endfunction
+
+function! ClearTabs() abort
+for i in [1, 2, 3, 4, 5, 6, 7]
+  tabcl
+endfor
 endfunction
