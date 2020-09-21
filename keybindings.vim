@@ -59,6 +59,7 @@ vmap <leader>hv <Plug>(quickhl-manual-this)
 no   <leader>v :Buffers<CR>
 no   <leader>: :History:<CR>
 no   <leader>$ :call GitGutterRefresh()<CR>
+no   <leader>* :CocRestart<CR>
 no   <leader>cz :call ToggleCommentHIghlight()<CR>
 no   <leader>t :Tags<CR>
 no   <leader>ss :Obsession<CR>
