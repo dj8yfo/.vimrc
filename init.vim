@@ -108,6 +108,7 @@ source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/go_specific_after_dein.vim
 " }}}
 
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
+hi Normal ctermbg=NONE
 " transparent background
 call Toggle_chrosshairs()
