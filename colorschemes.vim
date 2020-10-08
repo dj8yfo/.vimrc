@@ -3,7 +3,7 @@ if has('nvim')
 endif
 set background=dark
 let g:molokai_original = 1
-color monokai-bold
+color moonfly
 set relativenumber
 set number
 set colorcolumn=88

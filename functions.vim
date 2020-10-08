@@ -164,7 +164,7 @@ endfunction
 function! ToggleCommentHIghlight() abort
     if g:comment_bright
         let g:comment_bright = 0
-        hi Comment term=bold ctermfg=Cyan guifg=#75715E guibg=#000000
+        hi Comment term=bold ctermfg=Cyan guifg=#75715E guibg=#272822
         hi Folded guibg=#000000 guifg=#555555
     else
         let g:comment_bright = 1

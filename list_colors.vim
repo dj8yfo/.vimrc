@@ -5,4 +5,5 @@ call dein#add('dracula/vim')
 call dein#add('tomasr/molokai')
 call dein#add('jcherven/jummidark.vim')
 call dein#add('megantiu/true.vim')
+call dein#add('bluz71/vim-moonfly-colors')
 
