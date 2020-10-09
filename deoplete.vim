@@ -29,6 +29,6 @@ augroup deoplete_coc
     \ call deoplete#disable()
     autocmd FileType html
     \ call deoplete#disable()
-    autocmd FileType go
-    \ call deoplete#disable()
+    "autocmd FileType go
+    "\ call deoplete#disable()
 augroup END
