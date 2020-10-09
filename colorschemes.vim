@@ -2,8 +2,10 @@ if has('nvim')
   set termguicolors
 endif
 set background=dark
-let g:molokai_original = 1
-color material-monokai
+
+let g:sonokai_style = 'default'
+let g:sonokai_enable_italic = 1
+color sonokai
 set relativenumber
 set number
 set colorcolumn=88
