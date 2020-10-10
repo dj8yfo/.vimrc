@@ -10,7 +10,7 @@ function! StatusLine(current, width)
     let l:s .= crystalline#left_mode_sep('')
     let l:s .= ' %{&ft}'
     let l:s .= crystalline#right_mode_sep('')
-    let l:s .= '%{getcwd()}'
+    "let l:s .= '%{getcwd()}'
     if a:current
         let l:s .= crystalline#right_sep('', 'Fill') . ' %{fugitive#head()}'
     endif

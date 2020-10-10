@@ -3,7 +3,7 @@ if has('nvim')
 endif
 set background=dark
 
-let g:sonokai_style = 'default'
+let g:sonokai_style = 'atlantis'
 let g:sonokai_enable_italic = 1
 color sonokai
 set relativenumber
@@ -11,7 +11,7 @@ set number
 set colorcolumn=88
 
 " neovide setup
-set guifont=Terminus:h12:cANSI
+set guifont=Hack:h12
 let g:neovide_cursor_vfx_mode = "sonicboom"
 let g:neovide_refresh_rate=60
 
