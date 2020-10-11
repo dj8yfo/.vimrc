@@ -25,8 +25,8 @@ augroup deoplete_coc
     \ call deoplete#disable()
     autocmd FileType cpp,c
     \ call deoplete#disable()
-    autocmd FileType json
-    \ call deoplete#disable()
+    "autocmd FileType json
+    "\ call deoplete#disable()
     autocmd FileType html
     \ call deoplete#disable()
     "autocmd FileType go

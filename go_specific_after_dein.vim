@@ -89,6 +89,8 @@ augroup coc_go
                 \ nnoremap <silent> <space>es  :<C-u>Denite decls
     autocmd FileType go
                 \ nmap <silent> <leader>i :<C-u>GoImplements<cr>
+    autocmd FileType go
+                \ nmap <silent> gr :<C-u>GoReferrers<cr>
 augroup END
 
 
