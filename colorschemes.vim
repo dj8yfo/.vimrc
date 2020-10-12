@@ -26,6 +26,10 @@ hi Visual guifg=#aaaaaa guibg=#222222
 hi Search  guifg=#ffffff guibg=#0000aa gui=underline
 hi ColorColumn ctermbg=Cyan guibg=#333333
 hi MatchParen guibg=gray  guifg=white
+
+hi TabLineFill guifg=LightGreen guibg=DarkGrey
+hi TabLine guifg=Grey guibg=Black
+hi TabLineSel guifg=White guibg=Black
 "let g:material_style='palenight'
 let g:airline_theme='powerlineish'
 
