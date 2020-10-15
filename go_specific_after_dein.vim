@@ -91,6 +91,10 @@ augroup coc_go
                 \ nmap <silent> <leader>i :<C-u>GoImplements<cr>
     autocmd FileType go
                 \ nmap <silent> gr :<C-u>GoReferrers<cr>
+    autocmd FileType go
+                \ nnoremap <silent> <space>ed  :<C-u>GoDocBrowser<CR>
+    autocmd FileType go
+                \ nnoremap <silent> <space>el  :<C-u>GoMetaLinter<CR>
 augroup END
 
 

@@ -105,9 +105,13 @@ imap <M-g> <Esc>~awea
 nmap gcw ~awe
 noremap H _
 noremap L $
+noremap ]i i <Esc>
 
 map  ]l :lnext<CR>
 map  [l :lprev<CR>
+
+map  ]t :cnext<CR>
+map  [t :cprev<CR>
 
 no   \0 :set syntax=none<CR>
 no   \1 :TabooRename 
