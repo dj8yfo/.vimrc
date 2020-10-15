@@ -5,7 +5,7 @@ if has('macunix')
 endif
 let g:go_def_mapping_enabled = 1
 let g:go_fmt_autosave = 0
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+"call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 let g:go_list_autoclose = 0
 let g:go_implements_mode = 'gopls'
 let g:go_list_type = "quickfix"
