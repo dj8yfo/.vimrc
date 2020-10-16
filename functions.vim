@@ -104,7 +104,8 @@ endfunction
 
 function! MyTagbarOpen() abort
 	let g:tagbar_show_linenumbers = 2
-	let g:tagbar_ctags_bin ="/usr/bin/ctags"
+	let g:tagbar_ctags_bin ="/usr/local/bin/ctags"
+ 
 	execute 'TagbarOpen fj'
 endfunction
 
