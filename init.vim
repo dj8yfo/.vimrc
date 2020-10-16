@@ -65,6 +65,7 @@ if dein#load_state('~/.local/share/dein')
     source ~/.config/nvim/_ide_smart.vim
 
     source ~/.config/nvim/_javascript_specific.vim
+    source ~/.config/nvim/markdown.vim
     source ~/.config/nvim/_python_specific.vim
     source ~/.config/nvim/_tmux.vim
     source ~/.config/nvim/list_colors.vim
