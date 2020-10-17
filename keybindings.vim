@@ -13,10 +13,9 @@ imap <C-l> <Esc>lxi
 imap <C-]> <Esc>ui<Right>
 
 
-map <C-h> <Plug>(snipe-F)
-map <C-l> <Plug>(snipe-f)
+map <C-h> <Plug>(easymotion-Fl)
+map <C-l> <Plug>(easymotion-fl)
 map <M-y> y$
-nmap <leader><leader>a <Plug>(snipe-f-a)
 
 cmap <C-g> <Left>
 inor <C-b> <Left>
@@ -139,6 +138,9 @@ noremap \/ /
 map <M-a> <esc>ggVG
 map <M-/> <esc>ggVG=
 map <M-t> <esc>:ALEFix<CR>
+
+map <M-r> :e!<CR>
+map <M-f> :w!<CR>
 
 nnoremap <leader>sb :Mktemp<cr>
 vn   <silent> y y:call ClipboardYank()<cr>
