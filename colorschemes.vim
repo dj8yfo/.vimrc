@@ -34,7 +34,7 @@ let g:airline_theme='powerlineish'
 
 let g:stealth#reveal_on_move = 0
 
-hi Ignore guibg=#2a2f38 guifg=#2a2f38
+hi Ignore guibg=#141e23 guifg=#141e23
 hi Folded guifg=#eeeeee guibg=#000000
 hi FoldColumn guibg=#444444 guifg=#00ffff
 set fdc=2

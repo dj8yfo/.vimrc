@@ -1,5 +1,6 @@
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
+set cmdwinheight=25
 
 
 if has('unix')
@@ -15,7 +16,7 @@ endif
 " var options ---------------------------- {{{
 set shada=!,'100,s10,h
 set clipboard+=unnamedplus
-set hidden
+set nohidden
 " lan en_US
 set updatetime=300
 "minimum height of a buffer winwow = 0
@@ -86,6 +87,9 @@ augroup filetype_vim
     autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType vim setlocal foldmethod=marker
     autocmd FileType vim :execute 'iabbrev <buffer> imc <F8>" {{{ }}}<F8>'
+augroup END
+    autocmd BufRead,BufNewFile * set nowrap
+augroup all_files
 augroup END
 " }}}
 

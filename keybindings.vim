@@ -87,13 +87,13 @@ nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">")<cr>
 nnoremap <f3> :echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')<cr>
 "nnoremap <f4> :exec 'syn list '.synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
-map <F4> :CocEnable<CR>
+"map <F4> :CocEnable<CR>
 map <F6> 20zl
 map <F5> 20zh
 map <F7> :set wrap!<CR>
 
 map <F10> :Stealth<CR>
-map <F11> :PatSearch 
+map <F4> :PatSearch 
 map <F12> :Autoformat<CR>
 " move whole line up/DOWN
 
@@ -141,6 +141,7 @@ map <M-t> <esc>:ALEFix<CR>
 
 map <M-r> :e!<CR>
 map <M-f> :w!<CR>
+map <M-q> :clo<CR>
 
 nnoremap <leader>sb :Mktemp<cr>
 vn   <silent> y y:call ClipboardYank()<cr>

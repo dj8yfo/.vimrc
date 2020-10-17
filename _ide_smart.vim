@@ -28,4 +28,6 @@ call dein#add('Chiel92/vim-autoformat', {
 call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
 call dein#add('mbbill/undotree')
 call dein#add('tpope/vim-obsession')
+call dein#add('roman/golden-ratio')
+
 "CocInstall coc-tsserver coc-json coc-html coc-css
