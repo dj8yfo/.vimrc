@@ -5,7 +5,6 @@ set background=dark
 
 let g:sonokai_style = 'atlantis'
 let g:sonokai_enable_italic = 1
-colorscheme two-firewatch
 set relativenumber
 set number
 set colorcolumn=88
@@ -24,7 +23,7 @@ hi CursorLine                    guibg=#3E3D32
 hi CursorLineNr    guifg=#FD971F               gui=none
 hi Visual guifg=#aaaaaa guibg=#222222
 hi Search  guifg=#ffffff guibg=#0000aa gui=underline
-hi ColorColumn ctermbg=Cyan guibg=#333333
+hi ColorColumn guibg=gray guifg=gray
 hi MatchParen guibg=gray  guifg=white
 
 hi TabLineFill guifg=LightGreen guibg=DarkGrey

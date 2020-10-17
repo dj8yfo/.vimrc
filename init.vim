@@ -1,5 +1,6 @@
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
+colorscheme two-firewatch
 
 
 if has('unix')
