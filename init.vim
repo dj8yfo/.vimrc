@@ -1,6 +1,5 @@
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
-colorscheme two-firewatch
 
 
 if has('unix')
@@ -95,6 +94,8 @@ au! BufNewFile,BufRead *.log set filetype=log
 " }}}
 
 
+colorscheme two-firewatch
+
 " keybindings, functions colorscheme and filetype initializations ------------------------------------ {{{
 let g:coc_disable_transparent_cursor = 1
 source ~/.config/nvim/colorschemes.vim
@@ -107,6 +108,7 @@ source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/go_specific_after_dein.vim
 " }}}
+"
 
 "hi Normal guibg=NONE ctermbg=NONE
 hi Normal ctermbg=NONE
