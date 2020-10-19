@@ -19,3 +19,5 @@ nmap gw <Plug>(easymotion-overwin-w)
 map  gl <Plug>(easymotion-bd-jk)
 nmap  gl <Plug>(easymotion-overwin-line)
 
+map <leader>h <Plug>(easymotion-F)
+map <leader>l <Plug>(easymotion-f)

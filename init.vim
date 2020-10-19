@@ -86,6 +86,7 @@ augroup filetype_vim
     autocmd!
     autocmd BufRead,BufNewFile *.vim setlocal tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType vim setlocal foldmethod=marker
+    autocmd FileType zsh setlocal foldmethod=marker
     autocmd FileType vim :execute 'iabbrev <buffer> imc <F8>" {{{ }}}<F8>'
 augroup END
     autocmd BufRead,BufNewFile * set nowrap
@@ -111,6 +112,9 @@ source ~/.config/nvim/cscope_maps.vim
 source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/go_specific_after_dein.vim
+augroup yaml_format
+    autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
+augroup end
 " }}}
 "
 
