@@ -12,7 +12,7 @@ call dein#add('Shougo/denite.nvim', {
             \ 'hook_add' : 'source ~/.config/nvim/denite.vim'})
 call dein#add('Shougo/neoyank.vim')
 call dein#add('majutsushi/tagbar')
-
+call dein#add('rizzatti/dash.vim')
 "call dein#add('KabbAmine/zeavim.vim', {
 "            \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
 call dein#add('chrisbra/NrrwRgn', {
