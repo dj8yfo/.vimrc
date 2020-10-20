@@ -13,8 +13,8 @@ call dein#add('Shougo/denite.nvim', {
 call dein#add('Shougo/neoyank.vim')
 call dein#add('majutsushi/tagbar')
 
-call dein#add('KabbAmine/zeavim.vim', {
-            \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
+"call dein#add('KabbAmine/zeavim.vim', {
+"            \ 'hook_add' : 'source ~/.config/nvim/zeal_doc.vim'})
 call dein#add('chrisbra/NrrwRgn', {
             \ 'hook_add' : 'source ~/.config/nvim/narrow_region.vim'})
 call dein#add('segeljakt/vim-stealth')

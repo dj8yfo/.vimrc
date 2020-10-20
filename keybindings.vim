@@ -40,6 +40,7 @@ nmap <leader>8 :8tabn<CR>
 nmap <leader>9 :9tabn<CR>
 no   <leader>a q:
 no   <leader>cd :tcd %:h<CR>
+no   <leader>. :lcd .<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
 map  <leader>e. :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
