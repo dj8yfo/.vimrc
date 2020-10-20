@@ -143,7 +143,8 @@ map <M-r> :e!<CR>
 map <M-f> :w!<CR>
 map <M-q> :clo<CR>
 
-nnoremap <leader>sb :Mktemp<cr>
+nnoremap <leader>sB :Mktemp<cr>
+nnoremap <leader>sb :call Small_scrach()<cr>
 vn   <silent> y y:call ClipboardYank()<cr>
 vn   <silent> d d:call ClipboardYank()<cr>
 nn   <silent> <leader>p :call ClipboardPaste()<cr>p

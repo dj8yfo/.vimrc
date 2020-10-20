@@ -48,6 +48,10 @@ endfunction
 command! -nargs=? Mktemp  call <SID>mktempfunc(<f-args>)
 command! -nargs=? PatSearch  call <SID>patsearch(<f-args>)
 
+function! Small_scrach() abort 
+    5sp
+    Mktemp
+endfunction
 
 command! Htmltoggle call <SID>html_toggle_rainbow()
 
