@@ -67,9 +67,9 @@ no   <leader>sl :call LoadSessionAndDoNotTrack()<CR>
 nn <Leader>q :Denite -no-empty  grep <CR>
 
 let g:slime_no_mappings = 1
-xmap <leader>rs <Plug>SlimeRegionSend
-nmap <leader>rx <Plug>SlimeMotionSend
-nmap <leader>rl <Plug>SlimeLineSend
+xmap <M-;> <Plug>SlimeRegionSend
+nmap <M-;> <Plug>SlimeMotionSend
+nmap <M-s> <Plug>SlimeLineSend
 
 vn   <leader>w :call RgVisual()<CR>
 no   <leader>W :call RgClip()<CR>
