@@ -105,7 +105,6 @@ imap <M-g> <Esc>~awea
 nmap gcw ~awe
 noremap H _
 noremap L $
-noremap ]i i <Esc>
 
 map  ]l :lnext<CR>
 map  [l :lprev<CR>
@@ -117,9 +116,9 @@ no   \0 :set syntax=none<CR>
 no   \1 :TabooRename 
 no   \5 :call LineTabFile()<CR>
 no   \c :tabclose<CR>
-no   \z /fzalnlsdndglksa<CR>
+no   \` /fzalnlsdndglksa<CR>
 let g:lt_location_list_toggle_map = '\e'
-let g:lt_quickfix_list_toggle_map = '\`'
+let g:lt_quickfix_list_toggle_map = '\z'
 "Valloric/ListToggle
 
 vn   \u :call UnstackVisual()<CR>
@@ -143,6 +142,7 @@ map <M-t> <esc>:ALEFix<CR>
 map <M-r> :e!<CR>
 map <M-f> :w!<CR>
 map <M-q> :clo<CR>
+noremap <M-p> i <Esc>
 
 nnoremap <leader>sB :Mktemp<cr>
 nnoremap <leader>sb :call Small_scrach()<cr>
