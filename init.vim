@@ -53,12 +53,11 @@ if dein#load_state('~/.local/share/dein')
     call dein#add('~/.local/share/dein/repos/utl_3_0a.vba')
     "libs end
     call dein#add('wsdjeg/dein-ui.vim')
-	if has('macunix')
-        " ./install_xbk_input_mac.sh 
-        let g:XkbSwitchEnabled = 1
-        call dein#add('lyokha/vim-xkbswitch')
-        let g:XkbSwitchLib = '/usr/local/lib/libInputSourceSwitcher.dylib'
-    endif
+    
+    " ./install_xbk_input_mac.sh 
+    let g:XkbSwitchEnabled = 1
+    call dein#add('lyokha/vim-xkbswitch')
+    let g:XkbSwitchLib = '/usr/local/lib/libInputSourceSwitcher.dylib'
 
     source ~/.config/nvim/_navigation.vim
     source ~/.config/nvim/_nifty_editing.vim
