@@ -17,4 +17,4 @@ call dein#add('baverman/vial')
 call dein#add('baverman/vial-http')
 call dein#add('fedorenchik/AnsiEsc')
 call dein#add('StanAngeloff/php.vim')
-
+call dein#add('tomlion/vim-solidity')

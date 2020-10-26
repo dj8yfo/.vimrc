@@ -103,7 +103,7 @@ au! BufNewFile,BufRead *.log set filetype=log
 " }}}
 
 
-colorscheme two-firewatch
+colorscheme dracula
 
 " keybindings, functions colorscheme and filetype initializations ------------------------------------ {{{
 let g:coc_disable_transparent_cursor = 1
