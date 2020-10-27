@@ -2,7 +2,6 @@ let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
 set cmdwinheight=25
 
-
 if has('unix')
     let g:python_host_prog = '/home/hypen9/.pyenv/versions/neovim2/bin/python'
     let g:python3_host_prog = '/home/hypen9/.pyenv/versions/neovim3/bin/python'
@@ -101,7 +100,6 @@ augroup END
 " log file settings ------------------------------------ {{{
 au! BufNewFile,BufRead *.log set filetype=log
 " }}}
-
 
 colorscheme dracula
 
