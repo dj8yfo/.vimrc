@@ -40,6 +40,7 @@ endif
 
 " Required:
 set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
+set rtp+=~/.fzf
 
 " Required:
 if dein#load_state('~/.local/share/dein')

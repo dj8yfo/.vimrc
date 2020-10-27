@@ -18,8 +18,7 @@ call dein#add('rizzatti/dash.vim')
 call dein#add('chrisbra/NrrwRgn', {
             \ 'hook_add' : 'source ~/.config/nvim/narrow_region.vim'})
 call dein#add('segeljakt/vim-stealth')
-call dein#add('junegunn/fzf.vim', {
-            \ 'hook_add': 'set rtp+=~/.fzf'})
+call dein#add('junegunn/fzf.vim')
 call dein#add('wincent/ferret', {
             \ 'hook_add': 'let g:FerretMap=0'})
 call dein#add('Chiel92/vim-autoformat', {
