@@ -21,8 +21,8 @@ augroup deoplete_coc
     autocmd!
     autocmd VimEnter * silent CocDisable
 
-    autocmd FileType javascript
-    \ call deoplete#disable()
+    "autocmd FileType javascript
+    "\ call deoplete#disable()
     autocmd FileType cpp,c
     \ call deoplete#disable()
     "autocmd FileType json
