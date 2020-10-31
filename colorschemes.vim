@@ -3,8 +3,6 @@ if has('nvim')
 endif
 set background=dark
 
-let g:sonokai_style = 'atlantis'
-let g:sonokai_enable_italic = 1
 set relativenumber
 set number
 set colorcolumn=88

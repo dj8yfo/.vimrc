@@ -13,8 +13,15 @@ imap <C-l> <Esc>lxi
 imap <C-]> <Esc>ui<Right>
 
 
-map <C-h> <Plug>(easymotion-Fl)
-map <C-l> <Plug>(easymotion-fl)
+map <C-;> <Plug>(easymotion-repeat)
+map F <Plug>(easymotion-Fl)
+map f <Plug>(easymotion-fl)
+map <C-l> <Plug>(easymotion-f)
+map <C-h> <Plug>(easymotion-F)
+"map <C-h> <Plug>(easymotion-Fl)
+"map <C-l> <Plug>(easymotion-fl)
+"map <C-.> <Plug>(easymotion-f)
+"map <C-,> <Plug>(easymotion-F)
 map <M-y> y$
 
 cmap <C-g> <Left>
@@ -43,10 +50,8 @@ no   <leader>cd :tcd %:h<CR>
 no   <leader>. :lcd .<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-map <C-.> :Defx -split=floating<CR>
-map <C-/> :Defx -split=vertical<CR>
+map <C-/> :Defx `expand('%:p:h')`<CR>
 map <C--> :Defx<CR>
-map <C-,> :Defx `expand('%:p:h')`<CR>
 
 map <leader>di :Defx -split=vertical<CR>
 map <leader>dh :Defx `expand('%:p:h')`<CR>
@@ -159,3 +164,4 @@ vnoremap <leader>de :!python -c 'import sys;from urllib.parse import unquote;pri
 nnoremap <leader>fl :call Flash()<CR>
 nnoremap gp `[v`]
 "already: source ~/.config/nvim/vim-easymotion.vim
+no <leader>] :GonvimMiniMap<CR>

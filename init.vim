@@ -102,12 +102,9 @@ augroup END
 au! BufNewFile,BufRead *.log set filetype=log
 " }}}
 
-colorscheme  sonokai
-let g:sonokai_style = 'shusia'
 
 " keybindings, functions colorscheme and filetype initializations ------------------------------------ {{{
 let g:coc_disable_transparent_cursor = 1
-source ~/.config/nvim/colorschemes.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/_javascript_after_dein.vim
 source ~/.config/nvim/_python_specific_after_dein.vim
@@ -116,6 +113,12 @@ source ~/.config/nvim/cscope_maps.vim
 source ~/.config/nvim/_c_specific.vim
 source ~/.config/nvim/keybindings.vim
 source ~/.config/nvim/go_specific_after_dein.vim
+
+let g:sonokai_enable_italic = 1
+let g:sonokai_style = 'shusia'
+colorscheme  sonokai
+source ~/.config/nvim/colorschemes.vim
+
 augroup yaml_format
     autocmd FileType yaml setlocal ts=4 sts=4 sw=4 expandtab
 augroup end
