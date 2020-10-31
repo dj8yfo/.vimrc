@@ -27,8 +27,8 @@ hi ColorColumn guibg=gray guifg=gray
 hi MatchParen guibg=gray  guifg=white
 
 hi TabLineFill guifg=LightGreen guibg=DarkGrey
-hi TabLine guifg=Grey guibg=Black
-hi TabLineSel guifg=White guibg=Black
+hi TabLine guifg=Black guibg=DarkGrey
+hi TabLineSel guifg=White guibg=#333333
 "let g:material_style='palenight'
 let g:airline_theme='powerlineish'
 
