@@ -90,6 +90,11 @@ function! LineTabFile() abort
 	execute "tabedit +" . l:line . " %"
 endfunction
 
+function! SearchFileDir() abort
+    let l:file = expand('%:p:h')
+    execute "Files " . l:file
+endfunction
+
 function! s:pyre_jaunt(search) abort
 	silent execute "!pyjau " . a:search
 endfunction

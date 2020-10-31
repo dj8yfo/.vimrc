@@ -22,7 +22,7 @@ highlight Cursor guifg=green guibg=black
 hi CursorLine                    guibg=#3E3D32
 hi CursorLineNr    guifg=#FD971F               gui=none
 hi Visual guifg=#aaaaaa guibg=#222222
-hi Search  guifg=#ffffff guibg=#0000aa gui=underline
+hi Search  guifg=#ff2222 guibg=#111111
 hi ColorColumn guibg=gray guifg=gray
 hi MatchParen guibg=gray  guifg=white
 

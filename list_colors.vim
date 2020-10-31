@@ -9,5 +9,4 @@ call dein#add('bluz71/vim-moonfly-colors')
 call dein#add('sainnhe/edge')
 call dein#add('sainnhe/sonokai')
 call dein#add('rafi/awesome-vim-colorschemes')
-
-
+call dein#add('artanikin/vim-synthwave84')

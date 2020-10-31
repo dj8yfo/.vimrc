@@ -42,7 +42,6 @@ no   <leader>a q:
 no   <leader>cd :tcd %:h<CR>
 no   <leader>. :lcd .<CR>
 map  <leader>C :call Toggle_chrosshairs()<CR>
-map  <leader>e. :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 map <C-.> :Defx -split=floating<CR>
 map <C-/> :Defx -split=vertical<CR>
@@ -55,6 +54,7 @@ map <leader>df :Defx -split=floating<CR>
 
 "fzf binding >
 no   <leader>f :Files<CR>
+map  <leader>e. :call SearchFileDir()<CR>
 vmap <leader>hv <Plug>(quickhl-manual-this)
 no   <leader>v :Buffers<CR>
 no   <leader>: :History:<CR>
@@ -112,11 +112,11 @@ map  [l :lprev<CR>
 map  ]t :cnext<CR>
 map  [t :cprev<CR>
 
-no   \0 :set syntax=none<CR>
+no   =0 :set syntax=none<CR>
 no   \1 :TabooRename 
 no   \5 :call LineTabFile()<CR>
 no   \c :tabclose<CR>
-no   \` /fzalnlsdndglksa<CR>
+no   <leader>= /fzalnlsdndglksa<CR>
 let g:lt_location_list_toggle_map = '\e'
 let g:lt_quickfix_list_toggle_map = '\z'
 "Valloric/ListToggle
@@ -133,6 +133,7 @@ nmap \\ :call MyTagbarOpen()<CR>
 nnoremap <leader>x *``cgn
 
 map  \' :setlocal foldmethod=indent<CR>
+map  \` :setlocal foldmethod=syntax<CR>
 noremap \/ /
 
 map <M-a> <esc>ggVG
@@ -141,7 +142,7 @@ map <M-t> <esc>:ALEFix<CR>
 
 map <M-r> :e!<CR>
 map <M-f> :w!<CR>
-map <M-q> :clo<CR>
+map <C-q> :clo<CR>
 noremap <M-p> i <Esc>
 
 nnoremap <leader>sB :Mktemp<cr>

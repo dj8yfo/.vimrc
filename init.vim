@@ -102,7 +102,8 @@ augroup END
 au! BufNewFile,BufRead *.log set filetype=log
 " }}}
 
-colorscheme dracula
+colorscheme  sonokai
+let g:sonokai_style = 'shusia'
 
 " keybindings, functions colorscheme and filetype initializations ------------------------------------ {{{
 let g:coc_disable_transparent_cursor = 1
