@@ -8,7 +8,7 @@ set number
 set colorcolumn=88
 
 " neovide setup
-set guifont=Hack:h12
+set guifont=Hack:h11
 let g:neovide_cursor_vfx_mode = "sonicboom"
 let g:neovide_refresh_rate=60
 
@@ -32,7 +32,7 @@ let g:airline_theme='powerlineish'
 
 let g:stealth#reveal_on_move = 0
 
-hi Ignore guibg=#141e23 guifg=#141e23
+hi Ignore guibg=#2d2a2e guifg=#2d2a2e
 hi Folded guifg=#eeeeee guibg=#000000
 hi FoldColumn guibg=#444444 guifg=#00ffff
 set fdc=2

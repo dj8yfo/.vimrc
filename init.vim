@@ -24,6 +24,9 @@ set tags=tags;
 set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<,space:.
 set sm
 set matchtime=3
+if has("persistent_undo")
+    set undofile
+endif
 
 set expandtab
 set signcolumn=yes

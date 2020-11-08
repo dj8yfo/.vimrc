@@ -18,6 +18,7 @@ map F <Plug>(easymotion-Fl)
 map f <Plug>(easymotion-fl)
 map <C-l> <Plug>(easymotion-f)
 map <C-h> <Plug>(easymotion-F)
+map <leader>' :UndotreeToggle<CR>
 "map <C-h> <Plug>(easymotion-Fl)
 "map <C-l> <Plug>(easymotion-fl)
 "map <C-.> <Plug>(easymotion-f)
