@@ -85,8 +85,8 @@ nmap <M-s> <Plug>SlimeLineSend
 map <M-t> <esc>:ALEFix<CR>
 nmap <M-t> :cc<cr>
 
-vn   <leader>w :call RgVisual()<CR>
-no   <leader>W :call RgClip()<CR>
+"vn   <leader>w :call RgVisual()<CR>
+"no   <leader>W :call RgClip()<CR>
 "fzf binding ^
 no   <leader>j<Space> :bd!<CR>
 no   <leader>jj :Pyja 
