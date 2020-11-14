@@ -81,10 +81,10 @@ nn <Leader>q :Denite -no-empty  grep <CR>
 let g:slime_no_mappings = 1
 xmap <M-;> <Plug>SlimeRegionSend
 nmap <M-;> <Plug>SlimeMotionSend
-nmap <M-s> <Plug>SlimeLineSend
+nmap <M-w> <Plug>SlimeLineSend
 map <M-t> <esc>:ALEFix<CR>
 nmap <M-t> :cc<cr>
-
+  
 "vn   <leader>w :call RgVisual()<CR>
 "no   <leader>W :call RgClip()<CR>
 "fzf binding ^
@@ -94,7 +94,6 @@ no   <leader>jp :Pyre
 vmap   <leader>jp :<C-U>call Pyre_visual()<CR>
 nmap <leader>js mzi<CR><Esc>`z
 nmap <C-x> :qa!<CR>
-nmap <C-s> :wq<CR>
 nmap <leader>\ :TagbarToggle<CR>
 nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
 nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
