@@ -32,6 +32,8 @@ map <M-y> y$
 cmap <C-g> <Left>
 inor <C-b> <Left>
 inor <C-f> <Right>
+map <M-d> :AnyJump<CR>
+map <M-q> :AnyJumpLastResults<CR>
 
 
 inor <C-n> <Down>
@@ -80,6 +82,8 @@ let g:slime_no_mappings = 1
 xmap <M-;> <Plug>SlimeRegionSend
 nmap <M-;> <Plug>SlimeMotionSend
 nmap <M-s> <Plug>SlimeLineSend
+map <M-t> <esc>:ALEFix<CR>
+nmap <M-t> :cc<cr>
 
 vn   <leader>w :call RgVisual()<CR>
 no   <leader>W :call RgClip()<CR>
@@ -148,7 +152,6 @@ noremap \/ /
 
 map <M-a> <esc>ggVG
 map <M-/> <esc>ggVG=
-map <M-t> <esc>:ALEFix<CR>
 
 map <M-r> :e!<CR>
 map <M-f> :w!<CR>

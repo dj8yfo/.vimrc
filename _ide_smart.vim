@@ -33,3 +33,4 @@ call dein#add('roman/golden-ratio')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 "CocInstall coc-tsserver coc-json coc-html coc-css
+call dein#add('pechorin/any-jump.vim')
