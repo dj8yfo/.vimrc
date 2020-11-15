@@ -12,7 +12,6 @@ call dein#add('Shougo/denite.nvim', {
             \ 'hook_add' : 'source ~/.config/nvim/denite.vim'})
 call dein#add('cyansprite/Extract', {
             \ 'hook_add' : 'source ~/.config/nvim/extract.vim'})
-call dein#add('Shougo/neoyank.vim')
 call dein#add('majutsushi/tagbar')
 call dein#add('rizzatti/dash.vim')
 "call dein#add('KabbAmine/zeavim.vim', {
@@ -34,5 +33,10 @@ call dein#add('roman/golden-ratio')
 
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
+let g:neosnippet#snippets_directory='~/.local/share/dein/repos/github.com/honza/vim-snippets/snippets'
+call dein#add('honza/vim-snippets')
+
 "CocInstall coc-tsserver coc-json coc-html coc-css
 call dein#add('pechorin/any-jump.vim')
+call dein#add('Yggdroot/LeaderF', { 'build': './install.sh', 
+            \ 'hook_add': 'source ~/.config/nvim/LeaderF.vim'})

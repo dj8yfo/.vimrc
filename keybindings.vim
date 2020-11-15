@@ -65,7 +65,7 @@ map <leader>dh :Defx `expand('%:p:h')`<CR>
 map <leader>df :Defx -split=floating<CR>
 
 "fzf binding >
-no   <leader>f :Files<CR>
+"no   <leader>f :Files<CR>
 map  <leader>e. :call SearchFileDir()<CR>
 vmap <leader>hv <Plug>(quickhl-manual-this)
 no   <leader>v :Buffers<CR>
