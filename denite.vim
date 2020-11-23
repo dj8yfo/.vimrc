@@ -68,6 +68,7 @@ no \r :Denite -resume<CR>
 no <Leader>/ :Denite line<CR>
 vn <Leader>/ :<C-U>call denite#visual('line')<CR>
 no <Leader>+ :Denite colorscheme<CR>
+no <Leader>" :Denite mark<CR>
 
 no <Leader>c :Denite command_history<CR>
 no \c :Denite command_history -default-action=edit_and_execute<CR>

@@ -34,6 +34,7 @@ inor <C-b> <Left>
 inor <C-f> <Right>
 map <M-d> :AnyJump<CR>
 map <M-q> :AnyJumpLastResults<CR>
+map <M-z> :AnyJumpArg 
 
 
 inor <C-n> <Down>

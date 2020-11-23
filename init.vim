@@ -44,6 +44,8 @@ endif
 " Required:
 set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
 set rtp+=~/.fzf
+let g:XkbSwitchEnabled = 1
+let g:XkbSwitchLib = '/usr/local/lib/libInputSourceSwitcher.dylib'
 
 " Required:
 if dein#load_state('~/.local/share/dein')
@@ -58,9 +60,7 @@ if dein#load_state('~/.local/share/dein')
     call dein#add('wsdjeg/dein-ui.vim')
     
     " ./install_xbk_input_mac.sh 
-    let g:XkbSwitchEnabled = 1
     call dein#add('lyokha/vim-xkbswitch')
-    let g:XkbSwitchLib = '/usr/local/lib/libInputSourceSwitcher.dylib'
 
     source ~/.config/nvim/_navigation.vim
     source ~/.config/nvim/_nifty_editing.vim

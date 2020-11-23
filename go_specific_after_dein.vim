@@ -112,6 +112,8 @@ augroup coc_go
                 \ nnoremap <silent> <space>ed  :<C-u>GoDocBrowser<CR>
     autocmd FileType go
                 \ nnoremap <silent> <space>el  :<C-u>GoMetaLinter<CR>
+    autocmd FileType go
+                \ nmap <silent> <leader>rn :<C-u>GoRename<CR>
 augroup END
 
 
