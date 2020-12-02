@@ -8,7 +8,7 @@ set number
 set colorcolumn=88
 
 " neovide setup
-set guifont=Hack:h11
+set guifont=Hack:h13
 "set guifont=Source\ Code\ Pro\ ExtraLight:h11
 let g:neovide_cursor_vfx_mode = "sonicboom"
 let g:neovide_refresh_rate=60
@@ -22,7 +22,7 @@ hi CursorLine                    guibg=#3E3D32
 hi CursorLineNr    guifg=#FD971F               gui=none
 hi Visual guifg=#aaaaaa guibg=#222222
 hi Search  guifg=#ff2222 guibg=#111111
-hi ColorColumn guibg=gray guifg=gray
+hi ColorColumn guifg=#e3e1e4 guibg=#2d2f2e
 hi MatchParen guibg=gray  guifg=white
 
 hi TabLineFill guifg=LightGreen guibg=DarkGrey
