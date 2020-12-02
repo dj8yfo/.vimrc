@@ -90,6 +90,12 @@ function! LineTabFile() abort
 	execute "tabedit +" . l:line . " %"
 endfunction
 
+function! CursorPositionAt() abort
+    let l:file = expand('%')
+	let l:line = line(".")
+    let @+ = l:file . ":" . l:line
+endfunction
+
 function! SearchFileDir() abort
     let l:file = expand('%:p:h')
     execute "Files " . l:file

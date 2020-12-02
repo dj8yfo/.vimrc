@@ -129,6 +129,7 @@ map  [t :cprev<CR>
 no   =0 :set syntax=none<CR>
 no   \1 :TabooRename 
 no   \5 :call LineTabFile()<CR>
+no   \; :call CursorPositionAt()<CR>
 no   \c :tabclose<CR>
 no   <leader>= /fzalnlsdndglksa<CR>
 let g:lt_location_list_toggle_map = '\e'

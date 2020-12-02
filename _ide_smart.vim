@@ -10,8 +10,9 @@ call dein#add('nixprime/cpsm', {
             \ 'build' : 'PY3=ON ./install.sh'})
 call dein#add('Shougo/denite.nvim', {
             \ 'hook_add' : 'source ~/.config/nvim/denite.vim'})
-call dein#add('cyansprite/Extract', {
-            \ 'hook_add' : 'source ~/.config/nvim/extract.vim'})
+" a lot of crashes
+"call dein#add('cyansprite/Extract', {
+"            \ 'hook_add' : 'source ~/.config/nvim/extract.vim'})
 call dein#add('majutsushi/tagbar')
 call dein#add('rizzatti/dash.vim')
 "call dein#add('KabbAmine/zeavim.vim', {
