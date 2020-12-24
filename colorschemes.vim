@@ -8,7 +8,7 @@ set number
 set colorcolumn=88
 
 " neovide setup
-set guifont=Cartograph\ CF:h14
+set guifont=Anonymous\ Pro:h14
 "set guifont=Source\ Code\ Pro\ ExtraLight:h11
 let g:neovide_cursor_vfx_mode = "sonicboom"
 let g:neovide_refresh_rate=60
