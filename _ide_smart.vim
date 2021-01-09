@@ -41,3 +41,4 @@ call dein#add('honza/vim-snippets')
 call dein#add('pechorin/any-jump.vim')
 call dein#add('Yggdroot/LeaderF', { 'build': './install.sh', 
             \ 'hook_add': 'source ~/.config/nvim/LeaderF.vim'})
+call dein#add('schickling/vim-bufonly')

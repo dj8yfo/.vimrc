@@ -32,3 +32,7 @@ augroup deoplete_coc
     "autocmd FileType go
     "\ call deoplete#disable()
 augroup END
+
+inoremap <silent><expr> <C-G>
+\ pumvisible() ? "\<C-n>" : 
+\ deoplete#manual_complete()
