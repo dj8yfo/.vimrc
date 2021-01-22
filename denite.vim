@@ -70,6 +70,9 @@ vn <Leader>/ :<C-U>call denite#visual('line')<CR>
 no <Leader>+ :Denite colorscheme<CR>
 no <Leader>" :Denite mark<CR>
 
+no gn :Denite -resume -cursor-pos=+1 -immediately<CR>
+no gb ::Denite -resume -cursor-pos=-1 -immediately<CR>
+
 no <Leader>c :Denite command_history<CR>
 no \c :Denite command_history -default-action=edit_and_execute<CR>
 function! denite#visual(source) abort
