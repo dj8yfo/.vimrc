@@ -120,7 +120,7 @@ source ~/.config/nvim/go_specific_after_dein.vim
 let g:sonokai_enable_italic = 1
 let g:edge_enable_italic = 1
 let g:sonokai_style = 'shusia'
-colorscheme  monokai-bold
+colorscheme  molokayo
 source ~/.config/nvim/colorschemes.vim
 
 augroup yaml_format
