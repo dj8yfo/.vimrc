@@ -147,6 +147,8 @@ no   \t :BTags<CR>
 nmap \\ :call MyTagbarOpen()<CR>
 nnoremap <leader>x *``cgn
 
+map gu :call HandleURL()<cr>
+
 map  \' :setlocal foldmethod=indent<CR>
 map  \` :setlocal foldmethod=syntax<CR>
 noremap \/ /

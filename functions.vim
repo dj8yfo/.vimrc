@@ -194,3 +194,13 @@ for i in [1, 2, 3, 4, 5, 6, 7]
   tabcl
 endfor
 endfunction
+
+function! HandleURL()
+  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;]*')
+  echo s:uri
+  if s:uri != ""
+    silent exec "!firefox '". escape(s:uri,"%#!") ."'"
+  else
+    echo "No URI found in line."
+  endif
+endfunction
