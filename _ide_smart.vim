@@ -34,8 +34,8 @@ call dein#add('roman/golden-ratio')
 
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
-let g:neosnippet#snippets_directory='~/.local/share/dein/repos/github.com/honza/vim-snippets/snippets'
-call dein#add('honza/vim-snippets')
+call dein#add('honza/vim-snippets', {
+            \ 'hook_add': 'let g:neosnippet#snippets_directory="~/.local/share/dein/repos/github.com/honza/vim-snippets/snippets"'})
 
 "CocInstall coc-tsserver coc-json coc-html coc-css
 call dein#add('pechorin/any-jump.vim')
