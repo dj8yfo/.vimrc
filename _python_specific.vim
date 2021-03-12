@@ -2,7 +2,9 @@
   	call dein#add('roxma/nvim-yarp')
   	call dein#add('roxma/vim-hug-neovim-rpc')
   endif
-  call dein#add('zchee/deoplete-jedi') " python
+  call dein#add('zchee/deoplete-jedi', {
+			  \ 'hook_add': 'source ~/.config/nvim/deoplete-jedi.vim'}) " python
+
   call dein#add('davidhalter/jedi-vim', {
 			  \ 'lazy' : 1, 'on_ft' : "python",
 			  \ 'hook_source': 'source ~/.config/nvim/jedi-vim.vim'}) " python
