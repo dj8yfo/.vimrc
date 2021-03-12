@@ -12,7 +12,7 @@ source ~/.config/nvim/vim-plug/plugins.vim
 source ~/.config/nvim/general/settings.vim
 source ~/.config/nvim/general/functions.vim
 source ~/.config/nvim/keys/mappings.vim
-
+let g:python3_host_prog = expand("~/.miniconda/envs/neovim/bin/python3.8")
 if exists('g:vscode')
   " VS Code extension
   source ~/.config/nvim/vscode/settings.vim
