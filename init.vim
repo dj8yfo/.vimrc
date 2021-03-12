@@ -84,3 +84,4 @@ endif
   " fix space and tab triggering completion all the time
   " Provide diagnostics for nvim tree 
   " port everything possible to lua
+color snazzy
