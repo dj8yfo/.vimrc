@@ -12,7 +12,6 @@ source ~/.config/nvim/vim-plug/plugins.vim
 source ~/.config/nvim/general/settings.vim
 source ~/.config/nvim/general/functions.vim
 source ~/.config/nvim/keys/mappings.vim
-let g:python3_host_prog = expand("/home/hypen9/.pyenv/versions/neovim3/bin/python")
 if exists('g:vscode')
   " VS Code extension
   source ~/.config/nvim/vscode/settings.vim
@@ -84,4 +83,3 @@ endif
   " fix space and tab triggering completion all the time
   " Provide diagnostics for nvim tree 
   " port everything possible to lua
-color snazzy
