@@ -10,4 +10,3 @@
   "call dein#add('lambdalisue/suda.vim', {
   "            \ 'hook_add' : 'source ~/.config/nvim/suda.vim'}) 
 
-  call dein#add('AndrewRadev/bufferize.vim') 

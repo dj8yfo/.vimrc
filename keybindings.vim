@@ -2,10 +2,6 @@ nmap <C-a> :w<CR>
 vmap <C-a> <Esc><C-a>gv
 nmap <C-n> o<Esc>k
 nmap <C-p> O<Esc>j
-no   <M-j> <C-W>j
-no   <M-k> <C-W>k
-no   <M-h> <C-W>h
-no   <M-l> <C-W>l
 no <C-g> i <Esc>
 imap <C-e> <Esc>$a
 imap <C-a> <Esc>0i
