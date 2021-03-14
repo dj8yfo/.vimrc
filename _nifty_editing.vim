@@ -1,4 +1,3 @@
-  call dein#add('scrooloose/nerdcommenter')
   call dein#add('michaeljsmith/vim-indent-object')
   call dein#add('tpope/vim-surround')
   call dein#add('tommcdo/vim-exchange') " https://github.com/tommcdo/vim-exchange

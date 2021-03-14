@@ -120,11 +120,6 @@ nmap gcw ~awe
 noremap H _
 noremap L $
 
-map  ]l :lnext<CR>
-map  [l :lprev<CR>
-
-map  ]t :cnext<CR>
-map  [t :cprev<CR>
 
 no   =0 :set syntax=none<CR>
 no   \1 :TabooRename 
@@ -138,7 +133,6 @@ let g:lt_quickfix_list_toggle_map = '\z'
 
 vn   \u :call UnstackVisual()<CR>
 "no   \e :lopen 8<CR>
-no   \f :let @+ = expand('%:t')<CR>
 map  \g :Gstatus<CR>
 no  \h :QuickhlManualAdd! 
 no   \a :let @+ = expand('%:p')<CR>
@@ -156,9 +150,6 @@ noremap \/ /
 map <M-a> <esc>ggVG
 map <M-/> <esc>ggVG=
 
-map <M-r> :e!<CR>
-map <M-f> :w!<CR>
-map <C-q> :clo<CR>
 noremap <M-p> i <Esc>
 
 nnoremap <leader>sB :Mktemp<cr>
@@ -173,6 +164,5 @@ vnoremap <leader>en :!python -c 'import sys;from urllib.parse import quote;print
 vnoremap <leader>de :!python -c 'import sys;from urllib.parse import unquote;print(unquote(sys.stdin.read().strip()))'<cr>
 
 nnoremap <leader>fl :call Flash()<CR>
-nnoremap gp `[v`]
 "already: source ~/.config/nvim/vim-easymotion.vim
 no <leader>] :GonvimMiniMap<CR>
