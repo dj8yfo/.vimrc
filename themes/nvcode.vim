@@ -25,3 +25,5 @@ hi Search  guifg=#ffff00 guibg=#111111
 hi EasyMotionTarget guifg=#00ff00
 hi EasyMotionTarget2Second guifg=#00ff00
 hi EasyMotionTarget2First guifg=#ffff00
+
+hi LineNr          guifg=#BCBCBC guibg=#3B3A32

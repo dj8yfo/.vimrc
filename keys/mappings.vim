@@ -1,4 +1,10 @@
+let g:lt_location_list_toggle_map = '<F6>'
+let g:lt_quickfix_list_toggle_map = '<F7>'
 
+map <F12> 20zl
+map <F11> 20zh
+"Valloric/ListToggle
+map <F5> :PatSearch 
 noremap H _
 noremap L $
 no   <M-j> <C-W>j
@@ -10,17 +16,14 @@ nnoremap gp `[v`]
 map <M-r> :e!<CR>
 map <M-f> :w!<CR>
 
-map  ]l :lnext<CR>
-map  [l :lprev<CR>
+map  ]a :lnext<CR>
+map  [a :lprev<CR>
 
 nnoremap gp `[v`]
 map <M-r> :e!<CR>
 
-map  ]l :lnext<CR>
-map  [l :lprev<CR>
-
-map  ]t :cnext<CR>
-map  [t :cprev<CR>
+map  ]b :cnext<CR>
+map  [b :cprev<CR>
 nnoremap   \a :let @+ = expand('%:p')<CR>
 nnoremap   \f :let @+ = expand('%:t')<CR>
 nnoremap   \s :let @+ = expand('%:p:h')<CR>
@@ -28,14 +31,16 @@ nnoremap <silent>  <C-q> :clo<CR>
 nmap <C-x> :qa!<CR>
 " Basic Key Mappings
 
-imap <C-h> <C-w>h
-imap <C-j> <C-w>j
-imap <C-k> <C-w>k
-imap <C-l> <C-w>l
+" variant 1
 " g Leader key
 let mapleader=" "
-" let localleader=" "
 nnoremap <Space> <Nop>
+" ----------------------
+
+" variant 2
+" let mapleader = "\<Space>"
+" let maplocalleader = "\<Space>"
+" ----------------------
 
 " Better indenting
 vnoremap < <gv
@@ -45,10 +50,6 @@ vnoremap > >gv
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
-
-" I hate escape more than anything else
-inoremap jk <Esc>
-inoremap kj <Esc>
 
 " Easy CAPS
 " inoremap <c-u> <ESC>viwUi

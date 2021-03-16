@@ -56,7 +56,6 @@
     " highlight all matches under cursor
     " Plug 'RRethy/vim-illuminate'
     " Surround
-    " Plug 'tpope/vim-surround'
     " auto set indent settings
     " Plug 'tpope/vim-sleuth'
     " FZF

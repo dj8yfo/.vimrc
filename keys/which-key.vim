@@ -98,6 +98,13 @@ let g:which_key_map.b = {
       \ '?' : ['Buffers'                , 'fzf-buffer'],
       \ }
 
+let g:which_key_map.c = {
+      \ 'name' : '+command' ,
+      \ 'c' : [':call LineTabFile()<CR>'        , 'create new tab'],
+      \ 'p' : [':call CursorPositionAt()<CR>'        , 'cursor position'],
+      \ 'z' : [':call TabNuke()<CR>'        , 'close tab'],
+      \ 'd' : [':call ToggleCommentHIghlight()<CR>'        , 'toggle comments color'],
+      \ }
 " d is for debug
 let g:which_key_map.d = {
       \ 'name' : '+debug' ,

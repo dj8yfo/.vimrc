@@ -12,6 +12,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'thinca/vim-visualstar'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/vim-edgemotion'
+Plug 'tpope/vim-surround'
+Plug 'Valloric/ListToggle'
+Plug 'tommcdo/vim-exchange'
+
+
+" Plug 'neomake/neomake'
 
 
 " Better Comments
@@ -26,7 +34,6 @@ Plug 'rafcamlet/nvim-luapad'
 
 
 " Easymotion
-Plug 'easymotion/vim-easymotion'
 " Have the file system follow you around
 Plug 'airblade/vim-rooter'
 " Treesitter

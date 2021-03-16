@@ -54,7 +54,6 @@ nn <Leader>q :Denite -no-empty  grep <CR>
 no gn :Denite -resume -cursor-pos=+1 -immediately<CR>
 no gb ::Denite -resume -cursor-pos=-1 -immediately<CR>
 
-no \c :Denite command_history -default-action=edit_and_execute<CR>
 function! denite#visual(source) abort
 let temp = @z
 norm gv"zy

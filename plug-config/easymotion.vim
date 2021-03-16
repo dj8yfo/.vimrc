@@ -19,6 +19,9 @@ let g:EasyMotion_do_shade = 0
 " s{char}{char} to move to {char}{char}
 nmap <silent> s <Plug>(easymotion-s2)
 nmap <silent> S <Plug>(easymotion-overwin-f2)
+
+map <C-j> <Plug>(edgemotion-j)
+map <C-k> <Plug>(edgemotion-k)
 " map  n <Plug>(easymotion-next)
 " map  N <Plug>(easymotion-prev)
 " nmap S <Plug>(easymotion-overwin-t)
