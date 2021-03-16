@@ -63,7 +63,6 @@
     " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     " Plug 'junegunn/fzf.vim'
     " undo time travel
-    " Plug 'mbbill/undotree'
     " " async tasks
     " Plug 'skywind3000/asynctasks.vim'
     " Plug 'skywind3000/asyncrun.vim'

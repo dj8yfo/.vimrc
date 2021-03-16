@@ -17,6 +17,7 @@ Plug 'haya14busa/vim-edgemotion'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'tommcdo/vim-exchange'
+Plug 'mbbill/undotree'
 
 
 " Plug 'neomake/neomake'
