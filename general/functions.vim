@@ -64,3 +64,8 @@ function! s:mktempfunc(...) abort
 endfunction
 
 command! -nargs=? Mktemp  call <SID>mktempfunc(<f-args>)
+
+function! SearchFileDir() abort
+    let l:file = expand('%:p:h')
+    execute "Files " . l:file
+endfunction

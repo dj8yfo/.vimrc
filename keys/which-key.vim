@@ -106,6 +106,8 @@ let g:which_key_map.c = {
       \ 'g' : [':Tags'        , 'global tags'],
       \ 'b' : [':BTags'        , 'buffer tags'],
       \ 't' : [':NeomakeSh ctags -R .'        , 'make ctags'],
+      \ 'f' : [':tcd %:h'        , 'change to file dir'],
+      \ '.' : [':call SearchFileDir()'        , 'change to file dir'],
       \ }
 
 " d is for debug

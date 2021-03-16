@@ -1,3 +1,4 @@
+nnoremap \x *``cgn
 
 nmap ]<Space> o<Esc>k
 nmap [<Space> O<Esc>j
