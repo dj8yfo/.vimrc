@@ -19,8 +19,10 @@ Plug 'Valloric/ListToggle'
 Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
 
-
-" Plug 'neomake/neomake'
+set rtp+=~/.fzf
+Plug 'junegunn/fzf.vim'
+Plug 'neomake/neomake'
+Plug 'wincent/ferret'
 
 
 " Better Comments

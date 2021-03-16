@@ -3,8 +3,8 @@
 " _/ // / / / / /__| |/ / / / / / / /
 "/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/
 " #************************************************#
-" #                .zshrc                          #
-" #               written by dj8yfo                #
+" #             .init.vim                          #
+" #          written by Kovacs                     #
 " #                Month 11, 2384                  #
 " #                                                #
 " #           private bathtub babe .               #
@@ -26,8 +26,14 @@ source ~/.config/nvim/plug-config/vim-commentary.vim
 source ~/.config/nvim/plug-config/rnvimr.vim
 source ~/.config/nvim/plug-config/codi.vim
 source ~/.config/nvim/plug-config/easymotion.vim
+
+" added by me
 source ~/.config/nvim/plug-config/incsearch.vim
 source ~/.config/nvim/plug-config/denite.vim
+source ~/.config/nvim/plug-config/denite.vim
+source ~/.config/nvim/plug-config/neomake.vim
+source ~/.config/nvim/plug-config/ferret.vim
+
 source ~/.config/nvim/plug-config/goyo.vim
 source ~/.config/nvim/plug-config/vim-rooter.vim
 source ~/.config/nvim/plug-config/start-screen.vim

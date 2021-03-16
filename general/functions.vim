@@ -29,6 +29,7 @@ function! TabNuke() abort
     tabclose
 endfunction
 
+
 "rg command for vimgrep backend
 set grepprg=rg\ --vimgrep
 set grepformat^=%f:%l:%c:%m

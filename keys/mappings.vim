@@ -1,3 +1,4 @@
+map <M-a> <esc>ggVG
 let g:lt_location_list_toggle_map = '<F6>'
 let g:lt_quickfix_list_toggle_map = '<F7>'
 

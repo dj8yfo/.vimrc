@@ -57,7 +57,6 @@ let g:which_key_map['z'] = [ 'Goyo'                                            ,
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
       \ 'c' : [':ColorizerToggle'        , 'colorizer'],
-      \ 'e' : [':CocCommand explorer'    , 'explorer'],
       \ 'h' : [':let @/ = ""'            , 'remove search highlight'],
       \ 'l' : [':Bracey'                 , 'start live server'],
       \ 'L' : [':BraceyStop'             , 'stop live server'],
@@ -100,10 +99,13 @@ let g:which_key_map.b = {
 
 let g:which_key_map.c = {
       \ 'name' : '+command' ,
-      \ 'c' : [':call LineTabFile()<CR>'        , 'create new tab'],
-      \ 'p' : [':call CursorPositionAt()<CR>'        , 'cursor position'],
-      \ 'z' : [':call TabNuke()<CR>'        , 'close tab'],
-      \ 'd' : [':call ToggleCommentHIghlight()<CR>'        , 'toggle comments color'],
+      \ 'c' : [':call LineTabFile()'        , 'create new tab'],
+      \ 'p' : [':call CursorPositionAt()'        , 'cursor position'],
+      \ 'z' : [':tabclose'        , 'close tab'],
+      \ 'd' : [':call ToggleCommentHIghlight()'        , 'toggle comments color'],
+      \ 'g' : [':Tags'        , 'global tags'],
+      \ 'b' : [':BTags'        , 'buffer tags'],
+      \ 't' : [':NeomakeSh ctags -R .'        , 'make ctags'],
       \ }
 
 " d is for debug
@@ -140,13 +142,6 @@ let g:which_key_map.F = {
 
 " f is for find and replace
       " \ 'f' : [':Farr'                     , 'file'],
-let g:which_key_map.f = {
-      \ 'name' : '+find & replace' ,
-      \ 'f' : [':Farr --source=vimgrep'    , 'file'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
-      \ }
-
-" k is for task
 let g:which_key_map.k = {
       \ 'name' : '+task' ,
       \ 'c' : [':AsyncTask file-compile'      , 'compile file'],
@@ -155,7 +150,6 @@ let g:which_key_map.k = {
       \ 'f' : [':AsyncTaskFzf'                , 'find task'],
       \ 'g' : [':AsyncTaskEdit!'              , 'edit global tasks'],
       \ 'h' : [':AsyncTaskList!'              , 'list hidden tasks'],
-      \ 'l' : [':CocList tasks'               , 'list tasks'],
       \ 'm' : [':AsyncTaskMacro'              , 'macro help'],
       \ 'o' : [':copen'                       , 'open task view'],
       \ 'r' : [':AsyncTask file-run'          , 'run file'],
@@ -163,18 +157,6 @@ let g:which_key_map.k = {
       \ 'x' : [':cclose'                      , 'close task view'],
       \ }
       " \ 'l' : [':AsyncTaskList'               , 'list tasks'],
-
-" m is for mark
-let g:which_key_map.m = {
-      \ 'name' : '+mark' ,
-      \ 'c' : [':CocCommand bookmark.clearForCurrentFile', 'clear file'],
-      \ 'C' : [':CocCommand bookmark.clearForAllFiles', 'clear project'],
-      \ 'j' : [':CocCommand bookmark.next', 'next bookmark'],
-      \ 'k' : [':CocCommand bookmark.prev', 'prev bookmark'],
-      \ 't' : [':CocCommand bookmark.toggle', 'toggle bookmark'],
-      \ }
-      " CoC throws an error
-      " \ 'a' : [':CocCommand bookmark.annotate', 'annotate bookmark'],
 
 
 " s is for search powered by telescope
@@ -230,7 +212,6 @@ let g:which_key_map.S = {
 let g:which_key_map.g = {
       \ 'name' : '+git' ,
       \ 'a' : [':Git add .'                        , 'add all'],
-      \ 'A' : [':CocCommand fzf-preview.GitStatus' , 'actions'],
       \ 'b' : [':Git blame'                        , 'blame'],
       \ 'B' : [':GBrowse'                          , 'browse'],
       \ 'c' : [':Git commit'                       , 'commit'],
@@ -249,7 +230,6 @@ let g:which_key_map.g = {
       \ 'P' : [':Git pull'                         , 'pull'],
       \ 'r' : [':GRemove'                          , 'remove'],
       \ 's' : ['<Plug>(GitGutterStageHunk)'        , 'stage hunk'],
-      \ 'S' : [':CocCommand fzf-preview.GitStatus' , 'status'],
       \ 't' : [':GitGutterSignsToggle'             , 'toggle signs'],
       \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'undo hunk'],
       \ 'v' : [':GV'                               , 'view commits'],
