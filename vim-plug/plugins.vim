@@ -18,6 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
+Plug 'Mcmartelle/vim-monokai-bold'
 
 set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'

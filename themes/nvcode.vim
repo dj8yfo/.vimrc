@@ -10,6 +10,7 @@ syntax on
 " colorscheme nvcode
 " colorscheme onedark
 colorscheme snazzy
+" colorscheme monokai-bold
 " colorscheme aurora
 
 
@@ -22,7 +23,7 @@ endif
 hi Visual guifg=#aaaaaa guibg=#222222
 hi Search  guifg=#ffff00 guibg=#111111
 
-hi EasyMotionTarget guifg=#00ff00
+hi EasyMotionTarget guifg=#ffff00
 hi EasyMotionTarget2Second guifg=#00ff00
 hi EasyMotionTarget2First guifg=#ffff00
 
