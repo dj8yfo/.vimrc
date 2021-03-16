@@ -1,10 +1,11 @@
 nnoremap \x *``cgn
+imap <C-\> <Esc>u
 
 nmap ]<Space> o<Esc>k
 nmap [<Space> O<Esc>j
 map <M-a> <esc>ggVG
-let g:lt_location_list_toggle_map = '<F6>'
-let g:lt_quickfix_list_toggle_map = '<F7>'
+let g:lt_location_list_toggle_map = '\e'
+let g:lt_quickfix_list_toggle_map = '\z'
 
 map <F12> 20zl
 map <F11> 20zh
