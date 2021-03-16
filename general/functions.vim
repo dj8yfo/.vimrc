@@ -52,3 +52,15 @@ function! ToggleCommentHIghlight() abort
         hi Folded guifg=#eeeeee guibg=#000000
     endif
 endfunction
+
+function! s:mktempfunc(...) abort
+    let arg = get(a:, 1, 0)
+    echo arg
+    if len(arg) > 1
+        exe 'edit ' . trim(system("mktemp")) . '.' . arg
+    else
+        exe 'edit ' . trim(system("mktemp"))
+    endif
+endfunction
+
+command! -nargs=? Mktemp  call <SID>mktempfunc(<f-args>)

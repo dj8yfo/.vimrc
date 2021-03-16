@@ -1,3 +1,6 @@
+
+nmap ]<Space> o<Esc>k
+nmap [<Space> O<Esc>j
 map <M-a> <esc>ggVG
 let g:lt_location_list_toggle_map = '<F6>'
 let g:lt_quickfix_list_toggle_map = '<F7>'
@@ -19,12 +22,12 @@ map <M-f> :w!<CR>
 
 map  ]a :lnext<CR>
 map  [a :lprev<CR>
+map  ]b :cnext<CR>
+map  [b :cprev<CR>
 
 nnoremap gp `[v`]
 map <M-r> :e!<CR>
 
-map  ]b :cnext<CR>
-map  [b :cprev<CR>
 nnoremap   \a :let @+ = expand('%:p')<CR>
 nnoremap   \f :let @+ = expand('%:t')<CR>
 nnoremap   \s :let @+ = expand('%:p:h')<CR>

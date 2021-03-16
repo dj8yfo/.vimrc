@@ -20,6 +20,7 @@ source ~/.config/nvim/keys/mappings.vim
 source ~/.config/nvim/themes/syntax.vim
 source ~/.config/nvim/themes/nvcode.vim
 
+
 " Plugin Configuration
 source ~/.config/nvim/keys/which-key.vim
 source ~/.config/nvim/plug-config/vim-commentary.vim
@@ -43,6 +44,7 @@ source ~/.config/nvim/plug-config/closetags.vim
 source ~/.config/nvim/plug-config/floaterm.vim
 source ~/.config/nvim/plug-config/barbar.vim
 source ~/.config/nvim/plug-config/tagalong.vim
+source ~/.config/nvim/lang/golang.vim
 source ~/.config/nvim/plug-config/bracey.vim
 source ~/.config/nvim/plug-config/markdown-preview.vim
 source ~/.config/nvim/plug-config/nvimtree-config.vim
