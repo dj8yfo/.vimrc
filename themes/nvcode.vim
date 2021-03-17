@@ -9,13 +9,13 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme onedark
-colorscheme monokai-bold
+colorscheme sonokai
 " colorscheme monokai-bold
 " colorscheme aurora
 
 
 " checks if your terminal has 24-bit color support
-if (has("termguicolors"))
+if (has("nvim"))
     set termguicolors
     hi LineNr ctermbg=NONE guibg=NONE
 endif
@@ -28,3 +28,6 @@ hi EasyMotionTarget2Second guifg=#00ff00
 hi EasyMotionTarget2First guifg=#ffff00
 
 hi LineNr          guifg=#BCBCBC guibg=#3B3A32
+
+hi ColorColumn guifg=#e3e1e4 guibg=#555555
+hi Normal ctermbg=NONE guibg=#112258
