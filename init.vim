@@ -38,7 +38,6 @@ source ~/.config/nvim/plug-config/vim-quickhl.vim
 source ~/.config/nvim/plug-config/neosnippets..vim
 source ~/.config/nvim/plug-config/rainbow_parentheses.vim
 
-source ~/.config/nvim/plug-config/goyo.vim
 source ~/.config/nvim/plug-config/vim-rooter.vim
 source ~/.config/nvim/plug-config/start-screen.vim
 source ~/.config/nvim/plug-config/gitgutter.vim

@@ -31,3 +31,12 @@ hi LineNr          guifg=#BCBCBC guibg=#3B3A32
 
 hi ColorColumn guifg=#e3e1e4 guibg=#555555
 hi Normal ctermbg=NONE guibg=#112258
+hi Visual guifg=#aaaaaa guibg=#222222
+
+" autocomplete menu ------------------------- {{{
+
+hi Pmenu           guifg=#5fd7ff  guibg=Grey0
+hi PmenuSel        guifg=Grey93 guibg=Grey42
+hi PmenuSbar                   guibg=Grey3
+hi PmenuThumb      guifg=SteelBlue1
+" }}}

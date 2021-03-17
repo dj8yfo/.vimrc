@@ -69,8 +69,6 @@ Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vista.vim'
 " See what keys do like in emacs
 Plug 'liuchengxu/vim-which-key'
-" Zen mode
-Plug 'junegunn/goyo.vim'
 " Snippets
 Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
