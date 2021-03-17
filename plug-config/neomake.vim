@@ -25,17 +25,17 @@ let g:neomake_error_sign   = {'text': '✖', 'texthl': 'NeomakeErrorSign'}
 let g:neomake_warning_sign = {'text': '∆', 'texthl': 'NeomakeWarningSign'}
 let g:neomake_message_sign = {'text': '➤', 'texthl': 'NeomakeMessageSign'}
 let g:neomake_info_sign    = {'text': 'ℹ', 'texthl': 'NeomakeInfoSign'}
-let g:neomake_go_enabled_makers = neomake#makers#ft#go#EnabledMakers()
-let g:neomake_go_golangci_lint_maker = {
-    \ 'exe': 'golangci-lint',
-    \ 'args': ['run', '--out-format=line-number', '--print-issued-lines=false'],
-    \ 'output_stream': 'stdout',
-    \ 'append_file': 0,
-    \ 'cwd': '%:h',
-    \ 'errorformat':
-        \ '%f:%l:%c: %m,' .
-        \ '%f:%l: %m'
-    \ }
+" let g:neomake_go_enabled_makers = neomake#makers#ft#go#EnabledMakers()
+" let g:neomake_go_golangci_lint_maker = {
+"     \ 'exe': 'golangci-lint',
+"     \ 'args': ['run', '--out-format=line-number', '--print-issued-lines=false'],
+"     \ 'output_stream': 'stdout',
+"     \ 'append_file': 0,
+"     \ 'cwd': '%:h',
+"     \ 'errorformat':
+"         \ '%f:%l:%c: %m,' .
+"         \ '%f:%l: %m'
+"     \ }
 
 " \ '--config', './.golangci.yml'
 " \ ],
