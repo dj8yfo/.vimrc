@@ -128,7 +128,6 @@ augroup yaml_format
 augroup end
 " }}}
 "
-
 "hi Normal guibg=NONE ctermbg=NONE
 hi Normal ctermbg=NONE
 " transparent background
