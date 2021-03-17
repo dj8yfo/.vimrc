@@ -18,7 +18,8 @@ let g:rainbow_conf = {
 \			'parentheses_options': 'containedin=markdownCode contained', 
 \		},
 \		'go': {
-\	        'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+        \	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'yellow', 'DeepSkyBlue1', 'magenta'],
+\	        'parentheses': [ 'start=/{/ end=/}/ fold'],
 \		},
 \		'lisp': {
 \			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'], 
