@@ -18,7 +18,6 @@ map F <Plug>(easymotion-Fl)
 map f <Plug>(easymotion-fl)
 map <C-l> <Plug>(easymotion-f)
 map <C-h> <Plug>(easymotion-F)
-map <leader>' :UndotreeToggle<CR>
 "map <C-h> <Plug>(easymotion-Fl)
 "map <C-l> <Plug>(easymotion-fl)
 "map <C-.> <Plug>(easymotion-f)
@@ -64,12 +63,10 @@ map <leader>df :Defx -split=floating<CR>
 "fzf binding >
 "no   <leader>f :Files<CR>
 map  <leader>e. :call SearchFileDir()<CR>
-vmap <leader>hv <Plug>(quickhl-manual-this)
 no   <leader>v :Buffers<CR>
 no   <leader>: :History:<CR>
 no   <leader>$ :call GitGutterRefresh()<CR>
 no   <leader>* :CocRestart<CR>
-no   <leader>cz :call ToggleCommentHIghlight()<CR>
 no   <leader>t :Tags<CR>
 no   <leader>ss :Obsession<CR>
 no   <leader>sl :call LoadSessionAndDoNotTrack()<CR>
@@ -99,12 +96,9 @@ nnoremap <f2> :echo ("hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 nnoremap <f3> :echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')<cr>
 "nnoremap <f4> :exec 'syn list '.synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
 "map <F4> :CocEnable<CR>
-map <F6> 20zl
-map <F5> 20zh
 map <F7> :set wrap!<CR>
 
 map <F10> :Stealth<CR>
-map <F4> :PatSearch 
 map <F12> :Autoformat<CR>
 " move whole line up/DOWN
 

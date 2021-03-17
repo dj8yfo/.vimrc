@@ -46,7 +46,6 @@ function! s:mktempfunc(...) abort
 endfunction
 
 command! -nargs=? Mktemp  call <SID>mktempfunc(<f-args>)
-command! -nargs=? PatSearch  call <SID>patsearch(<f-args>)
 
 function! Small_scrach() abort 
     5sp
@@ -67,9 +66,6 @@ function! DumpBindings() abort
 	redir END
 endfunction
 
-function! s:patsearch(search) abort
-    exec 'lvimgrep /' . a:search .'/gj %'
-endfunction
 
 function! s:pyre_search(search) abort
 	tabnew
