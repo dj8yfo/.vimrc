@@ -77,3 +77,13 @@ endfunction
 function! Telescope_FF()
     lua require('telescope.builtin').find_files({find_command = {'fd', '-H'}})
 endfunction
+
+function! HandleURL()
+  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;]*')
+  echo s:uri
+  if s:uri != ""
+    silent exec "!firefox '". escape(s:uri,"%#!") ."'"
+  else
+    echo "No URI found in line."
+  endif
+endfunction

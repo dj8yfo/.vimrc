@@ -107,6 +107,7 @@ let g:which_key_map.c = {
       \ 't' : [':NeomakeSh ctags -R .'        , 'make ctags'],
       \ 'f' : [':tcd %:h'        , 'change to file dir'],
       \ '.' : [':call SearchFileDir()'        , 'change to file dir'],
+      \ 'u' : [':call HandleURL()'        , 'goto url'],
       \ }
 
 " d is for debug
@@ -140,6 +141,7 @@ let g:which_key_map.F = {
     \ '5' : [':set foldlevel=5', 'level5'],
     \ '6' : [':set foldlevel=6', 'level6']
     \ }
+
 
 " f is for find and replace
       " \ 'f' : [':Farr'                     , 'file'],
