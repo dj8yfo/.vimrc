@@ -19,7 +19,7 @@ let g:rainbow_conf = {
 \		},
 \		'go': {
         \	'guifgs': ['gold', 'CadetBlue1', 'chartreuse1', 'yellow', 'DeepSkyBlue1', 'magenta'],
-\	        'parentheses': [ 'start=/{/ end=/}/ fold'],
+\			'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'], 
 \		},
 \		'lisp': {
 \			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'], 
