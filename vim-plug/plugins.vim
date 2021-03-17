@@ -20,6 +20,8 @@ Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
 Plug 'Mcmartelle/vim-monokai-bold'
 Plug 'sainnhe/sonokai'
+Plug 'luochen1990/rainbow'
+
 
 set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'
