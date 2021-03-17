@@ -69,3 +69,11 @@ function! SearchFileDir() abort
     let l:file = expand('%:p:h')
     execute "Files " . l:file
 endfunction
+
+function! Show_documentation()
+    execute 'h '.expand('<cword>')
+endfunction
+
+function! Telescope_FF()
+    lua require('telescope.builtin').find_files({find_command = {'fd', '-H'}})
+endfunction

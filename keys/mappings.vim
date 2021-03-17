@@ -1,3 +1,5 @@
+inor <C-b> <Left>
+inor <C-f> <Right>
 nnoremap \x *``cgn
 imap <C-\> <Esc>u
 

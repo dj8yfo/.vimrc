@@ -34,6 +34,7 @@ source ~/.config/nvim/plug-config/denite.vim
 source ~/.config/nvim/plug-config/denite.vim
 source ~/.config/nvim/plug-config/neomake.vim
 source ~/.config/nvim/plug-config/ferret.vim
+source ~/.config/nvim/plug-config/vim-quickhl.vim
 
 source ~/.config/nvim/plug-config/goyo.vim
 source ~/.config/nvim/plug-config/vim-rooter.vim

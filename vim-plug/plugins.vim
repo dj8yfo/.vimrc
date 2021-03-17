@@ -24,6 +24,7 @@ set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'wincent/ferret'
+Plug 't9md/vim-quickhl'
 
 
 " Better Comments
