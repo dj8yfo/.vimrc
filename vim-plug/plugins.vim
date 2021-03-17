@@ -26,6 +26,10 @@ Plug 'neomake/neomake'
 Plug 'wincent/ferret'
 Plug 't9md/vim-quickhl'
 
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'honza/vim-snippets'
+
 
 " Better Comments
 Plug 'tpope/vim-commentary'
