@@ -1,3 +1,5 @@
+nmap <M-q> :ll<cr>
+nmap <M-t> :cc<cr>
 inor <C-b> <Left>
 inor <C-f> <Right>
 nnoremap \x *``cgn
