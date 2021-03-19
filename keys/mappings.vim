@@ -1,3 +1,6 @@
+map <F7> :set wrap!<CR>
+map <F8> :call AutoPairsToggle()<CR>
+
 nmap <M-q> :ll<cr>
 nmap <M-t> :cc<cr>
 inor <C-b> <Left>
