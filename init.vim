@@ -47,6 +47,7 @@ source ~/.config/nvim/plug-config/floaterm.vim
 source ~/.config/nvim/plug-config/barbar.vim
 source ~/.config/nvim/plug-config/tagalong.vim
 source ~/.config/nvim/lang/golang.vim
+source ~/.config/nvim/lang/rust.vim
 source ~/.config/nvim/plug-config/bracey.vim
 source ~/.config/nvim/plug-config/markdown-preview.vim
 source ~/.config/nvim/plug-config/nvimtree-config.vim
