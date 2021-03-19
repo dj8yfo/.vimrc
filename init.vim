@@ -68,6 +68,7 @@ luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/lua-ls.lua
 luafile ~/.config/nvim/lua/lsp/python-ls.lua
 luafile ~/.config/nvim/lua/lsp/gopls.lua
+luafile ~/.config/nvim/lua/lsp/rust_analyzer.lua
 luafile ~/.config/nvim/lua/lsp/bash-ls.lua
 luafile ~/.config/nvim/lua/lsp/css-ls.lua
 luafile ~/.config/nvim/lua/lsp/docker-ls.lua
