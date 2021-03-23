@@ -82,7 +82,7 @@ function! HandleURL()
   let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;]*')
   echo s:uri
   if s:uri != ""
-    silent exec "!firefox '". escape(s:uri,"%#!") ."'"
+    silent exec "!google-chrome '". escape(s:uri,"%#!") ."'"
   else
     echo "No URI found in line."
   endif
