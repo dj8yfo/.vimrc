@@ -32,6 +32,7 @@ Plug 't9md/vim-quickhl'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets'
+Plug 'jpalardy/vim-slime'
 
 
 " Better Comments

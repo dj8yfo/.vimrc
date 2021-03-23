@@ -37,6 +37,9 @@ source ~/.config/nvim/plug-config/ferret.vim
 source ~/.config/nvim/plug-config/vim-quickhl.vim
 source ~/.config/nvim/plug-config/neosnippets..vim
 source ~/.config/nvim/plug-config/rainbow_parentheses.vim
+source ~/.config/nvim/plug-config/vim_slime.vim
+
+
 
 source ~/.config/nvim/plug-config/vim-rooter.vim
 source ~/.config/nvim/plug-config/start-screen.vim
