@@ -9,8 +9,8 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme onedark
-colorscheme sonokai
-" colorscheme monokai-bold
+" colorscheme sonokai
+colorscheme monokai-bold
 " colorscheme aurora
 
 
@@ -30,7 +30,7 @@ hi EasyMotionTarget2First guifg=#ffff00
 hi LineNr          guifg=#BCBCBC guibg=#3B3A32
 
 hi ColorColumn guifg=#e3e1e4 guibg=#555555
-hi Normal ctermbg=NONE guibg=#112258
+" hi Normal ctermbg=NONE guibg=#112258
 hi Visual guifg=#aaaaaa guibg=#222222
 
 " autocomplete menu ------------------------- {{{
