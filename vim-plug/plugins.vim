@@ -22,6 +22,8 @@ Plug 'Mcmartelle/vim-monokai-bold'
 Plug 'sainnhe/sonokai'
 Plug 'luochen1990/rainbow'
 
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'junegunn/vim-easy-align'
 
 set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'
