@@ -103,6 +103,8 @@ Plug 'mfussenegger/nvim-dap'
 " https://github.com/mhartington/formatter.nvim look into this
 " File Explorer
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'Shougo/defx.nvim'
+
 " Themes
 Plug 'christianchiarulli/nvcode-color-schemes.vim'
 " Better Syntax Support

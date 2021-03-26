@@ -39,6 +39,8 @@ source ~/.config/nvim/plug-config/neosnippets..vim
 source ~/.config/nvim/plug-config/rainbow_parentheses.vim
 source ~/.config/nvim/plug-config/vim_slime.vim
 source ~/.config/nvim/plug-config/markdown_preview.vim
+source ~/.config/nvim/plug-config/nvimtree-config.vim
+source ~/.config/nvim/plug-config/defx_settings.vim
 
 
 
@@ -54,7 +56,6 @@ source ~/.config/nvim/lang/golang.vim
 source ~/.config/nvim/lang/rust.vim
 source ~/.config/nvim/plug-config/bracey.vim
 source ~/.config/nvim/plug-config/markdown-preview.vim
-source ~/.config/nvim/plug-config/nvimtree-config.vim
 source ~/.config/nvim/plug-config/lsp-saga.vim
 source ~/.config/nvim/plug-config/lightbulb.vim
 source ~/.config/nvim/lua/lsp-wrapper.vim
