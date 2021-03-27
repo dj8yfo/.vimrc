@@ -22,10 +22,14 @@ Plug 'Mcmartelle/vim-monokai-bold'
 Plug 'sainnhe/sonokai'
 Plug 'luochen1990/rainbow'
 
+" call dein#add('megantiu/true.vim')
+
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'junegunn/vim-easy-align'
+Plug 'majutsushi/tagbar'
 
 set rtp+=~/.fzf
+
 Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'wincent/ferret'

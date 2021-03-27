@@ -41,6 +41,7 @@ source ~/.config/nvim/plug-config/vim_slime.vim
 source ~/.config/nvim/plug-config/markdown_preview.vim
 source ~/.config/nvim/plug-config/nvimtree-config.vim
 source ~/.config/nvim/plug-config/defx_settings.vim
+source ~/.config/nvim/plug-config/tagbar.vim
 
 
 
