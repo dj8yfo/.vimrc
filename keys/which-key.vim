@@ -48,6 +48,8 @@ let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 ,
 let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
+let g:which_key_map['z'] = [ ':Goyo 140'                                       , 'goyyou' ]
+let g:which_key_map['x'] = [ ':call ExitGoyo()'                                , 'goyyou exit' ]
 
 " Group mappings
 

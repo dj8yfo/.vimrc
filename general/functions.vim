@@ -94,3 +94,10 @@ function! MyTagbarOpen() abort
  
 	execute 'TagbarOpen fj'
 endfunction
+
+command! Jsf %!python -m json.tool
+
+function! ExitGoyo() abort
+    Goyo
+    so ~/.config/nvim/themes/nvcode.vim
+endfunction

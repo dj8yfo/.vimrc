@@ -19,8 +19,10 @@ Plug 'Valloric/ListToggle'
 Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
 Plug 'Mcmartelle/vim-monokai-bold'
+Plug 'megantiu/true.vim'
 Plug 'sainnhe/sonokai'
 Plug 'luochen1990/rainbow'
+Plug 'junegunn/goyo.vim'
 
 " call dein#add('megantiu/true.vim')
 
