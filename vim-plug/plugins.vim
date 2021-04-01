@@ -23,6 +23,7 @@ Plug 'megantiu/true.vim'
 Plug 'sainnhe/sonokai'
 Plug 'luochen1990/rainbow'
 Plug 'junegunn/goyo.vim'
+Plug 'jeetsukumaran/vim-indentwise'
 
 " call dein#add('megantiu/true.vim')
 

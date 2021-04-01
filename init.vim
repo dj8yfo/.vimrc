@@ -16,6 +16,7 @@ source ~/.config/nvim/vim-plug/plugins.vim
 source ~/.config/nvim/general/settings.vim
 source ~/.config/nvim/general/functions.vim
 source ~/.config/nvim/keys/mappings.vim
+source ~/.config/nvim/keys/indent_wise.vim
 " Themes
 source ~/.config/nvim/themes/syntax.vim
 source ~/.config/nvim/themes/nvcode.vim
