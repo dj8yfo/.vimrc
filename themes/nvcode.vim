@@ -10,8 +10,8 @@ syntax on
 " colorscheme nvcode
 " colorscheme onedark
 " colorscheme sonokai
-colorscheme sonokai
-" colorscheme aurora
+" colorscheme true
+colorscheme edge
 
 
 " checks if your terminal has 24-bit color support
@@ -30,7 +30,7 @@ hi EasyMotionTarget2First guifg=#ffff00
 hi LineNr          guifg=#BCBCBC guibg=#3B3A32
 
 hi ColorColumn guifg=#e3e1e4 guibg=#555555
-hi Normal ctermbg=NONE guibg=#444444
+hi Normal ctermbg=NONE guibg=#2c2e34
 hi Visual guifg=#aaaaaa guibg=#222222
 
 " autocomplete menu ------------------------- {{{

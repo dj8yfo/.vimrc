@@ -1,3 +1,4 @@
+nmap \n mzi<CR><Esc>`z
 map <F7> :set wrap!<CR>
 map <F8> :call AutoPairsToggle()<CR>
 

@@ -31,6 +31,7 @@ Plug 'jeetsukumaran/vim-indentwise'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'junegunn/vim-easy-align'
 Plug 'majutsushi/tagbar'
+Plug 'segeljakt/vim-stealth'
 
 set rtp+=~/.fzf
 
