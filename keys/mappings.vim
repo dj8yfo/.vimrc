@@ -1,3 +1,5 @@
+map <C-l> <Plug>(easymotion-f)
+map <C-h> <Plug>(easymotion-F)
 nmap \n mzi<CR><Esc>`z
 map <F7> :set wrap!<CR>
 map <F8> :call AutoPairsToggle()<CR>
@@ -88,11 +90,6 @@ nnoremap <silent> <C-c> <Esc>
 " <TAB>: completion.
 inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 " Terminal window navigation
 tnoremap <C-h> <C-\><C-N><C-w>h

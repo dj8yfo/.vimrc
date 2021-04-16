@@ -9,9 +9,9 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme onedark
-" colorscheme sonokai
+colorscheme sonokai
 " colorscheme true
-colorscheme edge
+" colorscheme edge
 
 
 " checks if your terminal has 24-bit color support

@@ -109,6 +109,8 @@ let g:which_key_map.c = {
       \ 'f' : [':tcd %:h'        , 'change to file dir'],
       \ '.' : [':call SearchFileDir()'        , 'change to file dir'],
       \ 'u' : [':call HandleURL()'        , 'goto url'],
+      \ 'm' : [':set filetype=markdown'        , 'switch to markdown'],
+      \ 'q' : [':GFiles?'        , 'changed in git'],
       \ }
 
 " d is for debug
