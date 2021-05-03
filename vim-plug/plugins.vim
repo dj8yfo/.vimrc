@@ -44,7 +44,7 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets'
 Plug 'jpalardy/vim-slime'
-
+Plug 'sbdchd/neoformat'
 
 " Better Comments
 Plug 'tpope/vim-commentary'

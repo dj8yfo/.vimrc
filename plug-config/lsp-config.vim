@@ -6,7 +6,7 @@ nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent>gR :Lspsaga rename<CR>
 nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>
-nnoremap <silent> ca :Lspsaga code_action<CR>
+nnoremap <silent> CA :Lspsaga code_action<CR>
 " nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> K :Lspsaga hover_doc<CR>
 nnoremap <silent> <C-a> <cmd>lua vim.lsp.buf.signature_help()<CR>

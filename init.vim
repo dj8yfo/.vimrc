@@ -28,6 +28,7 @@ source ~/.config/nvim/plug-config/vim-commentary.vim
 source ~/.config/nvim/plug-config/rnvimr.vim
 source ~/.config/nvim/plug-config/codi.vim
 source ~/.config/nvim/plug-config/easymotion.vim
+source ~/.config/nvim/plug-config/neoformat.vim
 
 " added by me
 source ~/.config/nvim/plug-config/incsearch.vim
@@ -56,6 +57,7 @@ source ~/.config/nvim/plug-config/floaterm.vim
 source ~/.config/nvim/plug-config/barbar.vim
 source ~/.config/nvim/plug-config/tagalong.vim
 source ~/.config/nvim/lang/golang.vim
+source ~/.config/nvim/lang/javascript.vim
 source ~/.config/nvim/lang/rust.vim
 source ~/.config/nvim/plug-config/bracey.vim
 source ~/.config/nvim/plug-config/markdown-preview.vim
@@ -63,6 +65,7 @@ source ~/.config/nvim/plug-config/lsp-saga.vim
 source ~/.config/nvim/plug-config/lightbulb.vim
 source ~/.config/nvim/lua/lsp-wrapper.vim
 source ~/.config/nvim/plug-config/lsp-config.vim
+
 luafile ~/.config/nvim/lua/lsp/general-ls.lua
 luafile ~/.config/nvim/lua/plugins/galaxyline-config.lua
 luafile ~/.config/nvim/lua/plugins/nvimtree-config.lua
