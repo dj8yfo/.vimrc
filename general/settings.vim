@@ -38,7 +38,10 @@ set updatetime=300                      " Faster completion
 set timeoutlen=400                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
-set guifont=Hack:h11
+set guifont=Ubuntu\ Mono:h12
+
+" for gnvim on GTK <- Xft
+" echo 'FREETYPE_PROPERTIES="truetype:interpreter-version=35 cff:no-stem-darkening=1 autofitter:warping=1"' | sudo tee /etc/profile.d/fix-freetype.sh
 
 " New stuff
 " set notimeout nottimeout
