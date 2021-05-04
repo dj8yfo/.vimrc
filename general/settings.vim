@@ -40,8 +40,29 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=Ubuntu\ Mono:h12
 
+" ==============================
 " for gnvim on GTK <- Xft
 " echo 'FREETYPE_PROPERTIES="truetype:interpreter-version=35 cff:no-stem-darkening=1 autofitter:warping=1"' | sudo tee /etc/profile.d/fix-freetype.sh
+
+" /etc/fonts/fonts.conf:
+
+" <match target="font">
+"     <edit name="rgba" mode="assign">
+"       <const>rgb</const>
+"     </edit>
+"   </match>
+" <match target="font">
+"       <edit name="lcdfilter" mode="assign">
+"       <const>lcdlight</const>
+"     </edit>
+" </match>
+"            <match target="font">
+"  <match target="font">
+"     <edit name="hintstyle" mode="assign">
+"       <const>hintfull</const>
+"     </edit>
+"   </match>
+" ==============================
 
 " New stuff
 " set notimeout nottimeout
