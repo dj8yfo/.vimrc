@@ -33,7 +33,6 @@ source ~/.config/nvim/plug-config/neoformat.vim
 " added by me
 source ~/.config/nvim/plug-config/incsearch.vim
 source ~/.config/nvim/plug-config/denite.vim
-source ~/.config/nvim/plug-config/denite.vim
 source ~/.config/nvim/plug-config/neomake.vim
 source ~/.config/nvim/plug-config/ferret.vim
 source ~/.config/nvim/plug-config/vim-quickhl.vim

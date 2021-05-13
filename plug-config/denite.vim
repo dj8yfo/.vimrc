@@ -51,7 +51,7 @@ nn <Leader>q :Denite -no-empty  grep <CR>
 " no <Leader>/ :Denite line<CR>
 " vn <Leader>/ :<C-U>call denite#visual('line')<CR>
 
-no gn :Denite -resume -cursor-pos=+1 -immediately<CR>
+no gm :Denite -resume -cursor-pos=+1 -immediately<CR>
 no gb ::Denite -resume -cursor-pos=-1 -immediately<CR>
 
 function! denite#visual(source) abort

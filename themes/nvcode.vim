@@ -32,7 +32,7 @@ hi LineNr          guifg=#BCBCBC guibg=#3B3A32
 hi ColorColumn guifg=#e3e1e4 guibg=#555555
 hi Normal ctermbg=NONE guibg=#2c2e34
 hi Visual guifg=#aaaaaa guibg=#222222
-
+hi QuickhlCword guibg=gray27
 " autocomplete menu ------------------------- {{{
 
 hi Pmenu           guifg=#5fd7ff  guibg=Grey0
