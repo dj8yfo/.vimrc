@@ -38,7 +38,7 @@ set updatetime=300                      " Faster completion
 set timeoutlen=400                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
-set guifont=DejaVu\ Sans\ Mono:h11
+set guifont=DejaVu\ Sans\ Mono:h8
 
 " ==============================
 " for gnvim on GTK <- Xft
