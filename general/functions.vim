@@ -101,3 +101,8 @@ function! ExitGoyo() abort
     Goyo
     so ~/.config/nvim/themes/nvcode.vim
 endfunction
+
+function! MyLspRestart() abort
+     lua vim.lsp.stop_client(vim.lsp.get_active_clients())
+     edit!
+ endfunction

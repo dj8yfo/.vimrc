@@ -18,11 +18,18 @@ Plug 'tpope/vim-surround'
 Plug 'Valloric/ListToggle'
 Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
+
 Plug 'Mcmartelle/vim-monokai-bold'
 Plug 'megantiu/true.vim'
 Plug 'sainnhe/sonokai'
 Plug 'sainnhe/edge'
 Plug 'luochen1990/rainbow'
+Plug 'plainfingers/black_is_the_color'
+Plug 'arzg/vim-colors-xcode'
+Plug 'bfredl/nvim-miniyank'
+Plug 'Yggdroot/indentLine'
+
+
 Plug 'junegunn/goyo.vim'
 Plug 'jeetsukumaran/vim-indentwise'
 

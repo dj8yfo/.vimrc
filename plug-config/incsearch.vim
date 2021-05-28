@@ -13,5 +13,5 @@ function! s:incsearch_config(...) abort
   \ }), get(a:, 1, {}))
 endfunction
 
-noremap <silent><expr> g/  incsearch#go(<SID>incsearch_config({'is_stay': 1}))
+noremap <silent><expr> gj  incsearch#go(<SID>incsearch_config({'is_stay': 1}))
 noremap <silent><expr> g?  incsearch#go(<SID>incsearch_config({'command': '?'}))

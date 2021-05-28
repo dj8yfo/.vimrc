@@ -111,6 +111,7 @@ let g:which_key_map.c = {
       \ 'u' : [':call HandleURL()'        , 'goto url'],
       \ 'm' : [':set filetype=markdown'        , 'switch to markdown'],
       \ 'q' : [':GFiles?'        , 'changed in git'],
+      \ 'r' : [':call MyLspRestart()'        , 'restart lsp server'],
       \ }
 
 " d is for debug

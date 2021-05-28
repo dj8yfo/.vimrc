@@ -40,6 +40,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=DejaVu\ Sans\ Mono:h8
 
+set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<,space:.
 " ==============================
 " for gnvim on GTK <- Xft
 " echo 'FREETYPE_PROPERTIES="truetype:interpreter-version=35 cff:no-stem-darkening=1 autofitter:warping=1"' | sudo tee /etc/profile.d/fix-freetype.sh

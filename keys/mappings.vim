@@ -4,6 +4,10 @@ nmap \n mzi<CR><Esc>`z
 map <F7> :set wrap!<CR>
 map <F8> :call AutoPairsToggle()<CR>
 
+map g\ <Plug>(miniyank-startput)
+map g/ <Plug>(miniyank-startPut)
+map g] <Plug>(miniyank-cycle)
+map go <Plug>(miniyank-cycleback)
 
 nmap <M-q> :ll<cr>
 nmap <M-t> :cc<cr>

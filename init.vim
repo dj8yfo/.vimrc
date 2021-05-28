@@ -44,6 +44,8 @@ source ~/.config/nvim/plug-config/nvimtree-config.vim
 source ~/.config/nvim/plug-config/defx_settings.vim
 source ~/.config/nvim/plug-config/tagbar.vim
 source ~/.config/nvim/plug-config/stealth.vim
+source ~/.config/nvim/plug-config/yaml.vim
+source ~/.config/nvim/plug-config/indentline.vim
 
 
 

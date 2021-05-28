@@ -9,7 +9,7 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme onedark
-colorscheme sonokai
+colorscheme true
 " colorscheme true
 " colorscheme edge
 
