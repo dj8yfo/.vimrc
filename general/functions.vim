@@ -106,3 +106,7 @@ function! MyLspRestart() abort
      lua vim.lsp.stop_client(vim.lsp.get_active_clients())
      edit!
  endfunction
+
+function! Ack_cword() abort
+    exec 'Ack ' . expand("<cword>")
+ endfunction

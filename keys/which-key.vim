@@ -112,6 +112,7 @@ let g:which_key_map.c = {
       \ 'm' : [':set filetype=markdown'        , 'switch to markdown'],
       \ 'q' : [':GFiles?'        , 'changed in git'],
       \ 'r' : [':call MyLspRestart()'        , 'restart lsp server'],
+      \ 'a' : [':call Ack_cword()'        , 'Ack current word'],
       \ }
 
 " d is for debug
