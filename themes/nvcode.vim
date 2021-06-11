@@ -9,7 +9,7 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme onedark
-colorscheme true
+colorscheme monokai
 " colorscheme true
 " colorscheme edge
 
@@ -20,10 +20,11 @@ if (has("nvim"))
     hi LineNr ctermbg=NONE guibg=NONE
 endif
 
-hi Visual guifg=#aaaaaa guibg=#222222
-hi Search  guifg=#ffff00 guibg=#111111
+hi Visual guifg=#aaaaaa guibg=#222222 
+hi Search  guifg=#111111 guibg=DarkSalmon gui=bold
+hi CursorLine guibg=NONE
 
-hi EasyMotionTarget guifg=#ffff00
+hi EasyMotionTarget guifg=HotPink gui=bold
 hi EasyMotionTarget2Second guifg=#00ff00
 hi EasyMotionTarget2First guifg=#ffff00
 
