@@ -19,6 +19,7 @@ Plug 'Valloric/ListToggle'
 Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
 Plug 'sickill/vim-monokai'
+Plug 'tomasr/molokai'
 
 Plug 'Mcmartelle/vim-monokai-bold'
 Plug 'megantiu/true.vim'
