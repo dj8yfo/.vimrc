@@ -3,6 +3,7 @@ map <C-h> <Plug>(easymotion-F)
 nmap \n mzi<CR><Esc>`z
 map <F7> :set wrap!<CR>
 map <F8> :call AutoPairsToggle()<CR>
+map gV :vertical wincmd f<CR>
 
 map g\ <Plug>(miniyank-startput)
 map g/ <Plug>(miniyank-startPut)
