@@ -44,11 +44,11 @@ let g:comment_bright = 0
 function! ToggleCommentHIghlight() abort
     if g:comment_bright
         let g:comment_bright = 0
-        hi Comment term=bold ctermfg=Cyan guifg=#75715E guibg=#272822
+        hi TSComment term=bold ctermfg=Cyan guifg=#75715E guibg=#272822
         hi Folded guibg=#000000 guifg=#555555
     else
         let g:comment_bright = 1
-        hi Comment term=bold ctermfg=Cyan guifg=#eeeeee guibg=#000000
+        hi TSComment term=bold ctermfg=Cyan guifg=#eeeeee guibg=#000000
         hi Folded guifg=#eeeeee guibg=#000000
     endif
 endfunction

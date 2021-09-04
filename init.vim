@@ -79,6 +79,7 @@ luafile ~/.config/nvim/lua/plugins/lspsaga-config.lua
 " LSP: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/lua-ls.lua
+luafile ~/.config/nvim/lua/lsp/ccls-ls.lua
 luafile ~/.config/nvim/lua/lsp/python-ls.lua
 luafile ~/.config/nvim/lua/lsp/gopls.lua
 luafile ~/.config/nvim/lua/lsp/rust_analyzer.lua
