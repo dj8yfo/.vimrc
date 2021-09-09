@@ -15,6 +15,7 @@ source ~/.config/nvim/plug-config/polyglot.vim
 source ~/.config/nvim/vim-plug/plugins.vim
 source ~/.config/nvim/general/settings.vim
 source ~/.config/nvim/general/functions.vim
+source ~/.config/nvim/general/breakhabits.vim
 source ~/.config/nvim/keys/indent_wise.vim
 source ~/.config/nvim/keys/mappings.vim
 " Themes

@@ -48,6 +48,8 @@ map  [b :cprev<CR>
 nnoremap gp `[v`]
 map <M-r> :e!<CR>
 
+
+nnoremap   \c :call BreakHabitsWindow([expand('%:p'), "this is the file"])<CR>
 nnoremap   \a :let @+ = expand('%:p')<CR>
 nnoremap   \f :let @+ = expand('%:t')<CR>
 nnoremap   \s :let @+ = expand('%:p:h')<CR>
