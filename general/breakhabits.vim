@@ -6,7 +6,7 @@ endfunction
 
 function! BreakHabitsWindow(message) abort
     " Define the size of the floating window
-    let width = 100
+    let width = 120
     let height = 10
 
     " Create the scratch buffer displayed in the floating window
