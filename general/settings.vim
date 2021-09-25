@@ -40,7 +40,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=JetBrainsMono\ NF:h7
 
-let g:neovide_cursor_vfx_mode = "sonicboom"
+let g:neovide_cursor_vfx_mode = "torpedo"
 
 set listchars=eol:$,nbsp:_,tab:>-,trail:~,extends:>,precedes:<,space:.
 " ==============================
