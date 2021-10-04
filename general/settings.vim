@@ -38,7 +38,7 @@ set updatetime=300                      " Faster completion
 set timeoutlen=400                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
-set guifont=JetBrainsMono\ NF:h7
+set guifont=JetBrainsMono\ NF:h9
 
 let g:neovide_cursor_vfx_mode = "torpedo"
 

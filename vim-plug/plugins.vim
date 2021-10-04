@@ -31,6 +31,7 @@ Plug 'plainfingers/black_is_the_color'
 Plug 'arzg/vim-colors-xcode'
 Plug 'bfredl/nvim-miniyank'
 Plug 'Yggdroot/indentLine'
+Plug 'powerman/vim-plugin-AnsiEsc'
 
 
 Plug 'junegunn/goyo.vim'
