@@ -110,3 +110,5 @@ function! MyLspRestart() abort
 function! Ack_cword() abort
     exec 'Ack ' . expand("<cword>")
  endfunction
+
+command! CargoPlay !cargo play %
