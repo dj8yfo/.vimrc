@@ -103,6 +103,7 @@ let g:which_key_map.c = {
       \ 'p' : [':call CursorPositionAt()'        , 'cursor position'],
       \ 'z' : [':tabclose'        , 'close tab'],
       \ 'd' : [':call ToggleCommentHIghlight()'        , 'toggle comments color'],
+      \ 'e' : [':e tmp.err.log'        , 'open error log from bake'],
       \ 'g' : [':Tags'        , 'global tags'],
       \ 'b' : [':BTags'        , 'buffer tags'],
       \ 't' : [':NeomakeSh ctags -R .'        , 'make ctags'],
