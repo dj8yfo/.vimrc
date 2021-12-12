@@ -8,10 +8,8 @@ set colorcolumn=88
 syntax on
 " colorscheme nord
 " colorscheme nvcode
-" colorscheme onedark
-colorscheme sonokai
+colorscheme molokai
 " colorscheme true
-" colorscheme edge
 
 
 " checks if your terminal has 24-bit color support
