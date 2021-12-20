@@ -42,6 +42,7 @@ source ~/.config/nvim/plug-config/rainbow_parentheses.vim
 source ~/.config/nvim/plug-config/vim_slime.vim
 source ~/.config/nvim/plug-config/markdown_preview.vim
 source ~/.config/nvim/plug-config/nvimtree-config.vim
+lua require'nvim-tree'.setup {}
 source ~/.config/nvim/plug-config/defx_settings.vim
 source ~/.config/nvim/plug-config/tagbar.vim
 source ~/.config/nvim/plug-config/stealth.vim
