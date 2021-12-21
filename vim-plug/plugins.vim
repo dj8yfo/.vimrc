@@ -115,7 +115,6 @@ Plug 'nvim-telescope/telescope-media-files.nvim'
 " Intellisense
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
-Plug 'glepnir/lspsaga.nvim'
 Plug 'onsails/lspkind-nvim'
 Plug 'kosayoda/nvim-lightbulb'
 Plug 'mfussenegger/nvim-jdtls'

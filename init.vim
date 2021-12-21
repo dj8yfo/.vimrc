@@ -64,7 +64,6 @@ source ~/.config/nvim/lang/javascript.vim
 source ~/.config/nvim/lang/rust.vim
 source ~/.config/nvim/plug-config/bracey.vim
 source ~/.config/nvim/plug-config/markdown-preview.vim
-source ~/.config/nvim/plug-config/lsp-saga.vim
 source ~/.config/nvim/plug-config/lightbulb.vim
 source ~/.config/nvim/lua/lsp-wrapper.vim
 source ~/.config/nvim/plug-config/lsp-config.vim
@@ -77,7 +76,6 @@ luafile ~/.config/nvim/lua/plugins/colorizer-config.lua
 luafile ~/.config/nvim/lua/plugins/telescope-config.lua
 luafile ~/.config/nvim/lua/lsp/lsp-kind.lua
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
-luafile ~/.config/nvim/lua/plugins/lspsaga-config.lua
 " LSP: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/lua-ls.lua
