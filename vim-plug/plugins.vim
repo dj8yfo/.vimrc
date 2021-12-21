@@ -32,6 +32,7 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'arzg/vim-colors-xcode'
 Plug 'bfredl/nvim-miniyank'
 Plug 'Yggdroot/indentLine'
+Plug 'plasticboy/vim-markdown'
 Plug 'powerman/vim-plugin-AnsiEsc'
 
 

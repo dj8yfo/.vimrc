@@ -88,6 +88,75 @@ function! HandleURL()
   endif
 endfunction
 
+function! s:FindNextSyntax(lnum, col, name)
+    let l:col = a:col
+    let l:step = 1
+    while synIDattr(synID(a:lnum, l:col, 1), 'name') !=# a:name
+        let l:col += l:step
+    endwhile
+    return [a:lnum, l:col]
+endfunction
+
+function! s:FindCornerOfSyntax(lnum, col, step)
+    let l:col = a:col
+    let l:syn = synIDattr(synID(a:lnum, l:col, 1), 'name')
+    while synIDattr(synID(a:lnum, l:col, 1), 'name') ==# l:syn
+        let l:col += a:step
+    endwhile
+    return l:col - a:step
+endfunction
+
+function! s:FindCornersOfSyntax(lnum, col)
+    return [<sid>FindLeftOfSyntax(a:lnum, a:col), <sid>FindRightOfSyntax(a:lnum, a:col)]
+endfunction
+
+function! s:FindRightOfSyntax(lnum, col)
+    return <sid>FindCornerOfSyntax(a:lnum, a:col, 1)
+endfunction
+
+function! s:FindLeftOfSyntax(lnum, col)
+    return <sid>FindCornerOfSyntax(a:lnum, a:col, -1)
+endfunction
+
+function! s:Markdown_GetUrlForPosition(lnum, col)
+    let l:lnum = a:lnum
+    let l:col = a:col
+    let l:syn = synIDattr(synID(l:lnum, l:col, 1), 'name')
+
+    if l:syn ==# 'mkdInlineURL' || l:syn ==# 'mkdURL' || l:syn ==# 'mkdLinkDefTarget'
+        " Do nothing.
+    elseif l:syn ==# 'mkdLink'
+        let [l:lnum, l:col] = <sid>FindNextSyntax(l:lnum, l:col, 'mkdURL')
+        let l:syn = 'mkdURL'
+    elseif l:syn ==# 'mkdDelimiter'
+        let l:line = getline(l:lnum)
+        let l:char = l:line[col - 1]
+        if l:char ==# '<'
+            let l:col += 1
+        elseif l:char ==# '>' || l:char ==# ')'
+            let l:col -= 1
+        elseif l:char ==# '[' || l:char ==# ']' || l:char ==# '('
+            let [l:lnum, l:col] = <sid>FindNextSyntax(l:lnum, l:col, 'mkdURL')
+        else
+            return ''
+        endif
+    else
+        return ''
+    endif
+
+    let [l:left, l:right] = <sid>FindCornersOfSyntax(l:lnum, l:col)
+    return getline(l:lnum)[l:left - 1 : l:right - 1]
+endfunction
+
+function! HandleURLAlt()
+    let s:uri = s:Markdown_GetUrlForPosition(line('.'), col('.'))
+    if s:uri != ''
+        silent exec "!google-chrome '". escape(s:uri,"%#!") ."'"
+    else
+        echomsg 'The cursor is not on a link.'
+    endif
+endfunction
+
 function! MyTagbarOpen() abort
 	let g:tagbar_show_linenumbers = 2
 	let g:tagbar_ctags_bin ="/usr/local/bin/ctags"

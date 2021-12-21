@@ -110,6 +110,7 @@ let g:which_key_map.c = {
       \ 'f' : [':tcd %:h'        , 'change to file dir'],
       \ '.' : [':call SearchFileDir()'        , 'change to file dir'],
       \ 'u' : [':call HandleURL()'        , 'goto url'],
+      \ 'U' : [':call HandleURLAlt()'        , 'goto url'],
       \ 'm' : [':set filetype=markdown'        , 'switch to markdown'],
       \ 'M' : [':color monokai'        , 'set to monokai'],
       \ 'q' : [':GFiles?'        , 'changed in git'],
