@@ -111,7 +111,7 @@ let g:which_key_map.c = {
       \ '.' : [':call SearchFileDir()'        , 'change to file dir'],
       \ 'u' : [':call HandleURL()'        , 'goto url'],
       \ 'U' : [':call HandleURLAlt()'        , 'goto url'],
-      \ 'm' : [':set filetype=markdown'        , 'switch to markdown'],
+      \ 'm' : [':set syntax=markdown'        , 'switch to markdown'],
       \ 'M' : [':color monokai'        , 'set to monokai'],
       \ 'q' : [':GFiles?'        , 'changed in git'],
       \ 'r' : [':call MyLspRestart()'        , 'restart lsp server'],

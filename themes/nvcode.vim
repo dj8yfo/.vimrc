@@ -15,7 +15,7 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme molokai
-colorscheme nightfly
+colorscheme sonokai
 " colorscheme true
 
 
