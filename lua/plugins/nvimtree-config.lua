@@ -29,3 +29,12 @@ vim.g.nvim_tree_bindings = {
     ["-"] = tree_cb("dir_up"),
     ["q"] = tree_cb("close")
 }
+
+require'nvim-tree'.setup {
+    update_cwd          = true,
+     update_focused_file = {
+        enable      = true,
+        update_cwd  = false,
+        ignore_list = {}
+      },
+}
