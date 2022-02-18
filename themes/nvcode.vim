@@ -15,7 +15,7 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme molokai
-colorscheme sonokai
+" colorscheme sonokai
 " colorscheme true
 
 
@@ -41,3 +41,5 @@ hi PmenuSel        guifg=Grey93 guibg=Grey42
 hi PmenuSbar                   guibg=Grey3
 hi PmenuThumb      guifg=SteelBlue1
 " }}}
+
+color aurora

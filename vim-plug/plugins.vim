@@ -20,6 +20,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'mbbill/undotree'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
+Plug 'ray-x/aurora'
 Plug 'lifepillar/pgsql.vim'
 
 Plug 'Mcmartelle/vim-monokai-bold'
