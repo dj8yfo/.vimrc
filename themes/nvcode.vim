@@ -42,4 +42,6 @@ hi PmenuSbar                   guibg=Grey3
 hi PmenuThumb      guifg=SteelBlue1
 " }}}
 
-color aurora
+" color aurora
+colorscheme PaperColor
+" color vimdark

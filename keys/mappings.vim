@@ -9,6 +9,7 @@ map g\ <Plug>(miniyank-startput)
 map g/ <Plug>(miniyank-startPut)
 map g] <Plug>(miniyank-cycle)
 map go <Plug>(miniyank-cycleback)
+map gU :cd ..<CR>
 
 nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
 

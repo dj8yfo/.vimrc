@@ -21,6 +21,8 @@ Plug 'mbbill/undotree'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
 Plug 'ray-x/aurora'
+" Plug 'rafalbromirski/vim-aurora'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'lifepillar/pgsql.vim'
 
 Plug 'Mcmartelle/vim-monokai-bold'
@@ -35,6 +37,7 @@ Plug 'bfredl/nvim-miniyank'
 Plug 'Yggdroot/indentLine'
 Plug 'plasticboy/vim-markdown'
 Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'ldelossa/vimdark'
 
 
 Plug 'junegunn/goyo.vim'
