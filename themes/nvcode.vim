@@ -14,16 +14,19 @@ endif
 syntax on
 " colorscheme nord
 " colorscheme nvcode
-" colorscheme molokai
+colorscheme molokai
 " colorscheme sonokai
 " colorscheme true
 
 
+" color sonokai
+" colorscheme tumnus
 
 hi Visual guifg=#aaaaaa guibg=#222222 
 hi Search  guifg=gold guibg=#111111 gui=bold
 hi CursorLine guibg=NONE
 
+:hi SpellBad cterm=underline guifg=red guibg=NONE
 hi EasyMotionTarget guifg=HotPink gui=bold
 hi EasyMotionTarget2Second guifg=#00ff00
 hi EasyMotionTarget2First guifg=#ffff00
@@ -43,5 +46,11 @@ hi PmenuThumb      guifg=SteelBlue1
 " }}}
 
 " color aurora
-colorscheme PaperColor
+" colorscheme sonokai
 " color vimdark
+" color tender
+" colorscheme true
+" color simple-dark
+" color kalahari
+" color synthwave
+" color monokai

@@ -1,6 +1,5 @@
 map <C-l> <Plug>(easymotion-f)
 map <C-h> <Plug>(easymotion-F)
-nmap \n mzi<CR><Esc>`z
 map <F7> :set wrap!<CR>
 map <F8> :call AutoPairsToggle()<CR>
 map gV :vertical wincmd F<CR>
@@ -39,7 +38,8 @@ no   <M-l> <C-W>l
 
 nnoremap gp `[v`]
 map <M-r> :e!<CR>
-map <M-f> :w!<CR>
+map gw :w!<CR>
+nmap gn mzi<CR><Esc>`z
 
 map  ]a :lnext<CR>
 map  [a :lprev<CR>
