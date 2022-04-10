@@ -40,7 +40,6 @@ source ~/.config/nvim/plug-config/vim-quickhl.vim
 source ~/.config/nvim/plug-config/neosnippets..vim
 source ~/.config/nvim/plug-config/rainbow_parentheses.vim
 source ~/.config/nvim/plug-config/vim_slime.vim
-source ~/.config/nvim/plug-config/markdown_preview.vim
 source ~/.config/nvim/plug-config/nvimtree-config.vim
 source ~/.config/nvim/plug-config/defx_settings.vim
 source ~/.config/nvim/plug-config/tagbar.vim
@@ -63,7 +62,6 @@ source ~/.config/nvim/lang/markdown.md
 source ~/.config/nvim/lang/javascript.vim
 source ~/.config/nvim/lang/rust.vim
 source ~/.config/nvim/plug-config/bracey.vim
-source ~/.config/nvim/plug-config/markdown-preview.vim
 source ~/.config/nvim/plug-config/lightbulb.vim
 source ~/.config/nvim/lua/lsp-wrapper.vim
 source ~/.config/nvim/plug-config/lsp-config.vim
@@ -81,6 +79,7 @@ luafile ~/.config/nvim/lua/plugins/compe-config.lua
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/lua-ls.lua
 luafile ~/.config/nvim/lua/lsp/ccls-ls.lua
+
 luafile ~/.config/nvim/lua/lsp/python-ls.lua
 luafile ~/.config/nvim/lua/lsp/gopls.lua
 luafile ~/.config/nvim/lua/lsp/rust_analyzer.lua
@@ -93,6 +92,7 @@ luafile ~/.config/nvim/lua/lsp/javascript-ls.lua
 luafile ~/.config/nvim/lua/lsp/json-ls.lua
 luafile ~/.config/nvim/lua/lsp/vim-ls.lua
 luafile ~/.config/nvim/lua/lsp/yaml-ls.lua
+luafile ~/.config/nvim/lua/lsp/zk-ls.lua
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
 " Add paths to node and python here

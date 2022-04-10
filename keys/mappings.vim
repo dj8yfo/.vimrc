@@ -4,10 +4,10 @@ map <F7> :set wrap!<CR>
 map <F8> :call AutoPairsToggle()<CR>
 map gV :vertical wincmd F<CR>
 
-map g\ <Plug>(miniyank-startput)
-map g/ <Plug>(miniyank-startPut)
-map g] <Plug>(miniyank-cycle)
-map go <Plug>(miniyank-cycleback)
+map gp <Plug>(miniyank-startput)
+map gP <Plug>(miniyank-startPut)
+map <M-,> <Plug>(miniyank-cycle)
+map <M-m> <Plug>(miniyank-cycleback)
 map gU :cd ..<CR>
 
 nnoremap <f1> :echo synIDattr(synID(line('.'), col('.'), 0), 'name')<cr>
@@ -36,7 +36,7 @@ no   <M-k> <C-W>k
 no   <M-h> <C-W>h
 no   <M-l> <C-W>l
 
-nnoremap gp `[v`]
+nnoremap gl `[v`]
 map <M-r> :e!<CR>
 map gw :w!<CR>
 nmap gn mzi<CR><Esc>`z
@@ -46,7 +46,7 @@ map  [a :lprev<CR>
 map  ]b :cnext<CR>
 map  [b :cprev<CR>
 
-nnoremap gp `[v`]
+nnoremap gl `[v`]
 map <M-r> :e!<CR>
 
 

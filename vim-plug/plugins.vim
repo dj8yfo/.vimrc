@@ -54,13 +54,13 @@ Plug 'jeetsukumaran/vim-indentwise'
 
 " call dein#add('megantiu/true.vim')
 
-Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'junegunn/vim-easy-align'
 Plug 'majutsushi/tagbar'
 Plug 'segeljakt/vim-stealth'
 
 set rtp+=~/.fzf
 
+Plug 'mickael-menu/zk-nvim'
 Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'wincent/ferret'
@@ -118,8 +118,6 @@ Plug 'romgrk/barbar.nvim'
 Plug 'Shougo/denite.nvim'
 " Smooth scroll
 Plug 'psliwka/vim-smoothie'
-" Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 " Intuitive buffer closing
 Plug 'moll/vim-bbye'
 " Telescope

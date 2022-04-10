@@ -48,7 +48,7 @@ let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 ,
 let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
-let g:which_key_map['z'] = [ ':Goyo 140'                                       , 'goyyou' ]
+let g:which_key_map['Z'] = [ ':Goyo 140'                                       , 'goyyou' ]
 let g:which_key_map['x'] = [ ':call ExitGoyo()'                                , 'goyyou exit' ]
 
 " Group mappings
@@ -60,8 +60,7 @@ let g:which_key_map.a = {
       \ 'h' : [':let @/ = ""'            , 'remove search highlight'],
       \ 'l' : [':Bracey'                 , 'start live server'],
       \ 'L' : [':BraceyStop'             , 'stop live server'],
-      \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
-      \ 'M' : [':MarkdownPreviewStop'    , 'markdown preview stop'],
+      \ 'm' : [':!ghostwriter %:p'       , 'ghostwriter preview'],
       \ 'n' : [':set nonumber!'          , 'line-numbers'],
       \ 's' : [':s/\%V\(.*\)\%V/"\1"/'   , 'surround'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],
