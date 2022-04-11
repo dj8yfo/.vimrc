@@ -60,7 +60,7 @@ let g:which_key_map.a = {
       \ 'h' : [':let @/ = ""'            , 'remove search highlight'],
       \ 'l' : [':Bracey'                 , 'start live server'],
       \ 'L' : [':BraceyStop'             , 'stop live server'],
-      \ 'm' : [':!ghostwriter %:p'       , 'ghostwriter preview'],
+      \ 'm' : [':AsyncRun ghostwriter %:p '       , 'ghostwriter preview'],
       \ 'n' : [':set nonumber!'          , 'line-numbers'],
       \ 's' : [':s/\%V\(.*\)\%V/"\1"/'   , 'surround'],
       \ 'r' : [':set norelativenumber!'  , 'relative line nums'],

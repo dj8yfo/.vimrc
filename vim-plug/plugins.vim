@@ -47,6 +47,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'plasticboy/vim-markdown'
 Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'ldelossa/vimdark'
+Plug 'skywind3000/asyncrun.vim'
 
 
 Plug 'junegunn/goyo.vim'
